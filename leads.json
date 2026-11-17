@@ -1,0 +1,159 @@
+[
+  {
+    "slug": "alice-wilford",
+    "business": "Bridal Hairstyles by Alice",
+    "wordmark": ["BRIDAL", "HAIRSTYLES"],
+    "first_name": "Alice",
+    "full_name": "Alice Paonessa",
+    "area": "Wilford",
+    "city": "Nottingham",
+    "phone": "07546 606107",
+    "email": "info@bridalhairstyles.co.uk",
+    "socials": {"instagram": "", "facebook": "", "pinterest": "", "tiktok": ""},
+    "language": "italian",
+    "fonts": "italian",
+    "motif": "olive",
+    "accent": "#C9846A",
+    "colors": {"ivory": "#FAF6F1", "blush": "#EFDDD5", "blush2": "#F5E8E2", "accent": "#C9846A", "accentDark": "#A9664D",
+               "ink": "#3B2A26", "muted": "#6B5751", "silk": "#EAD2C7", "silkEdge": "#C49A8A"},
+    "description": "Bridal hair by Alice, from Milan to Nottingham. Trials at the Wilford studio, calm wedding mornings, styles that last until the last dance.",
+    "hero": {
+      "lead": "Trusted expertise for a seamless, luxurious wedding morning, with a touch of Italy.",
+      "facts": ["Born in Milan", "Trials at the Wilford studio", "Nottinghamshire venues"],
+      "detail_caption": "Soft updo, pearl vine"
+    },
+    "pull": {"roots": "Rooted in Milan, grown in Nottingham, and made to last, like every style Alice creates."},
+    "about": {
+      "sub": "Piacere. From the style capital, Milan, to Nottingham.",
+      "paragraphs": [
+        "I’m Alice Paonessa, your local Italian wedding hair expert. I bring a touch of Italian flair to your bridal look, with calm energy and serious hair know-how.",
+        "My studio is in Wilford, Nottingham. It’s where your trial happens, where we try, refine and fall in love with your style before the day itself.",
+        "I use classic, timeless techniques that enhance your natural beauty, so you look and feel like the very best version of yourself."
+      ]
+    },
+    "journey": [
+      {"kicker": "01 · La consulenza", "title": "The consultation", "short": "Consultation",
+       "text": "Tell me about your dress, your venue and the look you’ve been saving. I’ll guide you towards the style that suits you, and your day.",
+       "quote": "So quick to respond to messages and guide me through choosing my hairstyle for the big day.", "cite": "Cathryn, bride"},
+      {"kicker": "02 · La prova", "title": "Your trial, in Wilford", "short": "Trial",
+       "text": "At my studio we create your look together, test it, refine it and photograph it, so the morning holds no surprises.",
+       "quote": "She recreated the hair style I wanted perfectly for my wedding day.", "cite": "A Bridal Hairstyles bride"},
+      {"kicker": "03 · La mattina", "title": "The wedding morning", "short": "Wedding morning",
+       "text": "I come to you. Bride, bridesmaids, mums and flower girls, all styled calmly and ready ahead of time, with room to breathe.",
+       "quote": "8 different hairstyles achieved, and each one stunning!", "cite": "Sarah, bride"},
+      {"kicker": "04 · L’ultimo ballo", "title": "Until the last dance", "short": "Last dance",
+       "text": "Styles built to last: through the photos, the speeches, the weather and the dance floor.",
+       "quote": "It lasted the entire night, even through all the dancing!", "cite": "Danielle, bride"}
+    ],
+    "reels": {
+      "text": "Robes, pins, a little fizz and a lot of laughing. Moments from Alice’s wedding mornings, as they happened.",
+      "items": [
+        {"title": "Getting-ready smiles", "duration": "0:24"}, {"title": "Pearls & pins", "duration": "0:18"},
+        {"title": "Morning light", "duration": "0:31"}, {"title": "The robe", "duration": "0:12"},
+        {"title": "For the mums", "duration": "0:20"}, {"title": "The veil moment", "duration": "0:27"}
+      ]
+    },
+    "reviews": [
+      {"text": "From the hair trial appointment to the catch-up messages, to the actual morning of the wedding: Alice was incredible. 8 different hairstyles achieved, and each one stunning!", "name": "Sarah, bride"},
+      {"text": "Her expertise meant that all of the bridal party’s hair kept in place despite a late night on the dance floor.", "name": "Cathryn, bride"},
+      {"text": "My hair was absolutely beautiful, as were my bridesmaids’, and it lasted the entire night, even through all the dancing!", "name": "Danielle, bride"},
+      {"text": "On the day we battled with rain, wind and even a bit of snow, and all the hair stayed beautiful.", "name": "A Bridal Hairstyles bride"},
+      {"text": "She did my hair, my 5 bridesmaids and 2 flower girls, and everyone was thrilled! A wonderful, kind and fun person to have around on your wedding morning.", "name": "A Bridal Hairstyles bride"}
+    ],
+    "looks_text": "Every bride, her own style. Soft romantic updos, polished low buns, glossy Hollywood waves: classic and timeless, made for you.",
+    "looks": [
+      {"tag": "Romantic", "title": "Fairy-light updo"}, {"tag": "Glamour", "title": "Hollywood waves"},
+      {"tag": "Classic", "title": "Sculpted low bun"}, {"tag": "Down", "title": "Waves & pearl veil"},
+      {"tag": "Statement", "title": "Volume updo"}, {"tag": "Soft", "title": "Undone chignon"},
+      {"tag": "Half-up", "title": "The just-married glow"}
+    ],
+    "guides": [
+      {"title": "What happens at a wedding hair trial, and is it worth it?", "text": "What to bring, how long it takes, and why it makes the morning calmer."},
+      {"title": "Should a bride do hair or makeup first?", "text": "The order Alice recommends, and how it helps everything last."},
+      {"title": "How much does wedding hair cost?", "text": "Understanding the costs, so you can plan your budget with confidence."}
+    ],
+    "booking": {
+      "facts": ["Bridal packages from [£___]", "Trials at the Wilford studio", "Now booking [2027]"],
+      "services": [
+        {"title": "The bride", "text": "Your trial, then your wedding-morning style", "image": "detail.jpg", "quote": "“8 different hairstyles achieved, and each one stunning!” Sarah"},
+        {"title": "Bride & bridal party", "text": "Bridesmaids, mums and flower girls too", "image": "party.jpg", "quote": "“She did my hair, my 5 bridesmaids and 2 flower girls, and everyone was thrilled!”"},
+        {"title": "Trial first", "text": "Test your look at the Wilford studio", "image": "step2.jpg", "quote": "“She recreated the hair style I wanted perfectly for my wedding day.”"},
+        {"title": "Special occasion", "text": "Events, parties and shoots", "image": "look2.jpg", "quote": "Hollywood waves, sleek updos and red-carpet polish, for the days that deserve it."}
+      ]
+    },
+    "studio_lines": ["Wilford, Nottingham", "Trials by appointment"],
+    "positions": {"step2": "50% 30%", "party": "55% 50%", "look7": "50% 40%"},
+    "alts": {
+      "hero": "A bride holding a blush and ivory bouquet, her dark hair in a soft pinned updo",
+      "detail": "Close-up of a textured updo finished with a pearl hair vine",
+      "portrait": "Alice Paonessa, smiling, with long glossy brown waves",
+      "at-work": "Alice smiling as she pins a bride’s hair on the wedding morning",
+      "step1": "A bride at a sunlit window, veil falling over loose dark waves",
+      "step2": "A bride in an off-shoulder gown during her hair trial",
+      "step3": "A bride’s half-up braided style as her dress is fastened",
+      "step4": "A groom dips his bride in a garden, her veil sweeping the ground",
+      "party": "A bride and five bridesmaids in champagne satin cheering with their bouquets",
+      "party-2": "A bride with bridesmaids in teal satin raising their bouquets outdoors",
+      "look1": "A bride with a loose textured updo and floral pins under fairy lights",
+      "look2": "Glossy Hollywood waves swept over one shoulder with a red lip",
+      "look3": "A sleek, twisted low bun on a blonde bride",
+      "look4": "Long brown waves under a pearl-edged veil",
+      "look5": "A bride at a piano with a voluminous curled updo",
+      "look6": "A dark, softly tousled updo with face-framing tendrils",
+      "look7": "A smiling bride with a half-up style and veil"
+    }
+  },
+  {
+    "slug": "example-bridal",
+    "business": "Example Bridal Studio",
+    "wordmark": ["EXAMPLE", "BRIDAL STUDIO"],
+    "first_name": "Sophie",
+    "full_name": "Sophie Example",
+    "area": "Clifton",
+    "city": "Bristol",
+    "phone": "07000 000000",
+    "email": "hello@example.com",
+    "socials": {"instagram": "", "tiktok": ""},
+    "language": "english",
+    "fonts": "soft-modern",
+    "motif": "eucalyptus",
+    "accent": "#B98B6E",
+    "hero": {
+      "lead": "[Their positioning line, from their own website, as one sentence.]",
+      "facts": ["[Fact 1]", "[Fact 2]", "[Fact 3]"],
+      "detail_caption": "[Style name]"
+    },
+    "about": {
+      "sub": "[A short italic line: origin or philosophy.]",
+      "paragraphs": ["[Who they are, in their voice.]", "[Their studio and where trials happen.]", "[Their style and approach.]"]
+    },
+    "journey": [
+      {"title": "The consultation", "short": "Consultation", "text": "[What happens at the first chat.]", "quote": "[Real review line]", "cite": "[Name], bride"},
+      {"title": "Your trial", "short": "Trial", "text": "[What happens at the trial.]", "quote": "[Real review line]", "cite": "[Name], bride"},
+      {"title": "The wedding morning", "short": "Wedding morning", "text": "[How the morning runs.]", "quote": "[Real review line]", "cite": "[Name], bride"},
+      {"title": "Until the last dance", "short": "Last dance", "text": "[Why their styles last.]", "quote": "[Real review line]", "cite": "[Name], bride"}
+    ],
+    "reels": {"text": "[One line about their wedding mornings.]",
+              "items": [{"title": "[Reel 1]"}, {"title": "[Reel 2]"}, {"title": "[Reel 3]"}, {"title": "[Reel 4]"}, {"title": "[Reel 5]"}, {"title": "[Reel 6]"}]},
+    "reviews": [
+      {"text": "[Real review, word for word.]", "name": "[Name], bride", "placeholder": true},
+      {"text": "[Real review, word for word.]", "name": "[Name], bride", "placeholder": true},
+      {"text": "[Real review, word for word.]", "name": "[Name], bride", "placeholder": true}
+    ],
+    "looks_text": "[One line on their signature styles.]",
+    "looks": [
+      {"tag": "Romantic", "title": "[Look 1]"}, {"tag": "Glamour", "title": "[Look 2]"}, {"tag": "Classic", "title": "[Look 3]"},
+      {"tag": "Down", "title": "[Look 4]"}, {"tag": "Statement", "title": "[Look 5]"}, {"tag": "Soft", "title": "[Look 6]"},
+      {"tag": "Half-up", "title": "[Look 7]"}
+    ],
+    "guides": [{"title": "[Guide title]", "text": "[One line summary]"}, {"title": "[Guide title]", "text": "[One line summary]"}, {"title": "[Guide title]", "text": "[One line summary]"}],
+    "booking": {
+      "facts": ["Bridal packages from [£___]", "[Trials at the studio]", "Now booking [2027]"],
+      "services": [
+        {"title": "The bride", "text": "Your trial, then your wedding-morning style", "image": "detail.jpg", "quote": "“[Short review]” [Name]"},
+        {"title": "Bride & bridal party", "text": "Bridesmaids, mums and flower girls too", "image": "party.jpg", "quote": "“[Short review]”"}
+      ]
+    },
+    "studio_lines": ["Clifton, Bristol", "Trials by appointment"]
+  }
+]
