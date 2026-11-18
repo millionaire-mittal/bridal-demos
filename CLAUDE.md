@@ -12,7 +12,7 @@ The quickest route for a new client is the `/new-demo` command.
 - **Their photos only.** Use photos from the client's own site or Instagram. Never use stock photos of other brides, and never use photos of a different stylist's work.
 - **Edit `leads.json`, not `demos/*/index.html`.** The HTML is generated. To change the design for everyone, edit `engine/engine.css` or `engine/engine.js`, then run `python build.py` to rebuild all demos.
 - **Copy in their voice.** First person, warm, short sentences. Rewrite their own website copy rather than inventing new claims. Use the heritage language only as seasoning (greeting, chapter numbers, one or two words); everything else is in English.
-- Don't commit or push unless asked. Demos are private: `noindex`, and the link is shared only with that stylist.
+- **Publishing:** `/new-demo` commits and pushes the new demo itself (only `leads.json` and `demos/<slug>`). Changes to `engine/`, `build.py` or other demos need the user's OK before pushing. Never force-push. Demos are private: `noindex`, and the link is shared only with that stylist.
 
 ## Lead fields at a glance
 

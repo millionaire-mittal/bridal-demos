@@ -13,4 +13,12 @@ Follow CLAUDE.md. In order:
 4. **Photos.** Save them under the exact names `build.py` expects (README → Photos). Prefer their own photos. If one is missing, reuse their best other photo, never a stranger's.
 5. **Build and check:** `python build.py <slug>`, then `python check.py <slug>`. Fix anything it reports and rebuild.
 6. **Look.** Open `shots/<slug>-desktop.png` and `shots/<slug>-mobile.png` and check the crops, text fit and overall feel.
-7. **Report back** in a short list: the local URL (`http://localhost:8000/<slug>/` after `python -m http.server 8000 -d demos`), the live URL (`https://bridal-demos.vercel.app/<slug>/` once pushed), every placeholder still on the page, and anything you weren't sure about. Don't commit or push unless the user asks.
+7. **Publish.** Commit and push automatically, with no need to ask:
+   ```
+   git pull --rebase
+   git add leads.json demos/<slug>
+   git commit -m "Add demo: <slug>"
+   git push
+   ```
+   Stage only `leads.json` and `demos/<slug>`. Never force-push. If the push is rejected, pull with rebase and push once more. If it still fails, stop and report the error. Vercel deploys automatically within about a minute.
+8. **Report back** in a short list: the live URL `https://bridal-demos.vercel.app/<slug>/` (or the project's real domain from `BASE_URL` in build.py), whether it's READY TO SEND or which placeholders are left, and anything you weren't sure about.

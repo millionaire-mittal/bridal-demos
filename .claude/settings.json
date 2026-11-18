@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python build.py:*)",
+      "Bash(python3 build.py:*)",
+      "Bash(python check.py:*)",
+      "Bash(python3 check.py:*)",
+      "Bash(python tools/frames.py:*)",
+      "Bash(python3 tools/frames.py:*)",
+      "Bash(git status:*)",
+      "Bash(git pull --rebase:*)",
+      "Bash(git add leads.json:*)",
+      "Bash(git commit -m:*)",
+      "Bash(git push)",
+      "Bash(git push origin main)"
+    ],
+    "deny": [
+      "Bash(git push --force:*)",
+      "Bash(git push -f:*)"
+    ]
+  }
+}
