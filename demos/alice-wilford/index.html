@@ -65,6 +65,9 @@ h2 em,h1 em,.pull-text em{font-style:italic}
 .btn:hover,.btn:focus-visible{color:var(--ink)}
 .btn:hover .dot::after,.btn:focus-visible .dot::after{transform:scale(70)}
 .btn span{position:relative}
+.btn-ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink)}
+.btn-ghost .dot::after{background:var(--ink)}
+.btn-ghost:hover,.btn-ghost:focus-visible{color:var(--ivory)}
 .btn-sm{min-height:44px;padding:0 20px 0 18px;font-size:11px}
 .link{font-size:12px;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;padding:6px 0;background:linear-gradient(var(--ink),var(--ink)) left bottom/100% 1px no-repeat;transition:background-size .5s var(--ease)}
 .link:hover{background-size:30% 1px}
@@ -440,6 +443,7 @@ html.js:not(.rm) .bow.in path{stroke-dashoffset:0}
   "full": "Alice Paonessa",
   "phone": "07546 606107",
   "email": "info@bridalhairstyles.co.uk",
+  "instagram": null,
   "socials": [
    {
     "label": "Instagram"
@@ -829,6 +833,7 @@ var CH = (S.words && S.words.chapters) || ['One','Two','Three','Four','Five','Si
 var ci = 0;
 var chap = function(label){ var i = ci++; return '<p class="chap" data-fade><span class="num">'+esc(CH[i]||'')+'</span><span class="ln"></span><span>'+esc(label)+'</span></p>'; };
 var btn = function(href, label, tag){ tag = tag || 'a'; return tag === 'a' ? '<a class="btn" href="'+href+'"><i class="dot"></i><span>'+esc(label)+'</span></a>' : '<button class="btn" type="submit"><i class="dot"></i><span>'+esc(label)+'</span></button>'; };
+
 var PLAY = '<svg viewBox="0 0 18 18"><path d="M2 1 L16 9 L2 17Z" fill="currentColor"/></svg>';
 var cta = (S.words && S.words.cta) || 'Check your date';
 
@@ -847,6 +852,9 @@ if (S.meta && S.meta.description){ var m = document.createElement('meta'); m.nam
 
 /* ---------- sections ---------- */
 var B = S.brand, P = S.person, H = S.hero, PL = S.pull, A = S.about, J = S.journey, R = S.reels, W = S.testimonials, K = S.work, G = S.guides, BK = S.booking, F = S.footer || {};
+var IG = P.instagram && P.instagram.url ? P.instagram : null;
+var igLink = function(cls, label){ return '<a class="'+cls+'" href="'+esc(IG.url)+'" target="_blank" rel="noopener">'+label+'</a>'; };
+var contactBits = [P.phone ? 'call '+esc(P.phone) : '', P.email ? esc(P.email) : ''].filter(Boolean).join(' &nbsp;·&nbsp; ');
 var brand = '<span class="b1">'+esc(B.line1)+'</span><span class="b2">'+esc(B.line2)+'</span>';
 
 var nav = '<a class="skip" href="#main">Skip to content</a>'+
@@ -858,7 +866,7 @@ var hero = '<section class="hero" id="top"><div class="wrap hero-grid"><div clas
  '<p class="eyebrow" data-fade>'+esc(H.eyebrow)+'</p>'+
  '<h1 data-blur>'+(H.greetingScript ? '<span class="script">'+esc(H.greetingScript)+'</span> ' : '')+md(H.greeting)+'</h1>'+
  '<p class="lead" data-fade style="--d:500ms">'+esc(H.lead)+'</p>'+
- '<div class="cta-row" data-fade style="--d:700ms">'+btn('#book', cta)+'<a class="link" href="#work">'+esc(H.secondary||'See the work')+'</a></div>'+
+ '<div class="cta-row" data-fade style="--d:700ms">'+btn('#book', cta)+(IG ? igLink('link', esc(IG.cta || ('DM @'+IG.handle+' on Instagram'))) : '<a class="link" href="#work">'+esc(H.secondary||'See the work')+'</a>')+'</div>'+
  '<p class="meta" data-fade style="--d:900ms">'+(H.facts||[]).map(function(x){ return '<span>'+esc(x)+'</span>'; }).join('')+'</p></div>'+
  '<div class="hero-art z"><svg class="bot" data-bot="hero" aria-hidden="true"></svg>'+
  '<figure class="arch-wrap hero-arch" data-reveal><div class="arch">'+img(H.image,' fetchpriority="high"')+'</div></figure>'+
@@ -936,7 +944,7 @@ var book = '<section class="book blush" id="book"><i class="rp" data-rib=".96" d
  '<div class="field"><label for="f-people">Who needs styling?</label><select id="f-people" name="people">'+opt(BK.people||['Just me','Me + 1 to 3','Me + 4 to 7','Me + 8 or more'])+'</select></div>'+
  '<div class="field"><label for="f-time">Ready by</label><select id="f-time" name="time">'+opt(BK.times||['Not sure yet','Before 11:00','11:00 to 13:00','After 13:00'])+'</select></div>'+
  '<div class="field full"><label for="f-msg">Anything else?</label><textarea id="f-msg" name="msg" placeholder="Your dress, your inspiration, your accessories…"></textarea></div></div>'+
- '<div class="form-foot">'+btn('', BK.submit||'Send my enquiry', 'button')+'<small>Or call '+esc(P.phone)+' &nbsp;·&nbsp; '+esc(P.email)+'</small></div></form>'+
+ '<div class="form-foot">'+btn('', BK.submit||'Send my enquiry', 'button')+(IG ? igLink('btn btn-ghost', '<i class="dot"></i><span>'+esc(IG.button || 'DM on Instagram')+'</span>') : '')+(contactBits ? '<small>Or '+contactBits+'</small>' : '')+'</div></form>'+
  '<div class="thanks" role="status" aria-live="polite"><h3>'+esc(BK.thanksWord||'Thank you')+'<span id="tName"></span>.</h3><p>'+esc(BK.thanksText||'Your enquiry is on its way.')+' <span id="tDate">'+esc(BK.thanksDateFallback||'your date')+'</span> very soon.</p></div></div>'+
  '<aside class="b-aside" aria-label="Your selection"><svg class="bow" id="bow" viewBox="0 0 120 120" aria-hidden="true">'+
  '<path class="bandp" pathLength="1" style="--i:0" d="M60 62 C 40 40, 10 38, 14 58 C 18 76, 44 70, 60 62"/><path class="bandp" pathLength="1" style="--i:1" d="M60 62 C 80 40, 110 38, 106 58 C 102 76, 76 70, 60 62"/><path class="bandp" pathLength="1" style="--i:2" d="M58 64 C 52 80, 44 96, 34 112"/><path class="bandp" pathLength="1" style="--i:2" d="M62 64 C 70 82, 78 98, 90 110"/>'+
@@ -948,7 +956,7 @@ var foot = '<footer class="foot"><svg class="bot in" data-bot="sprig" aria-hidde
  '<a class="totop" href="#top" aria-label="Back to top"><svg viewBox="0 0 30 150" aria-hidden="true"><path d="M15 0 C 6 30, 24 55, 14 85 C 6 108, 22 122, 15 146" stroke-width="6"/><path d="M15 0 C 6 30, 24 55, 14 85 C 6 108, 22 122, 15 146" stroke-width="1" style="stroke:var(--silk-edge)"/></svg><span>Back to top</span></a>'+
  '<div class="wrap"><div class="f-grid"><div><a class="brand" href="#top" style="align-items:flex-start">'+brand+'</a><span class="ciao">'+esc((S.words && S.words.farewell)||'See you soon.')+'</span></div>'+
  '<div><h4>Studio</h4><p>'+(F.studio||[]).map(esc).join('<br>')+'</p></div>'+
- '<div><h4>Contact</h4><ul><li><a href="tel:'+esc(String(P.phone).replace(/\s/g,''))+'">'+esc(P.phone)+'</a></li><li><a href="mailto:'+esc(P.email)+'">'+esc(P.email)+'</a></li></ul></div>'+
+ '<div><h4>Contact</h4><ul>'+(P.phone ? '<li><a href="tel:'+esc(String(P.phone).replace(/\s/g,''))+'">'+esc(P.phone)+'</a></li>' : '')+(P.email ? '<li><a href="mailto:'+esc(P.email)+'">'+esc(P.email)+'</a></li>' : '')+(IG ? '<li>'+igLink('', 'Instagram DM · @'+esc(IG.handle))+'</li>' : '')+'</ul></div>'+
  '<div><h4>Follow</h4><ul>'+(P.socials||[]).map(function(x){ return '<li>'+(x.url ? '<a href="'+esc(x.url)+'">'+esc(x.label)+'</a>' : esc(x.label))+'</li>'; }).join('')+'</ul></div></div>'+
  '<div class="f-bottom"><span>© '+new Date().getFullYear()+' '+esc(B.name)+'</span><span>'+esc(F.credit||'Website concept by Codzo')+'</span></div></div></footer>';
 

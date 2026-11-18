@@ -78,9 +78,20 @@ COLOR_KEYS = ["ivory", "blush", "blush2", "accent", "accentDark", "ink", "muted"
 # Validation
 # --------------------------------------------------------------------------
 
-REQUIRED = ["slug", "business", "wordmark", "first_name", "full_name", "area", "city",
-            "phone", "email", "accent", "hero", "about", "journey", "reviews", "looks",
-            "booking", "studio_lines"]
+REQUIRED = ["slug", "business", "wordmark", "first_name", "city", "accent", "hero", "about",
+            "journey", "reviews", "looks", "booking", "studio_lines"]
+
+
+def instagram(lead: dict):
+    """Normalise the optional 'instagram' field to {url, handle, cta?, button?}."""
+    ig = lead.get("instagram")
+    if not ig:
+        return None
+    if isinstance(ig, str):
+        ig = {"url": ig}
+    url = ig.get("url", "")
+    handle = ig.get("handle") or re.sub(r".*instagram\.com/([^/?#]+).*", r"\1", url).lstrip("@")
+    return {**ig, "url": url, "handle": handle}
 
 
 def strs(v, lo, hi):
@@ -111,6 +122,11 @@ def validate(lead: dict) -> list[str]:
     slug = lead["slug"]
     if not re.fullmatch(r"[a-z0-9]+(-[a-z0-9]+)*", slug):
         errs.append("'slug' must be lowercase letters, digits and dashes")
+    if not (lead.get("phone") or lead.get("email") or lead.get("instagram")):
+        errs.append("give at least one way to book: 'phone', 'email' or 'instagram'")
+    ig = lead.get("instagram")
+    if ig and not re.match(r"https://(www\.)?instagram\.com/[A-Za-z0-9._]+/?$", ig if isinstance(ig, str) else str(ig.get("url", ""))):
+        errs.append("'instagram' must be a profile URL like https://www.instagram.com/handle/ (or {url, cta?, button?})")
     if not strs(lead["wordmark"], 2, 2):
         errs.append("'wordmark' must be 2 strings, e.g. [\"BRIDAL\", \"HAIRSTYLES\"]")
     if not re.fullmatch(r"#[0-9a-fA-F]{6}", str(lead["accent"])):
@@ -275,14 +291,15 @@ def site_config(lead: dict) -> dict:
         "meta": {"title": f"{lead['business']} · Bridal hair in {lead['city']}",
                  "description": lead.get("description") or h["lead"]},
         "brand": {"line1": lead["wordmark"][0], "line2": lead["wordmark"][1], "name": lead["business"]},
-        "person": {"first": first, "full": lead["full_name"], "phone": lead["phone"], "email": lead["email"],
+        "person": {"first": first, "full": lead.get("full_name") or first, "phone": lead.get("phone", ""),
+                   "email": lead.get("email", ""), "instagram": instagram(lead),
                    "socials": [{"label": k.capitalize() if k != "tiktok" else "TikTok", **({"url": v} if v else {})}
                                for k, v in (lead.get("socials") or {}).items()]},
         "theme": {"motif": lead.get("motif", "olive"), "colors": palette(lead), "fonts": fonts},
         "words": {"chapters": L["chapters"], "scroll": L["scroll"], "cta": lead.get("cta", "Check your date"),
                   "farewell": lead.get("farewell") or L["farewell"]},
         "hero": {
-            "eyebrow": h.get("eyebrow") or f"Bridal hair by {first}  ·  {lead['area']}, {lead['city']}",
+            "eyebrow": h.get("eyebrow") or f"Bridal hair by {first}  ·  " + ", ".join(x for x in (lead.get("area"), lead["city"]) if x),
             "greetingScript": greet[0], "greeting": greet[1], "lead": h["lead"], "secondary": "See the work",
             "facts": h["facts"], "image": img("hero.jpg", f"A bride styled by {first}"),
             "detail": img("detail.jpg", "A close-up of a bridal hair detail"), "detailCaption": h["detail_caption"],
@@ -297,7 +314,7 @@ def site_config(lead: dict) -> dict:
             "label": f"Meet {first}", "heading": a.get("heading") or f"Hi, I’m *{first}.*",
             "sub": a["sub"], "paragraphs": a["paragraphs"], "signature": a.get("signature", first),
             "link": "How your day unfolds",
-            "portrait": img("portrait.jpg", f"{lead['full_name']}, smiling"),
+            "portrait": img("portrait.jpg", f"{lead.get('full_name') or first}, smiling"),
             "atWork": img("at-work.jpg", f"{first} styling a bride’s hair"),
         },
         "journey": {

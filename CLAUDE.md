@@ -16,9 +16,9 @@ The quickest route for a new client is the `/new-demo` command.
 
 ## Lead fields at a glance
 
-Required: `slug business wordmark first_name full_name area city phone email accent hero about journey reviews looks booking studio_lines`
+Required: `slug business wordmark first_name city accent hero about journey reviews looks booking studio_lines`, plus at least one of `phone email instagram`
 
-Optional: `socials language fonts motif colors description pull reels guides looks_text looks_heading journey_heading portfolio_url positions alts cta farewell`
+Optional: `full_name area phone email instagram socials language fonts motif colors description pull reels guides looks_text looks_heading journey_heading portfolio_url positions alts cta farewell`
 
 `alice-wilford` in `leads.json` is the complete reference. Field rules and presets are in README.md. `build.py` prints exactly what's wrong if a lead or photo doesn't fit.
 
@@ -38,3 +38,7 @@ Take `accent` from their logo or Instagram grid. One hex is enough, because the 
 ## Photos from a screen recording
 
 `python tools/frames.py recording.mp4` → `frames/<name>/contact.jpg`. Pick frames, crop each photo with Pillow, paint out the cursor, and save it under the required name in `demos/<slug>/img/`. Aim for about 1400px on the long side and under 300 KB.
+
+## Instagram-only stylists
+
+Many stylists only take bookings by DM. Give them an `instagram` object (see `vkxglam-london`) so the page offers a DM button next to the enquiry form. If the stylist's own photo isn't confirmed, keep the labelled `portrait.jpg` and `at-work.jpg` placeholders and say so in your report. Never guess who the person in a photo is.

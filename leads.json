@@ -155,5 +155,242 @@
       ]
     },
     "studio_lines": ["Clifton, Bristol", "Trials by appointment"]
+  },
+  {
+    "slug": "vkxglam-london",
+    "business": "VKX Glam",
+    "wordmark": [
+      "VKX GLAM",
+      "HAIRSTYLIST"
+    ],
+    "first_name": "VKX Glam",
+    "city": "London",
+    "instagram": {
+      "url": "https://www.instagram.com/vkxglam/",
+      "handle": "vkxglam",
+      "cta": "DM @vkxglam to book",
+      "button": "DM on Instagram"
+    },
+    "socials": {
+      "instagram": "https://www.instagram.com/vkxglam/"
+    },
+    "language": "english",
+    "fonts": {
+      "display": "Playfair Display",
+      "script": "Pinyon Script",
+      "body": "Montserrat",
+      "href": "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Pinyon+Script&family=Montserrat:wght@300;400;500&display=swap"
+    },
+    "motif": "laurel",
+    "accent": "#7A2A2E",
+    "colors": {
+      "ivory": "#F8F4EF",
+      "blush": "#EDE3D9",
+      "blush2": "#F3ECE5",
+      "accent": "#8E3A3E",
+      "accentDark": "#6E2327",
+      "ink": "#221918",
+      "muted": "#5E504B",
+      "deep": "#2B1C1D",
+      "deep2": "#3A2627",
+      "line": "#A38E80",
+      "silk": "#E6D5C8",
+      "silkEdge": "#B4927E"
+    },
+    "description": "VKX Glam: London hairstylist for brides and occasions. Hollywood waves, half-up glam and modern French twists. DM @vkxglam to book.",
+    "hero": {
+      "greeting": [
+        "Hello,",
+        "gorgeous."
+      ],
+      "eyebrow": "Bridal & occasion hair  ·  London",
+      "lead": "Hollywood waves, half-up glam and modern French twists, for London brides and the days that deserve it.",
+      "facts": [
+        "Trained by @senadakxo",
+        "Bookings by Instagram DM",
+        "In collaboration with @glamann.beauty"
+      ],
+      "detail_caption": "Modern French twist"
+    },
+    "pull": {
+      "roots_word": "London.",
+      "roots": "Trained by @senadakxo, styled in London, and planned around you from the first message to the last dance."
+    },
+    "about": {
+      "heading": "The hands behind *VKX Glam.*",
+      "sub": "London hairstylist. Trained by @senadakxo.",
+      "paragraphs": [
+        "I create bridal and occasion hair in London: soft Hollywood waves, glossy half-up glam, sleek ponytails and modern takes on the classic French twist.",
+        "I trained with @senadakxo and work in collaboration with @glamann.beauty.",
+        "Booking is simple. Send me a DM on Instagram with your date and a few inspiration photos, and we’ll plan your look together."
+      ],
+      "signature": "VKX"
+    },
+    "journey": [
+      {
+        "kicker": "01 · Your message",
+        "title": "Send a DM",
+        "short": "DM to book",
+        "text": "Message @vkxglam on Instagram with your date, your venue and a few photos you love. I’ll come back to you with availability."
+      },
+      {
+        "kicker": "02 · The plan",
+        "title": "Planning your look",
+        "short": "Your look",
+        "text": "Waves, half-up, sleek or a sculpted updo: we choose the style together, plus any extensions or accessories it needs."
+      },
+      {
+        "kicker": "03 · The morning",
+        "title": "The wedding morning",
+        "short": "Wedding morning",
+        "text": "Your hair is styled calmly and carefully on the day, so you can enjoy the morning and feel completely yourself."
+      },
+      {
+        "kicker": "04 · The night",
+        "title": "Until the last dance",
+        "short": "Last dance",
+        "text": "Glamour that looks as good in the last photo of the night as in the first."
+      }
+    ],
+    "reels": {
+      "heading": "Behind the *glam.*",
+      "text": "Moments from the chair and the shoot: waves, twists and finishing touches.",
+      "note": "This reel plays here on the live site.",
+      "items": [
+        {
+          "title": "Half-up glam waves",
+          "duration": "0:20"
+        },
+        {
+          "title": "Glossy half-up"
+        },
+        {
+          "title": "Bridal glam"
+        },
+        {
+          "title": "Chandelier light"
+        }
+      ]
+    },
+    "reviews": [
+      {
+        "text": "[Real client review, word for word, from an Instagram DM or comment]",
+        "name": "[Client name]",
+        "placeholder": true
+      },
+      {
+        "text": "[Real client review, word for word]",
+        "name": "[Client name]",
+        "placeholder": true
+      },
+      {
+        "text": "[Real client review, word for word]",
+        "name": "[Client name]",
+        "placeholder": true
+      }
+    ],
+    "looks_heading": "The work, *up close.*",
+    "looks_text": "Hollywood waves, half-up glam, sleek ponytails and sculpted updos for brides and occasions across London.",
+    "looks": [
+      {
+        "tag": "Bridal",
+        "title": "Half-up glam waves"
+      },
+      {
+        "tag": "Soft glam",
+        "title": "Brunette glam waves"
+      },
+      {
+        "tag": "Bridal",
+        "title": "Half-up with jewellery"
+      },
+      {
+        "tag": "Occasion",
+        "title": "Soft pinned waves"
+      },
+      {
+        "tag": "Bridal",
+        "title": "Voluminous bridal curls"
+      },
+      {
+        "tag": "Sleek",
+        "title": "Sleek high ponytail"
+      },
+      {
+        "tag": "Updo",
+        "title": "Textured updo"
+      }
+    ],
+    "booking": {
+      "label": "Let’s talk",
+      "heading": "Check *your date.*",
+      "intro": "Tell me about your day, or send me a DM on Instagram. I’ll reply with availability and a quote for your look.",
+      "facts": [
+        "Bridal hair from [£___]",
+        "Bookings by Instagram DM",
+        "In collaboration with @glamann.beauty"
+      ],
+      "services": [
+        {
+          "title": "Bridal hair",
+          "text": "Your wedding-morning look, planned with you",
+          "image": "step3.jpg",
+          "quote": "Half-up glam waves, from the VKX Glam portfolio."
+        },
+        {
+          "title": "Hollywood waves",
+          "text": "The red-carpet classic",
+          "image": "hero.jpg",
+          "quote": "Please note: for Hollywood waves, human hair extensions are essential."
+        },
+        {
+          "title": "Updos & French twists",
+          "text": "Sleek, sculpted and modern",
+          "image": "detail.jpg",
+          "quote": "A modern take on a classic French twist."
+        },
+        {
+          "title": "Occasion hair",
+          "text": "Events, parties and shoots",
+          "image": "look6.jpg",
+          "quote": "In collaboration with @glamann.beauty."
+        }
+      ],
+      "thanks_text": "Your enquiry is in. I’ll be in touch about"
+    },
+    "studio_lines": [
+      "London",
+      "Bookings by Instagram DM"
+    ],
+    "positions": {
+      "hero": "36% 40%",
+      "step1": "50% 30%",
+      "party": "50% 35%",
+      "party-2": "50% 40%",
+      "step2": "50% 20%",
+      "step3": "50% 25%",
+      "step4": "50% 20%",
+      "look1": "50% 20%",
+      "look7": "50% 40%"
+    },
+    "alts": {
+      "hero": "A bride with voluminous blonde Hollywood waves in a strapless tulle gown",
+      "detail": "Back view of a sculpted, glossy French twist updo",
+      "portrait": "[Add a photo of the stylist]",
+      "at-work": "[Add a photo of the stylist at work]",
+      "step1": "A woman in a black outfit with a sleek French twist, seated by a wardrobe",
+      "step2": "Back view of long half-up glam waves over a lace bridal gown",
+      "step3": "A bride with half-up blonde glam waves and a jewelled choker",
+      "step4": "A smiling bride with half-up glam waves",
+      "party": "A sleek modern French twist with statement earrings",
+      "party-2": "Long dark waves over a sequinned saree in a garden",
+      "look1": "Half-up blonde glam waves with a jewelled choker and lace gown",
+      "look2": "Glossy brunette waves with a soft glam makeup look",
+      "look3": "A bride with half-up dark hair and a gold statement necklace",
+      "look4": "Soft pinned waves with a pearl necklace",
+      "look5": "Voluminous bridal curls with a maang tikka",
+      "look6": "A sleek high ponytail with soft glam makeup",
+      "look7": "A textured updo with statement crystal earrings"
+    }
   }
 ]

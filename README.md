@@ -40,9 +40,10 @@ Then paste everything you have: their website text, Instagram bio, reviews, phon
 | `slug` | `"alice-wilford"` | Folder and URL name. Lowercase, digits, dashes |
 | `business` | `"Bridal Hairstyles by Alice"` | |
 | `wordmark` | `["BRIDAL", "HAIRSTYLES"]` | Two-line logo in the nav and footer |
-| `first_name`, `full_name` | `"Alice"`, `"Alice Paonessa"` | |
-| `area`, `city` | `"Wilford"`, `"Nottingham"` | |
-| `phone`, `email` | | Shown as written |
+| `first_name`, `full_name` | `"Alice"`, `"Alice Paonessa"` | `full_name` optional. If the stylist's name isn't public, use the brand (e.g. `"VKX Glam"`) |
+| `area`, `city` | `"Wilford"`, `"Nottingham"` | `area` optional |
+| `phone`, `email` | | Optional, shown as written. A lead needs at least one of phone, email or instagram |
+| `instagram` | `{"url": "https://www.instagram.com/vkxglam/", "handle": "vkxglam", "cta": "DM @vkxglam to book"}` | Optional. For DM-to-book stylists: adds a DM link in the hero, a "DM on Instagram" button by the form, and Instagram in the footer |
 | `socials` | `{"instagram": "https://…"}` | Optional. Empty string shows the name without a link |
 | `language` | `"italian"` | `english` (default), `italian`, `french`, `spanish`, `hindi`. Sets the greeting, chapter numbers (*Uno, Due…*), the "Scroll" word, the farewell and the thank-you word |
 | `fonts` | `"italian"` | `italian`, `soft-modern` (default), `boho`, `french`, `royal`, or `{display, script, body, href}` |
