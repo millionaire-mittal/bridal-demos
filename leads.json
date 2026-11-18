@@ -392,5 +392,242 @@
       "look6": "A sleek high ponytail with soft glam makeup",
       "look7": "A textured updo with statement crystal earrings"
     }
+  },
+  {
+    "slug": "giovanna-long-island",
+    "business": "Bridal by Gi Ambra",
+    "wordmark": [
+      "BRIDAL BY",
+      "GI AMBRA"
+    ],
+    "first_name": "Giovanna",
+    "full_name": "Giovanna Alvino",
+    "area": "Port Jefferson",
+    "city": "Long Island",
+    "instagram": {
+      "url": "https://www.instagram.com/bridal.by.gi.ambra/",
+      "handle": "bridal.by.gi.ambra",
+      "cta": "DM @bridal.by.gi.ambra",
+      "button": "DM on Instagram"
+    },
+    "socials": {
+      "instagram": "https://www.instagram.com/bridal.by.gi.ambra/"
+    },
+    "language": "english",
+    "fonts": "soft-modern",
+    "motif": "olive",
+    "accent": "#A9806C",
+    "colors": {
+      "ivory": "#FAF7F3",
+      "blush": "#EFE6DE",
+      "blush2": "#F5EFE9",
+      "accent": "#B48A74",
+      "accentDark": "#7E5847",
+      "ink": "#2E2522",
+      "muted": "#62534D",
+      "silk": "#E9DCD2",
+      "silkEdge": "#BC9C8A"
+    },
+    "farewell": "A presto.",
+    "description": "Bridal hair by Giovanna Alvino on Long Island. True to you, made for “I do”. In studio in Port Jefferson and on location.",
+    "hero": {
+      "greeting": [
+        "True to you,",
+        "made for *“I do.”*"
+      ],
+      "eyebrow": "Bridal hair by Giovanna  ·  Port Jefferson, Long Island",
+      "lead": "Bridal hair on Long Island, in studio in Port Jefferson and on location for your wedding morning.",
+      "facts": [
+        "In studio at Heaven Hair Salon",
+        "On location across Long Island",
+        "Inquire by email or Instagram DM"
+      ],
+      "detail_caption": "Soft waves, pearl clip"
+    },
+    "pull": {
+      "roots_word": "Always,",
+      "roots": "true to you. Soft bridal buns, classic glam waves and romantic updos, styled around who you are."
+    },
+    "about": {
+      "heading": "Hi, I’m *Giovanna.*",
+      "sub": "Bridal hair stylist on Long Island, NY.",
+      "paragraphs": [
+        "I’m Giovanna Alvino, a bridal hair stylist on Long Island. My promise is in four words: true to you, made for “I do.”",
+        "I style in studio at Heaven Hair Salon in Port Jefferson, and on location for your wedding morning.",
+        "Rich in life, because making things beautiful is my job."
+      ],
+      "signature": "Gi"
+    },
+    "journey": [
+      {
+        "kicker": "01 · Your inquiry",
+        "title": "Say hello",
+        "short": "Inquiry",
+        "text": "Email me or send a DM on Instagram with your date, your venue and the looks you love. We’ll talk through what feels true to you."
+      },
+      {
+        "kicker": "02 · The trial",
+        "title": "Your trial, in studio",
+        "short": "Trial",
+        "text": "We create and refine your look together at Heaven Hair Salon in Port Jefferson, so you know exactly how you’ll feel on the day."
+      },
+      {
+        "kicker": "03 · The morning",
+        "title": "On location, or in studio",
+        "short": "Wedding morning",
+        "text": "On your wedding morning I come to you, or you come to the studio. Calm, unhurried and all about you."
+      },
+      {
+        "kicker": "04 · The night",
+        "title": "Until the last dance",
+        "short": "Last dance",
+        "text": "Classic glam that never goes out of style, from your first look to your last dance."
+      }
+    ],
+    "reels": {
+      "heading": "Behind the *chair.*",
+      "text": "Trials, real brides and a few honest moments from the studio.",
+      "note": "This reel plays here on the live site.",
+      "items": [
+        {
+          "title": "Bubble half-up"
+        },
+        {
+          "title": "Do a trial with me"
+        },
+        {
+          "title": "Curly girls"
+        },
+        {
+          "title": "Rich in life"
+        },
+        {
+          "title": "The power of different lighting"
+        },
+        {
+          "title": "The style change"
+        }
+      ]
+    },
+    "reviews": [
+      {
+        "text": "[Real client review of Giovanna, word for word]",
+        "name": "[Client name]",
+        "placeholder": true
+      },
+      {
+        "text": "[Real client review of Giovanna, word for word]",
+        "name": "[Client name]",
+        "placeholder": true
+      },
+      {
+        "text": "[Real client review of Giovanna, word for word]",
+        "name": "[Client name]",
+        "placeholder": true
+      }
+    ],
+    "looks_heading": "The work, *up close.*",
+    "looks_text": "Soft bridal buns, glossy glam waves, romantic updos and half-up styles, each one true to the bride wearing it.",
+    "looks": [
+      {
+        "tag": "Occasion",
+        "title": "Baby shower updo"
+      },
+      {
+        "tag": "Romantic",
+        "title": "Pearl-pinned updo"
+      },
+      {
+        "tag": "Half-up",
+        "title": "Voluminous half-up"
+      },
+      {
+        "tag": "Updo",
+        "title": "Sculpted curls"
+      },
+      {
+        "tag": "Glam",
+        "title": "Glossy glam waves"
+      },
+      {
+        "tag": "Ponytail",
+        "title": "Pearl-pin ponytail"
+      },
+      {
+        "tag": "Bridal",
+        "title": "Veil & soft waves"
+      }
+    ],
+    "booking": {
+      "label": "Let’s talk",
+      "heading": "Check *your date.*",
+      "intro": "Tell me about your day, or send me a DM on Instagram. I’ll reply with my availability and a quote for your look.",
+      "facts": [
+        "Bridal hair from [$___]",
+        "In studio in Port Jefferson & on location",
+        "Inquiries by email or DM"
+      ],
+      "services": [
+        {
+          "title": "Bridal hair",
+          "text": "In studio or on location",
+          "image": "hero.jpg",
+          "quote": "True to you, made for “I do.”"
+        },
+        {
+          "title": "Bridal trial",
+          "text": "At the Port Jefferson studio",
+          "image": "step2.jpg",
+          "quote": "Soft bridal bun for this beauty’s trial."
+        },
+        {
+          "title": "Glam waves",
+          "text": "The classic red-carpet look",
+          "image": "step4.jpg",
+          "quote": "Classic glam that never goes out of style."
+        },
+        {
+          "title": "Showers & events",
+          "text": "Bridal showers, baby showers and more",
+          "image": "step1.jpg",
+          "quote": "Soft French twist for this beauty’s bridal shower."
+        }
+      ],
+      "thanks_text": "Your inquiry is with Giovanna. She’ll be in touch about"
+    },
+    "studio_lines": [
+      "Heaven Hair Salon",
+      "230 E Main St, Port Jefferson, NY 11777",
+      "On location across Long Island"
+    ],
+    "positions": {
+      "hero": "45% 30%",
+      "step1": "60% 30%",
+      "step2": "50% 40%",
+      "step3": "40% 30%",
+      "step4": "55% 30%",
+      "party": "40% 45%",
+      "party-2": "50% 50%",
+      "look7": "65% 40%"
+    },
+    "alts": {
+      "hero": "A smiling bride under a long veil holding a peony and delphinium bouquet on a sunny pier",
+      "detail": "Soft glossy waves with a pearl hair clip",
+      "portrait": "[Add a photo of Giovanna]",
+      "at-work": "[Add a photo of Giovanna styling a bride]",
+      "step1": "A couple smiling at each other, the bride in a soft blonde French twist",
+      "step2": "A soft bridal bun finished with a pearl and crystal hair pin",
+      "step3": "A voluminous half-up style with long glossy waves",
+      "step4": "A bride with glossy dark glam waves sitting in a green leather booth",
+      "party": "A bride with dark glam waves seated beneath a framed portrait",
+      "party-2": "Two flower girls in white dresses sitting on the grass",
+      "look1": "A soft curled updo with face-framing tendrils, styled for a baby shower",
+      "look2": "A romantic textured updo with pearl pins",
+      "look3": "A voluminous half-up ponytail with dark curls",
+      "look4": "A sculpted updo of dark curls",
+      "look5": "Glossy honey-blonde glam waves",
+      "look6": "A high ponytail with waves and a pearl pin",
+      "look7": "A bride under a flowing veil smiling at her groom"
+    }
   }
 ]
