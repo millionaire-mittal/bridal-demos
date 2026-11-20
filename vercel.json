@@ -3,6 +3,9 @@
   "outputDirectory": "demos",
   "cleanUrls": true,
   "trailingSlash": true,
+  "rewrites": [
+    { "source": "/bridal/:path*", "destination": "/:path*" }
+  ],
   "headers": [
     { "source": "/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow" }] },
     { "source": "/(.*)/img/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=604800" }] }

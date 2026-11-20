@@ -2,7 +2,7 @@
 
 This repo turns a bridal hair or makeup artist's real content into a private, personalised demo website that Codzo uses to pitch them.
 
-Pipeline: `leads.json` → `python build.py <slug>` → `demos/<slug>/index.html` → `python check.py <slug>` → push → Vercel serves `demos/` at `/<slug>/`.
+Pipeline: `leads.json` → `python build.py <slug>` → `demos/<slug>/index.html` → `python check.py <slug>` → push → Vercel serves the demo at `/bridal/<slug>/` from the shared project.
 
 The quickest route for a new client is the `/new-demo` command.
 

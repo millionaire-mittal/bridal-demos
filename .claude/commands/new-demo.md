@@ -21,4 +21,4 @@ Follow CLAUDE.md. In order:
    git push
    ```
    Stage only `leads.json` and `demos/<slug>`. Never force-push. If the push is rejected, pull with rebase and push once more. If it still fails, stop and report the error. Vercel deploys automatically within about a minute.
-8. **Report back** in a short list: the live URL `https://bridal-demos.vercel.app/<slug>/` (or the project's real domain from `BASE_URL` in build.py), whether it's READY TO SEND or which placeholders are left, and anything you weren't sure about.
+8. **Report back** in a short list: the live URL `https://bridal-demos.vercel.app/bridal/<slug>/` (or the project's real domain from `BASE_URL` in build.py), whether it's READY TO SEND or which placeholders are left, and anything you weren't sure about.

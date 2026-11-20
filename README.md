@@ -5,7 +5,7 @@ Private demo websites for bridal hair and makeup artists. Each demo is a scroll-
 One engine, one entry per stylist, one self-contained page each:
 
 ```
-leads.json  ->  python build.py <slug>  ->  demos/<slug>/index.html  ->  Vercel, served at /<slug>/
+leads.json  ->  python build.py <slug>  ->  demos/<slug>/index.html  ->  Vercel, served at /bridal/<slug>/
 ```
 
 Every demo has: a greeting in the stylist's heritage language, arch-framed photos, line-art botanicals that draw themselves, an olive (or eucalyptus, laurel, willow) tree that grows as you scroll and shrinks back as you scroll up, a pinned "your journey" chapter, reels that slide sideways, rotating reviews, a 7-look portfolio, a booking form with a service picker, and one silk ribbon threading the whole page that ties into a bow at the form. It also works on mobile and respects reduced motion.
@@ -91,7 +91,7 @@ Plus any file named in a service's `image`. Keep images around 1400px on the lon
 3. **Write the lead**, by hand or with `/new-demo`. Copy `alice-wilford` as the reference.
 4. **Build:** `python build.py <slug>` (`python3` on macOS or Linux). Missing fields or photos are listed exactly.
 5. **Check:** `python check.py <slug>`, then look at both screenshots. A demo with placeholders is reported as **NOT READY TO SEND**.
-6. **Commit and push.** Vercel redeploys, and the demo is live at `/<slug>/`.
+6. **Commit and push.** Vercel redeploys, and the demo is live at `/bridal/<slug>/`. No ZIP download or per-demo Vercel project is needed.
 
 ## Preview locally
 
@@ -103,7 +103,7 @@ Open `http://localhost:8000/<slug>/`. Playwright for `check.py`: `pip install pl
 
 ## Deploy
 
-Import `millionaire-mittal/bridal-demos` into Vercel. `vercel.json` sets `outputDirectory: "demos"`, clean URLs, trailing slashes and `noindex`, and there's no build step. Set `BASE_URL` in `build.py` to the real domain so WhatsApp link previews show the hero photo, then rebuild.
+Import `millionaire-mittal/bridal-demos` into Vercel and connect the GitHub repo for automatic deploys on push. `vercel.json` serves the shared `demos/` output and rewrites `/bridal/<slug>/` to the matching `demos/<slug>/` page, with clean URLs, trailing slashes and `noindex`. Add each stylist as a lead and their photos under `demos/<slug>/img/`; build and push the new demo, and it is hosted on the same Vercel project at `https://bridal-demos.vercel.app/bridal/<slug>/`. Set `BASE_URL` in `build.py` to the real domain so WhatsApp link previews show the hero photo, then rebuild.
 
 ## Rules that protect the pitch
 

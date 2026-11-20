@@ -398,7 +398,7 @@ def build(lead: dict) -> Path:
         raise LeadError("\n  - " + "\n  - ".join(errs))
     cfg = site_config(lead)
     site = json.dumps(cfg, ensure_ascii=False, indent=1).replace("</", "<\\/")
-    url = f"{BASE_URL}/{lead['slug']}/"
+    url = f"{BASE_URL}/bridal/{lead['slug']}/"
     html = PAGE
     for key, val in (("__TITLE__", escape(cfg["meta"]["title"])),
                      ("__DESCRIPTION__", escape(cfg["meta"]["description"])),
