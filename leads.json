@@ -629,5 +629,212 @@
       "look6": "A high ponytail with waves and a pearl pin",
       "look7": "A bride under a flowing veil smiling at her groom"
     }
+  },
+  {
+    "slug": "hajra-manchester",
+    "business": "HBH | Hairstylist | Makeup",
+    "wordmark": [
+      "HAIRSTYLIST",
+      "MAKEUP"
+    ],
+    "first_name": "Hajra",
+    "city": "Manchester",
+    "instagram": {
+      "url": "https://www.instagram.com/byhajra_/",
+      "handle": "byhajra_",
+      "cta": "DM @byhajra_ to book",
+      "button": "DM on Instagram"
+    },
+    "socials": {
+      "instagram": "https://www.instagram.com/byhajra_/"
+    },
+    "language": "english",
+    "fonts": "royal",
+    "motif": "laurel",
+    "accent": "#9A7B3F",
+    "description": "Hair and makeup for Pakistani brides in Manchester: nikah, baraat, walima and mehndi. Travels for weddings. DM @byhajra_ to book.",
+    "hero": {
+      "greeting": [
+        "Hello,",
+        "beautiful."
+      ],
+      "eyebrow": "Bridal hair & makeup  ·  Manchester",
+      "lead": "Hair and makeup for Pakistani brides, from the mehndi to the walima. Styled in Manchester, and wherever your day takes us.",
+      "facts": [
+        "Hair & makeup in Manchester",
+        "Travels for weddings",
+        "1-to-1 training available"
+      ],
+      "detail_caption": "Braid with gold trim"
+    },
+    "pull": {
+      "roots_word": "Manchester.",
+      "roots": "Styled in Manchester, from the mehndi to the walima, and booked with one simple message."
+    },
+    "about": {
+      "heading": "The artist behind *the look.*",
+      "sub": "Hair | Makeup. Manchester, UK.",
+      "paragraphs": [
+        "I’m Hajra, a hairstylist and makeup artist based in Manchester. I style brides for the nikah, baraat, walima and mehndi: hair, makeup, or both together.",
+        "I travel for work, so wherever your celebration is, we can plan your look together.",
+        "If you’d like to learn, I also offer 1-to-1 training. Send me a DM with your date and we’ll take it from there."
+      ],
+      "signature": "Hajra"
+    },
+    "journey_heading": "From first message *to the walima.*",
+    "journey": [
+      {
+        "kicker": "01 · Your message",
+        "title": "Send a DM",
+        "short": "DM to book",
+        "text": "Message @byhajra_ on Instagram with your date, the time you need to be ready by, how many of you there are, and whether it’s bridal or party."
+      },
+      {
+        "kicker": "02 · Your date",
+        "title": "Secure your date",
+        "short": "Secure date",
+        "text": "A non-refundable deposit secures your booking. It is deducted from your final bill."
+      },
+      {
+        "kicker": "03 · The styling",
+        "title": "Hair and makeup",
+        "short": "Styling",
+        "text": "Bridal hair, bridal makeup, or both together, for the nikah, baraat, walima and mehndi."
+      },
+      {
+        "kicker": "04 · Every celebration",
+        "title": "From mehndi to walima",
+        "short": "Mehndi to walima",
+        "text": "Mehndi, nikah, baraat and walima: each celebration, styled."
+      }
+    ],
+    "reviews": [
+      {
+        "text": "[Real client review, word for word, from Instagram, Google or Bridebook]",
+        "name": "[Client name]",
+        "placeholder": true
+      },
+      {
+        "text": "[Real client review, word for word]",
+        "name": "[Client name]",
+        "placeholder": true
+      },
+      {
+        "text": "[Real client review, word for word]",
+        "name": "[Client name]",
+        "placeholder": true
+      }
+    ],
+    "looks_heading": "The work, *up close.*",
+    "looks_text": "Bridal and occasion hair and makeup from Manchester, for the nikah, baraat, walima and mehndi.",
+    "looks": [
+      {
+        "tag": "Hair",
+        "title": "Braid with gold trim"
+      },
+      {
+        "tag": "Hair",
+        "title": "Soft curls, hair jewellery"
+      },
+      {
+        "tag": "Hair & makeup",
+        "title": "Side plait with flowers"
+      },
+      {
+        "tag": "Hair & makeup",
+        "title": "Side-swept waves, bridal jewellery"
+      },
+      {
+        "tag": "Hair & makeup",
+        "title": "Flowers down a long plait"
+      },
+      {
+        "tag": "Hair",
+        "title": "Updo with hair jewellery"
+      },
+      {
+        "tag": "Makeup",
+        "title": "Gold eyes, red bridal"
+      }
+    ],
+    "booking": {
+      "label": "Let’s talk",
+      "heading": "Check *your date.*",
+      "intro": "Send me a DM on Instagram with your date, the time you need to be ready by, how many of you there are, and whether it’s bridal or party. I’ll reply with availability.",
+      "facts": [
+        "Bookings by Instagram DM",
+        "A non-refundable deposit secures your date",
+        "The deposit comes off your final bill",
+        "1-to-1 training available"
+      ],
+      "services": [
+        {
+          "title": "Bridal hair",
+          "text": "For the nikah, baraat, walima and mehndi",
+          "image": "look1.jpg",
+          "quote": "Hair for every celebration, from the mehndi to the walima."
+        },
+        {
+          "title": "Bridal makeup",
+          "text": "Pakistani bridal and wedding-event makeup",
+          "image": "look7.jpg",
+          "quote": "Pakistani traditional bridal makeup, for the day and the events around it."
+        },
+        {
+          "title": "Hair & makeup",
+          "text": "Bridal or party, styled together",
+          "image": "step1.jpg",
+          "quote": "Hair | Makeup. Manchester, UK. Travel available."
+        },
+        {
+          "title": "1-to-1 training",
+          "text": "Learn hair and makeup with Hajra",
+          "image": "look2.jpg",
+          "quote": "1-to-1 training available. DM to ask."
+        }
+      ],
+      "thanks_text": "Your enquiry is in. I’ll be in touch about"
+    },
+    "studio_lines": [
+      "Manchester, UK",
+      "Bookings by Instagram DM",
+      "Travel available"
+    ],
+    "positions": {
+      "hero": "50% 25%",
+      "detail": "50% 40%",
+      "step1": "50% 30%",
+      "step2": "50% 30%",
+      "step3": "50% 30%",
+      "step4": "50% 30%",
+      "party": "50% 30%",
+      "party-2": "50% 30%",
+      "look1": "50% 25%",
+      "look2": "50% 30%",
+      "look3": "50% 25%",
+      "look4": "50% 25%",
+      "look5": "50% 25%",
+      "look6": "50% 35%",
+      "look7": "50% 40%"
+    },
+    "alts": {
+      "hero": "A bride in a sage green embroidered outfit and veil, with glossy dark waves",
+      "detail": "A long braid wrapped in gold trim over a green embroidered outfit",
+      "portrait": "Placeholder for a portrait of Hajra",
+      "at-work": "Placeholder for a photo of Hajra styling a bride",
+      "party": "A smiling bride in a green and gold outfit with pearl jewellery",
+      "party-2": "A bride with dark glossy waves and a tikka",
+      "step1": "A bride in a deep red and gold outfit with a red dupatta",
+      "step2": "A smiling bride in a green dupatta and pearl choker",
+      "step3": "A bride with gold eyeshadow, a red dupatta and gold jewellery",
+      "step4": "A high textured bun with green hair jewellery, seen from behind",
+      "look1": "A braid wrapped in gold trim",
+      "look2": "Soft golden-brown curls with hair jewellery",
+      "look3": "A dark side plait with white flowers",
+      "look4": "Side-swept waves with bridal jewellery and a maroon outfit",
+      "look5": "A long plait with cream flowers and a teal outfit",
+      "look6": "A textured updo with green and gold hair jewellery",
+      "look7": "Gold eye makeup with a red bridal dupatta"
+    }
   }
 ]
