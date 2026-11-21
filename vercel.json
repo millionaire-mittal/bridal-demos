@@ -4,6 +4,7 @@
   "cleanUrls": true,
   "trailingSlash": true,
   "rewrites": [
+    { "source": "/bridal/:slug/", "destination": "/:slug/index.html" },
     { "source": "/bridal/:path*", "destination": "/:path*" }
   ],
   "headers": [
