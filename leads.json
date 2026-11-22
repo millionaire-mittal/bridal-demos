@@ -1062,5 +1062,236 @@
       "look6": "A bride in a cream outfit and veil, eyes closed in sunlight",
       "look7": "Soft smoky makeup and glowing skin under a cream veil"
     }
+  },
+  {
+    "slug": "mendibymariam",
+    "business": "Mendi by Mariam",
+    "wordmark": [
+      "MENDI BY",
+      "MARIAM"
+    ],
+    "first_name": "Mariam",
+    "city": "Leicester",
+    "phone": "07414 127672",
+    "instagram": {
+      "url": "https://www.instagram.com/mendibymariam/",
+      "handle": "mendibymariam",
+      "cta": "DM on Instagram",
+      "button": "DM on Instagram"
+    },
+    "socials": {
+      "instagram": "https://www.instagram.com/mendibymariam/"
+    },
+    "language": "english",
+    "fonts": "boho",
+    "motif": "olive",
+    "accent": "#A65D43",
+    "colors": {
+      "ivory": "#FAF4EC",
+      "blush": "#F1DFD3",
+      "blush2": "#F7ECE3",
+      "accent": "#A0573E",
+      "accentDark": "#7A3E2B",
+      "ink": "#2B1D16",
+      "muted": "#6B564A",
+      "deep": "#3A271E",
+      "deep2": "#4A332A",
+      "line": "#B8975F",
+      "silk": "#EBD2BE",
+      "silkEdge": "#C9A27E"
+    },
+    "title": "Award-Winning Bridal & Event Henna in Leicester and the Midlands | Mendi by Mariam",
+    "description": "Bespoke mehndi for weddings, celebrations, corporate events and private occasions. Award-winning henna artist serving Leicester and the Midlands, UK.",
+    "cta": "Enquire now",
+    "hero": {
+      "greeting": [
+        "Mehndi",
+        "by Mariam."
+      ],
+      "eyebrow": "2026 Award-Winning Henna Artist  ·  Leicester & the Midlands",
+      "lead": "Award-winning bridal and event henna in Leicester and the Midlands. Bespoke mehndi for weddings, celebrations, corporate events and private occasions.",
+      "facts": [
+        "11 years’ experience",
+        "2026 Award-Winning Henna Artist",
+        "Leicester & the Midlands"
+      ],
+      "detail_caption": "Floral palms, fine lattice"
+    },
+    "pull": {
+      "roots_word": "Leicester.",
+      "roots": "Henna for weddings, celebrations and events across Leicester and the Midlands."
+    },
+    "about": {
+      "heading": "The artist behind *the henna.*",
+      "sub": "11 years of henna. Leicester & the Midlands.",
+      "paragraphs": [
+        "I’m Mariam, a henna artist based in Leicester. I have 11 years’ experience creating mehndi for weddings, celebrations and events, and I’m a 2026 Award-Winning Henna Artist.",
+        "My approach is simple: personalised designs, close attention to detail and premium henna, in a calm and professional experience. I also teach henna classes.",
+        "I serve Leicester and the Midlands. The quickest way to reach me is an Instagram DM at @mendibymariam, or call 07414 127672."
+      ],
+      "signature": "Mariam"
+    },
+    "journey_heading": "From first message *to the stain.*",
+    "journey": [
+      {
+        "kicker": "01 · Your message",
+        "title": "Get in touch",
+        "short": "Get in touch",
+        "text": "Message @mendibymariam on Instagram or call 07414 127672 with your date, your location and what you have in mind."
+      },
+      {
+        "kicker": "02 · The design",
+        "title": "Choose your design",
+        "short": "Your design",
+        "text": "Share your outfit and your inspiration, and we’ll plan a bespoke design that suits you and your day.",
+        "quote": "She brought her own set up including a book for people to look at designs.",
+        "cite": "A client, via Instagram"
+      },
+      {
+        "kicker": "03 · The henna",
+        "title": "Your mehndi",
+        "short": "Your mehndi",
+        "text": "Your design is applied with premium henna, calmly and with close attention to detail.",
+        "quote": "my stain has already come through and we’re not even 24 hours in!",
+        "cite": "A bride, via Instagram"
+      },
+      {
+        "kicker": "04 · Every celebration",
+        "title": "Weddings, parties & events",
+        "short": "Every celebration",
+        "text": "Bridal henna, party henna, corporate and private events, and henna classes.",
+        "quote": "Would highly recommend her for any party mehndi",
+        "cite": "A client, via Instagram"
+      }
+    ],
+    "reviews": [
+      {
+        "text": "Would highly recommend her for any party mehndi - had so many compliments from guests, and she was so lovely to work with.",
+        "name": "A client, via Instagram"
+      },
+      {
+        "text": "My mehndi stains are usually really light, but this one is already looking amazing — I’m so impressed!",
+        "name": "A bride, via Instagram"
+      },
+      {
+        "text": "mehndi is beautiful and such great quality all of the girls had beautiful dark stains too.",
+        "name": "A bride, via Instagram"
+      },
+      {
+        "text": "She was easy to interact with, and very accommodating even though we had so many guests!",
+        "name": "A client, via Instagram"
+      }
+    ],
+    "looks_heading": "The work, *up close.*",
+    "looks_text": "Bridal, party and event henna from Leicester and the Midlands.",
+    "looks": [
+      {
+        "tag": "Floral",
+        "title": "Floral palms, fine lattice"
+      },
+      {
+        "tag": "Floral",
+        "title": "Lotus motifs on the hands"
+      },
+      {
+        "tag": "Modern",
+        "title": "Crescent moon and stars"
+      },
+      {
+        "tag": "Floral",
+        "title": "Roses and leaves, backs of hands"
+      },
+      {
+        "tag": "Minimal",
+        "title": "Light floral henna"
+      },
+      {
+        "tag": "Bridal",
+        "title": "A bridal hand, floral design"
+      },
+      {
+        "tag": "Bridal",
+        "title": "Bridal hands, deep red stain"
+      }
+    ],
+    "booking": {
+      "label": "Let’s talk",
+      "heading": "Book your *mehndi.*",
+      "intro": "Send me a message on Instagram, call 07414 127672, or fill in the form with your date and location. I’ll reply with availability.",
+      "facts": [
+        "Enquire by Instagram DM or phone",
+        "Serving Leicester & the Midlands",
+        "Pricing on enquiry",
+        "11 years’ experience"
+      ],
+      "services": [
+        {
+          "title": "Bridal mehndi",
+          "text": "For brides and their families",
+          "image": "look7.jpg",
+          "quote": "My mehndi stains are usually really light, but this one is already looking amazing"
+        },
+        {
+          "title": "Party & celebration",
+          "text": "Parties, celebrations and mehndi nights",
+          "image": "look5.jpg",
+          "quote": "had so many compliments from guests"
+        },
+        {
+          "title": "Corporate & private events",
+          "text": "Corporate events and private occasions",
+          "image": "look3.jpg",
+          "quote": "Bespoke henna for corporate events and private occasions."
+        },
+        {
+          "title": "Henna classes",
+          "text": "Learn henna with Mariam",
+          "image": "look1.jpg",
+          "quote": "Henna classes are available. Ask when you enquire."
+        }
+      ],
+      "thanks_text": "Your enquiry is in. I’ll be in touch about"
+    },
+    "studio_lines": [
+      "Leicester & the Midlands, UK",
+      "Instagram DM or 07414 127672",
+      "Henna classes available"
+    ],
+    "positions": {
+      "hero": "50% 20%",
+      "detail": "50% 40%",
+      "party": "50% 50%",
+      "party-2": "50% 40%",
+      "step1": "50% 35%",
+      "step2": "50% 45%",
+      "step3": "50% 40%",
+      "step4": "50% 40%",
+      "look1": "50% 40%",
+      "look2": "50% 40%",
+      "look3": "50% 45%",
+      "look4": "50% 40%",
+      "look5": "50% 45%",
+      "look6": "50% 30%",
+      "look7": "50% 50%"
+    },
+    "alts": {
+      "hero": "A bride in a red and gold outfit and veil, hands clasped to show henna, in a warmly lit hall",
+      "detail": "Close-up of henna on a palm with flowers, leaves and fine lattice fingers",
+      "portrait": "Placeholder for a portrait of Mariam",
+      "at-work": "Placeholder for a photo of Mariam applying henna",
+      "party": "A bride’s henna hands resting on her partner’s shoulders, with bangles and a diamond ring",
+      "party-2": "A hand with a floral henna design resting on a groom’s grey tweed jacket, with orange bangles",
+      "step1": "A bride with gold eye makeup resting a henna hand against her jewellery",
+      "step2": "Light orange henna on a bride’s hands resting on a silver beaded outfit",
+      "step3": "Detailed brown henna on the backs of two hands resting on white fur",
+      "step4": "A bride’s hand with henna and bangles seen through a veil",
+      "look1": "Dark floral henna on two palms with lattice fingers, on cream fur",
+      "look2": "Lotus-shaped henna on the backs of two hands with banded fingers",
+      "look3": "Crescent moon and star henna on two hands",
+      "look4": "Rose and leaf henna on the backs of two hands, resting on white fur",
+      "look5": "Light orange floral henna on two hands against a silver beaded dress",
+      "look6": "Rose henna on a bride’s hand with orange bangles on a groom’s jacket",
+      "look7": "Deep red bridal henna on two hands with bangles and a diamond ring"
+    }
   }
 ]
