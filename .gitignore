@@ -19,3 +19,6 @@ desktop.ini
 
 # Frames pulled from screen recordings
 frames/
+
+# Vercel build output (created by vercel.json buildCommand)
+site/

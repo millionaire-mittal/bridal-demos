@@ -1,12 +1,8 @@
 {
-  "buildCommand": "",
-  "outputDirectory": "demos",
+  "buildCommand": "rm -rf site && mkdir -p site/bridal && cp -r demos/. site/ && cp -r demos/. site/bridal/",
+  "outputDirectory": "site",
   "cleanUrls": true,
   "trailingSlash": true,
-  "rewrites": [
-    { "source": "/bridal/:slug", "destination": "/:slug/index.html" },
-    { "source": "/bridal/:path*", "destination": "/:path*" }
-  ],
   "headers": [
     { "source": "/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow" }] },
     { "source": "/(.*)/img/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=604800" }] }
