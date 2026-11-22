@@ -288,7 +288,7 @@ def site_config(lead: dict) -> dict:
         return t if len(t) <= 130 else t[:127].rsplit(" ", 1)[0] + "…"
 
     cfg = {
-        "meta": {"title": f"{lead['business']} · Bridal hair in {lead['city']}",
+        "meta": {"title": lead.get("title") or f"{lead['business']} · Bridal hair in {lead['city']}",
                  "description": lead.get("description") or h["lead"]},
         "brand": {"line1": lead["wordmark"][0], "line2": lead["wordmark"][1], "name": lead["business"]},
         "person": {"first": first, "full": lead.get("full_name") or first, "phone": lead.get("phone", ""),

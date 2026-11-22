@@ -836,5 +836,231 @@
       "look6": "A textured updo with green and gold hair jewellery",
       "look7": "Gold eye makeup with a red bridal dupatta"
     }
+  },
+  {
+    "slug": "bysadz",
+    "business": "By Sadz",
+    "wordmark": [
+      "MAKEUP",
+      "BY SADZ"
+    ],
+    "first_name": "Sadz",
+    "city": "Birmingham",
+    "email": "bysadz@outlook.com",
+    "instagram": {
+      "url": "https://www.instagram.com/bysadz/",
+      "handle": "bysadz",
+      "cta": "Enquire on Instagram",
+      "button": "DM on Instagram"
+    },
+    "socials": {
+      "instagram": "https://www.instagram.com/bysadz/"
+    },
+    "language": "english",
+    "fonts": "soft-modern",
+    "motif": "willow",
+    "accent": "#B07C6E",
+    "colors": {
+      "ivory": "#FBF6F2",
+      "blush": "#F1DFD8",
+      "blush2": "#F7EBE6",
+      "accent": "#A8705F",
+      "accentDark": "#85493E",
+      "ink": "#2E2220",
+      "muted": "#6A5651",
+      "deep": "#3B2B2A",
+      "deep2": "#4A3736",
+      "line": "#B79A8E",
+      "silk": "#EBD3C9",
+      "silkEdge": "#C6A093"
+    },
+    "title": "Bridal & Occasion Makeup Artist in Birmingham | By Sadz",
+    "description": "By Sadz is a Birmingham makeup artist offering bridal, party, hijab-friendly and hair styling. Enquire on Instagram or by email.",
+    "hero": {
+      "greeting": [
+        "Hello,",
+        "beautiful."
+      ],
+      "eyebrow": "Bridal & occasion makeup  ·  Birmingham",
+      "lead": "Soft, polished bridal and occasion makeup in Birmingham, including hijab-friendly looks, with hair styling too.",
+      "facts": [
+        "Bridal, party & hijab-friendly makeup",
+        "Hair styling available",
+        "Birmingham & international"
+      ],
+      "detail_caption": "Gold eyes, ruby jewellery"
+    },
+    "pull": {
+      "roots_word": "Birmingham.",
+      "roots": "Makeup for bridal days, parties and every occasion, from Birmingham and beyond."
+    },
+    "about": {
+      "heading": "The artist behind *the makeup.*",
+      "sub": "Bridal | Party | Hijab | Hair. Birmingham & international.",
+      "paragraphs": [
+        "I’m Sadz, a makeup artist based in Birmingham. I do bridal makeup, party and occasion makeup and hijab-friendly looks, with hair styling too.",
+        "I work in Birmingham and take selected international bookings.",
+        "The best place to reach me is Instagram. Message @bysadz, or email bysadz@outlook.com, and tell me about your day."
+      ],
+      "signature": "Sadz"
+    },
+    "journey_heading": "From first message *to the finishing touches.*",
+    "journey": [
+      {
+        "kicker": "01 · Your message",
+        "title": "Get in touch",
+        "short": "Get in touch",
+        "text": "Message @bysadz on Instagram or email bysadz@outlook.com with your date, your location and the look you have in mind."
+      },
+      {
+        "kicker": "02 · The look",
+        "title": "Plan your look",
+        "short": "Your look",
+        "text": "Share your outfit and your inspiration, and we’ll talk through the makeup you have in mind.",
+        "quote": "I think we absolutely slayed the look",
+        "cite": "Manrika"
+      },
+      {
+        "kicker": "03 · The day",
+        "title": "Your wedding day",
+        "short": "The day",
+        "text": "Your wedding-day makeup, finished with the final touches.",
+        "quote": "Definitely something I worry about with MUA’s (being ready on time) but I know I’ll never have to worry with you!!",
+        "cite": "Manrika"
+      },
+      {
+        "kicker": "04 · Every occasion",
+        "title": "Beyond the wedding",
+        "short": "Every occasion",
+        "text": "Party and occasion makeup, hijab-friendly looks and hair styling are all part of the service.",
+        "quote": "It genuinely stayed for hours and I got so many compliments",
+        "cite": "A client, via Instagram"
+      }
+    ],
+    "reviews": [
+      {
+        "text": "Hi lovely, I just wanted to say thank you so much for my makeup it was beautiful! It genuinely stayed for hours and I got so many compliments so thank you again",
+        "name": "A client, via Instagram"
+      },
+      {
+        "text": "I think we absolutely slayed the look and timing was insane!! Definitely something I worry about with MUA’s (being ready on time) but I know I’ll never have to worry with you!!",
+        "name": "Manrika, via Instagram"
+      },
+      {
+        "text": "Hey no no I absolutely loved it! Sorry have been really busy! Thank you so much for everything; will defo be using you again! Xx",
+        "name": "A client, via Instagram"
+      }
+    ],
+    "looks_heading": "The work, *up close.*",
+    "looks_text": "Bridal, party and occasion makeup from Birmingham.",
+    "looks": [
+      {
+        "tag": "Bridal",
+        "title": "Red and gold bridal"
+      },
+      {
+        "tag": "Bridal",
+        "title": "Gold eyes, ruby jewellery"
+      },
+      {
+        "tag": "Bridal",
+        "title": "Soft glam, gold jewellery"
+      },
+      {
+        "tag": "Makeup & hair",
+        "title": "Pearl and silver, soft waves"
+      },
+      {
+        "tag": "Bridal",
+        "title": "Soft glam, ivory and gold"
+      },
+      {
+        "tag": "Makeup",
+        "title": "Sunlit glow"
+      },
+      {
+        "tag": "Makeup",
+        "title": "Soft smoke, glowing skin"
+      }
+    ],
+    "booking": {
+      "label": "Let’s talk",
+      "heading": "Check *your date.*",
+      "intro": "Send me a message on Instagram or email bysadz@outlook.com with your date and the look you have in mind. I’ll reply with availability.",
+      "facts": [
+        "Enquire on Instagram or by email",
+        "Pricing on enquiry",
+        "Birmingham & international",
+        "Hijab-friendly makeup"
+      ],
+      "services": [
+        {
+          "title": "Bridal makeup",
+          "text": "Your wedding-day makeup",
+          "image": "look1.jpg",
+          "quote": "Soft, polished bridal makeup in Birmingham."
+        },
+        {
+          "title": "Party & occasion",
+          "text": "Parties, events, celebrations and photoshoots",
+          "image": "look3.jpg",
+          "quote": "Makeup for parties, events and photoshoots."
+        },
+        {
+          "title": "Hijab-friendly",
+          "text": "Makeup designed around hijab styling and modest looks",
+          "image": "look6.jpg",
+          "quote": "Makeup that works with your hijab styling."
+        },
+        {
+          "title": "Hair styling",
+          "text": "Hair styling is available",
+          "image": "look4.jpg",
+          "quote": "Hair styling is part of the service. Ask when you enquire."
+        }
+      ],
+      "thanks_text": "Your enquiry is in. I’ll be in touch about"
+    },
+    "studio_lines": [
+      "Birmingham, UK",
+      "Enquire on Instagram or by email",
+      "Birmingham & international"
+    ],
+    "positions": {
+      "hero": "50% 30%",
+      "detail": "50% 40%",
+      "party": "50% 35%",
+      "party-2": "50% 30%",
+      "step1": "50% 30%",
+      "step2": "50% 30%",
+      "step3": "50% 30%",
+      "step4": "50% 30%",
+      "look1": "50% 30%",
+      "look2": "50% 30%",
+      "look3": "50% 30%",
+      "look4": "50% 30%",
+      "look5": "50% 20%",
+      "look6": "50% 30%",
+      "look7": "50% 40%"
+    },
+    "alts": {
+      "hero": "A bride in a cream and gold outfit and veil, eyes closed in warm sunlight",
+      "detail": "Close-up of gold eye makeup, a nose ring and ruby and gold jewellery",
+      "portrait": "Placeholder for a portrait of Sadz",
+      "at-work": "Placeholder for a photo of Sadz doing a bride’s makeup",
+      "party": "A bride in a pale green and silver outfit with long soft waves",
+      "party-2": "A bride in ivory and gold with ruby jewellery",
+      "step1": "A bride in a cream outfit and veil sitting in soft sunlight",
+      "step2": "A bride in red and gold with a red veil and gold eye makeup",
+      "step3": "A bride in ivory and gold with ruby jewellery and soft curls",
+      "step4": "A bride in pale green with sparkling jewellery and long waves",
+      "look1": "Red and gold bridal makeup with a nose ring and ruby jewellery",
+      "look2": "Gold eye makeup with a red veil and ruby jewellery",
+      "look3": "Soft glam makeup with gold jewellery and a pale veil",
+      "look4": "Soft glam makeup with pearl jewellery and long waves",
+      "look5": "A bride seated in an ivory and gold outfit with a veil",
+      "look6": "A bride in a cream outfit and veil, eyes closed in sunlight",
+      "look7": "Soft smoky makeup and glowing skin under a cream veil"
+    }
   }
 ]
