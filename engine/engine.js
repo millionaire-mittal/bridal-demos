@@ -17,7 +17,8 @@ var pos = function(o){ return o && o.pos ? ' style="object-position:'+esc(o.pos)
 var img = function(o, extra){ return '<img src="'+esc(o.src)+'" alt="'+esc(o.alt||'')+'"'+pos(o)+(extra||' loading="lazy"')+'>'; };
 var CH = (S.words && S.words.chapters) || ['One','Two','Three','Four','Five','Six'];
 var ci = 0;
-var chap = function(label){ var i = ci++; return '<p class="chap" data-fade><span class="num">'+esc(CH[i]||'')+'</span><span class="ln"></span><span>'+esc(label)+'</span></p>'; };
+var CHX = ['Seven','Eight','Nine','Ten'];   // only used when optional sections push past six chapters
+var chap = function(label){ var i = ci++; return '<p class="chap" data-fade><span class="num">'+esc(CH[i]||CHX[i-6]||'')+'</span><span class="ln"></span><span>'+esc(label)+'</span></p>'; };
 var btn = function(href, label, tag){ tag = tag || 'a'; return tag === 'a' ? '<a class="btn" href="'+href+'"><i class="dot"></i><span>'+esc(label)+'</span></a>' : '<button class="btn" type="submit"><i class="dot"></i><span>'+esc(label)+'</span></button>'; };
 
 var PLAY = '<svg viewBox="0 0 18 18"><path d="M2 1 L16 9 L2 17Z" fill="currentColor"/></svg>';
@@ -38,6 +39,7 @@ if (S.meta && S.meta.description){ var m = document.createElement('meta'); m.nam
 
 /* ---------- sections ---------- */
 var B = S.brand, P = S.person, H = S.hero, PL = S.pull, A = S.about, J = S.journey, R = S.reels, W = S.testimonials, K = S.work, G = S.guides, BK = S.booking, F = S.footer || {};
+var CL = S.clients, FT = S.featured, V = S.videos;   // optional: selected clients, press features, video testimonials
 var IG = P.instagram && P.instagram.url ? P.instagram : null;
 var igLink = function(cls, label){ return '<a class="'+cls+'" href="'+esc(IG.url)+'" target="_blank" rel="noopener">'+label+'</a>'; };
 var contactBits = [P.phone ? 'call '+esc(P.phone) : '', P.email ? esc(P.email) : ''].filter(Boolean).join(' &nbsp;·&nbsp; ');
@@ -45,7 +47,7 @@ var brand = '<span class="b1">'+esc(B.line1)+'</span><span class="b2">'+esc(B.li
 
 var nav = '<a class="skip" href="#main">Skip to content</a>'+
  '<header class="nav" id="nav"><a class="brand" href="#top" aria-label="'+esc(B.name)+', back to top">'+brand+'</a>'+
- '<nav aria-label="Primary"><a href="#about">'+esc(P.first)+'</a><a href="#journey">'+esc(J.navLabel||'Your journey')+'</a>'+(R ? '<a href="#reels">'+esc(R.label)+'</a>' : '')+'<a href="#words">'+esc(W.label)+'</a><a href="#work">'+esc(K.label)+'</a></nav>'+
+ '<nav aria-label="Primary"><a href="#about">'+esc(P.first)+'</a><a href="#journey">'+esc(J.navLabel||'Your journey')+'</a>'+(R ? '<a href="#reels">'+esc(R.label)+'</a>' : '')+(CL ? '<a href="#clients">'+esc(CL.navLabel||CL.label)+'</a>' : '')+(FT ? '<a href="#featured">'+esc(FT.navLabel||FT.label)+'</a>' : '')+(V ? '<a href="#voices">'+esc(V.navLabel||V.label)+'</a>' : '')+'<a href="#words">'+esc(W.label)+'</a><a href="#work">'+esc(K.label)+'</a></nav>'+
  '<a class="btn btn-sm" href="#book"><i class="dot"></i><span>'+esc(cta)+'</span></a></header>';
 
 var hero = '<section class="hero" id="top"><div class="wrap hero-grid"><div class="hero-copy z">'+
@@ -95,6 +97,34 @@ var reels = !R || !R.items || !R.items.length ? '' : '<section class="reels" id=
  '<div class="r-track z" id="rTrack">'+R.items.map(function(r){ return '<figure class="reel"><div class="arch">'+img(r)+
    '<button class="play" type="button" aria-label="Play reel: '+esc(r.title)+'">'+PLAY+'</button><span class="soon" role="status"></span></div>'+
    '<figcaption><b>'+esc(r.title)+'</b><span>'+esc(r.duration||'')+'</span></figcaption></figure>'; }).join('')+'</div></div></section>';
+
+/* optional sections: selected clients, featured in, video testimonials (each only renders when its lead has data) */
+var secHead = function(o){ return '<div class="sec-head z"><div>'+chap(o.label)+'<h2 data-blur>'+md(o.heading)+'</h2></div>'+(o.text ? '<p data-fade>'+esc(o.text)+'</p>' : '')+'</div>'; };
+var linkTag = function(url, cls, inner, extra){ return url ? '<a class="'+cls+'" href="'+esc(url)+'" target="_blank" rel="noopener"'+(extra||'')+'>'+inner+'</a>' : '<div class="'+cls+'"'+(extra||'')+'>'+inner+'</div>'; };
+var initials = function(n){ return String(n).replace(/[^A-Za-zÀ-ɏ ]/g,'').split(/\s+/).filter(Boolean).slice(0,2).map(function(w){ return w.charAt(0).toUpperCase(); }).join(''); };
+
+var clients = !CL || !CL.items || !CL.items.length ? '' : (function(){
+  var hasImg = CL.items.some(function(c){ return c.image; });
+  var body = hasImg
+    ? '<div class="c-grid z">'+CL.items.map(function(c,i){
+        return '<figure class="c-card" data-fade style="--d:'+(i%4*110)+'ms"><div class="c-img">'+(c.image ? img(c.image) : '<span class="c-ph" aria-hidden="true">'+esc(initials(c.name))+'</span>')+'</div>'+
+          '<figcaption>'+linkTag(c.url,'c-name','<b>'+esc(c.name)+'</b>')+(c.role ? '<span>'+esc(c.role)+'</span>' : '')+'</figcaption></figure>'; }).join('')+'</div>'
+    : '<ul class="c-list z">'+CL.items.map(function(c,i){
+        return '<li class="c-row" data-fade style="--d:'+(i%2*90)+'ms">'+linkTag(c.url,'c-name','<b>'+esc(c.name)+'</b>')+(c.role ? '<span>'+esc(c.role)+'</span>' : '')+'</li>'; }).join('')+'</ul>';
+  return '<section class="clients" id="clients"><div class="wrap">'+secHead(CL)+body+'</div></section>';
+})();
+
+var featured = !FT || !FT.items || !FT.items.length ? '' : '<section class="featured blush" id="featured"><div class="wrap">'+secHead(FT)+'<div class="f-grid z">'+
+  FT.items.map(function(f,i){
+    var inner = '<span class="f-outlet">'+esc(f.outlet)+'</span>'+(f.title ? '<span class="f-title">'+esc(f.title)+'</span>' : '')+
+      '<span class="f-meta"><span>'+esc(f.year||'')+'</span>'+(f.url ? '<i>'+esc(FT.more||'Read')+' &rarr;</i>' : '')+'</span>';
+    return linkTag(f.url,'f-item',inner,' data-fade style="--d:'+(i%4*90)+'ms"'); }).join('')+'</div></div></section>';
+
+var voices = !V || !V.items || !V.items.length ? '' : '<section class="voices" id="voices"><div class="wrap">'+secHead(V)+'<div class="v-row z">'+
+  V.items.map(function(v,i){
+    return '<figure class="v-card" data-fade style="--d:'+(i%4*110)+'ms"><div class="v-media" data-src="'+esc(v.src||'')+'" data-embed="'+esc(v.embed||'')+'" data-poster="'+esc(v.poster.src)+'" data-name="'+esc(v.name)+'">'+img(v.poster)+
+      '<button class="play" type="button" aria-label="Play video: '+esc(v.name)+'">'+PLAY+'</button><span class="soon" role="status"></span></div>'+
+      '<figcaption><b>'+esc(v.name)+'</b>'+(v.role ? '<span>'+esc(v.role)+'</span>' : '')+(v.quote ? '<q>'+esc(v.quote)+'</q>' : '')+'</figcaption></figure>'; }).join('')+'</div></div></section>';
 
 var words = '<section class="words blush" id="words"><i class="rp" data-rib=".7" data-rib-m=".9" style="top:4%"></i><i class="rp" data-rib=".05" data-rib-m=".04" style="top:12%"></i><i class="rp" data-rib=".04" data-rib-m=".04" style="top:70%"></i><i class="rp" data-rib=".5" data-rib-m=".05" style="top:93%"></i>'+
  '<div class="wrap w-grid"><div class="w-photos z"><figure class="arch-wrap w-arch" data-reveal><div class="arch">'+img(W.photo)+'</div></figure>'+
@@ -147,7 +177,7 @@ var foot = '<footer class="foot"><svg class="bot in" data-bot="sprig" aria-hidde
  '<div class="f-bottom"><span>© '+new Date().getFullYear()+' '+esc(B.name)+'</span><span>'+esc(F.credit||'Website concept by Codzo')+'</span></div></div></footer>';
 
 document.body.insertAdjacentHTML('afterbegin', nav+'<main id="main"><svg id="ribbon" aria-hidden="true" focusable="false"><path class="band" id="ribBand"/><path class="edge" id="ribEdge"/><path class="edge2" id="ribEdge2"/></svg>'+
-  hero+pull+about+journey+reels+words+work+guides+book+'</main>'+foot+'<canvas id="petals" aria-hidden="true"></canvas>');
+  hero+pull+about+journey+reels+clients+featured+voices+words+work+guides+book+'</main>'+foot+'<canvas id="petals" aria-hidden="true"></canvas>');
 
 /* ===================== effects ===================== */
 var RM = document.documentElement.classList.contains('rm');
@@ -435,6 +465,31 @@ function updReels(){
 $$('.reel .play').forEach(function(b){ b.addEventListener('click', function(){
   var fig = b.closest('.reel'), s = $('.soon', fig); s.textContent = R.note || 'Video plays here on the live site.'; fig.classList.add('show');
   setTimeout(function(){ fig.classList.remove('show'); }, 2600);
+}); });
+
+/* ---------- video testimonials (click to play: local file or YouTube/Vimeo embed) ---------- */
+function stopVoice(box){
+  $$('video', box).forEach(function(v){ v.pause(); v.remove(); });
+  $$('iframe', box).forEach(function(f){ f.remove(); });
+  box.classList.remove('playing');
+}
+$$('.v-media .play').forEach(function(b){ b.addEventListener('click', function(){
+  var box = b.closest('.v-media'), src = box.getAttribute('data-src'), emb = box.getAttribute('data-embed'), name = box.getAttribute('data-name');
+  $$('.v-media.playing').forEach(function(o){ if (o !== box) stopVoice(o); });
+  if (!src && !emb){
+    var s = $('.soon', box); s.textContent = (V && V.note) || 'The video plays here on the live site.'; box.classList.add('show');
+    setTimeout(function(){ box.classList.remove('show'); }, 2600); return;
+  }
+  box.classList.add('playing');
+  if (emb){
+    box.insertAdjacentHTML('beforeend', '<iframe src="'+esc(emb)+(emb.indexOf('?') < 0 ? '?' : '&')+'autoplay=1&rel=0" title="Video: '+esc(name)+'" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>');
+  } else {
+    var v = document.createElement('video');
+    v.src = src; v.controls = true; v.autoplay = true; v.playsInline = true; v.setAttribute('playsinline', ''); v.setAttribute('aria-label', 'Video: '+name);
+    v.poster = box.getAttribute('data-poster');
+    box.appendChild(v);
+    var pr = v.play(); if (pr && pr.catch) pr.catch(function(){});
+  }
 }); });
 
 /* ---------- nav ---------- */

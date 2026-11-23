@@ -181,11 +181,32 @@ def validate(lead: dict) -> list[str]:
         if isinstance(x, dict) and "placeholder" in x and not isinstance(x["placeholder"], bool):
             errs.append("a review's 'placeholder' must be true or false")
 
+    # optional sections: selected clients, featured in, video testimonials
+    for key, hi, need in (("clients", 16, ["name"]), ("featured", 12, ["outlet"]), ("videos", 8, ["name", "poster"])):
+        v = lead.get(key)
+        if v is None:
+            continue
+        items = v.get("items") if isinstance(v, dict) else None
+        if not isinstance(items, list) or not 1 <= len(items) <= hi \
+                or not all(isinstance(x, dict) and all(x.get(k) for k in need) for x in items):
+            errs.append(f"'{key}' must be {{items: 1 to {hi} x {{{', '.join(need)}}}}} (optional: label, navLabel, heading, text)")
+    for x in (lead.get("videos") or {}).get("items", []) if isinstance(lead.get("videos"), dict) else []:
+        e = x.get("embed")
+        if e and not re.match(r"https://(www\.)?(youtube(-nocookie)?\.com/embed/|player\.vimeo\.com/video/)", e):
+            errs.append("a video 'embed' must be a YouTube or Vimeo embed URL (https://www.youtube.com/embed/ID or https://player.vimeo.com/video/ID)")
+
     if not errs:
         img = DEMOS / slug / "img"
         missing = [n for n in images_needed(lead) if not (img / n).is_file()]
+        extra = [c["image"] for c in (lead.get("clients") or {}).get("items", []) if c.get("image")]
+        extra += [v["poster"] for v in (lead.get("videos") or {}).get("items", [])]
+        missing += [n for n in dict.fromkeys(extra) if not (img / n).is_file()]
         if missing:
             errs.append(f"missing image(s) in demos/{slug}/img/: {', '.join(missing)}")
+        vids = [v["file"] for v in (lead.get("videos") or {}).get("items", []) if v.get("file")]
+        miss_v = [n for n in vids if not (DEMOS / slug / "video" / n).is_file()]
+        if miss_v:
+            errs.append(f"missing video file(s) in demos/{slug}/video/: {', '.join(miss_v)}")
     return errs
 
 
@@ -356,6 +377,30 @@ def site_config(lead: dict) -> dict:
         },
         "footer": {"studio": lead["studio_lines"], "credit": "Demo site · concept by Codzo"},
     }
+
+    # optional sections (only added when the lead has them, so other demos are unchanged)
+    cl, ft, vd = lead.get("clients"), lead.get("featured"), lead.get("videos")
+    if cl:
+        cfg["clients"] = {
+            "label": cl.get("label", "Selected clients"), "navLabel": cl.get("navLabel", "Clients"),
+            "heading": cl.get("heading", "Selected *clients.*"), "text": cl.get("text", ""),
+            "items": [{"name": c["name"], "role": c.get("role", ""), "url": c.get("url", ""),
+                       **({"image": img(c["image"], c["name"])} if c.get("image") else {})} for c in cl["items"]]}
+    if ft:
+        cfg["featured"] = {
+            "label": ft.get("label", "In the press"), "navLabel": ft.get("navLabel", "Press"),
+            "heading": ft.get("heading", "As seen *in.*"), "text": ft.get("text", ""), "more": ft.get("more", "Read"),
+            "items": [{"outlet": f["outlet"], "title": f.get("title", ""), "year": str(f.get("year", "")), "url": f.get("url", "")}
+                      for f in ft["items"]]}
+    if vd:
+        cfg["videos"] = {
+            "label": vd.get("label", "Client stories"), "navLabel": vd.get("navLabel", "Stories"),
+            "heading": vd.get("heading", "Hear it *from them.*"), "text": vd.get("text", ""),
+            "note": vd.get("note", "The video plays here on the live site."),
+            "items": [{"name": v["name"], "role": v.get("role", ""), "quote": v.get("quote", ""),
+                       "poster": img(v["poster"], f"Video: {v['name']}"),
+                       "src": f"video/{v['file']}" if v.get("file") else "", "embed": v.get("embed", "")}
+                      for v in vd["items"]]}
     return cfg
 
 

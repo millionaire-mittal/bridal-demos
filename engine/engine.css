@@ -345,6 +345,59 @@ html.js:not(.rm) .bow.in path{stroke-dashoffset:0}
 #petals{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:90}
 
 /* ---------- responsive ---------- */
+/* ---------- optional sections: selected clients, featured in, video testimonials ---------- */
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin-bottom:54px}
+.sec-head h2{font-size:clamp(34px,3.6vw,52px)}
+.sec-head p{max-width:38ch;color:var(--taupe)}
+
+.clients{padding:130px 0 120px}
+.c-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:80px;border-top:1px solid var(--sage)}
+.c-row{display:flex;justify-content:space-between;align-items:baseline;gap:20px;padding:26px 0;border-bottom:1px solid var(--sage)}
+.c-name{text-decoration:none;color:inherit}
+.c-name b{font-family:var(--display);font-weight:400;font-size:clamp(24px,2.4vw,34px);line-height:1.15}
+a.c-name:hover b{color:var(--peach-d)}
+.c-row span,.c-card figcaption span{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--taupe);text-align:right}
+.c-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:40px 28px}
+.c-card{margin:0}
+.c-img{aspect-ratio:3/4;overflow:hidden;border-radius:999px 999px 0 0;background:var(--blush-2)}
+.c-img img{width:100%;height:100%;object-fit:cover}
+.c-ph{display:grid;place-items:center;height:100%;font-family:var(--display);font-size:48px;color:var(--sage)}
+.c-card figcaption{display:flex;flex-direction:column;gap:4px;margin-top:16px}
+.c-card .c-name b{font-size:22px}
+.c-card figcaption span{text-align:left}
+
+.featured{padding:120px 0 130px}
+.f-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));border-top:1px solid var(--sage);border-left:1px solid var(--sage)}
+.f-item{display:flex;flex-direction:column;gap:14px;min-height:200px;padding:36px 30px 28px;border-right:1px solid var(--sage);border-bottom:1px solid var(--sage);text-decoration:none;color:inherit;transition:background .6s var(--ease)}
+a.f-item:hover{background:var(--blush-2)}
+.f-outlet{font-family:var(--display);font-size:clamp(24px,2.3vw,32px);line-height:1.12}
+.f-title{flex:1;font-size:15px;line-height:1.5;color:var(--taupe)}
+.f-meta{display:flex;justify-content:space-between;gap:12px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--taupe)}
+.f-meta i{font-style:normal;color:var(--peach-d)}
+
+.voices{padding:130px 0 130px}
+.v-row{display:flex;flex-wrap:wrap;justify-content:center;gap:40px 34px}
+.v-card{width:clamp(240px,23vw,290px);margin:0}
+.v-media{position:relative;overflow:hidden;aspect-ratio:9/16;border-radius:999px 999px 0 0;background:var(--blush-2)}
+.v-media>img,.v-media>video,.v-media>iframe{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border:0;background:#000}
+.v-media.playing .play{display:none}
+.v-media .soon{position:absolute;left:12px;right:12px;bottom:14px;background:rgba(40,30,25,.84);color:var(--ivory);font-size:12.5px;padding:10px 12px;opacity:0;transform:translateY(8px);transition:opacity .4s var(--ease),transform .4s var(--ease);pointer-events:none}
+.v-media.show .soon{opacity:1;transform:none}
+.v-card figcaption{display:flex;flex-direction:column;gap:4px;margin-top:16px}
+.v-card figcaption b{font-family:var(--display);font-weight:400;font-size:21px}
+.v-card figcaption span{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--taupe)}
+.v-card q{margin-top:8px;font-size:15px;line-height:1.5;color:var(--taupe);font-style:italic;quotes:"\201C" "\201D"}
+@media (max-width:860px){
+  .sec-head{display:block;margin-bottom:40px}
+  .sec-head p{margin-top:16px}
+  .clients,.featured,.voices{padding:90px 0}
+  .c-list{grid-template-columns:1fr}
+  .c-grid{grid-template-columns:1fr 1fr;gap:32px 16px}
+  .f-item{min-height:0}
+  .v-row{flex-wrap:nowrap;justify-content:flex-start;overflow-x:auto;scroll-snap-type:x mandatory;gap:20px;padding:0 var(--pad) 20px;margin:0 calc(var(--pad) * -1);-webkit-overflow-scrolling:touch}
+  .v-card{flex:none;width:72vw;scroll-snap-align:center}
+}
+
 @media (max-width:1080px){
   .nav nav{display:none}
   .j-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);}

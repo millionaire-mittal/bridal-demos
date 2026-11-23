@@ -63,6 +63,10 @@ Then paste everything you have: their website text, Instagram bio, reviews, phon
 | `studio_lines` | `["Wilford, Nottingham", "Trials by appointment"]` | Footer |
 | `positions` | `{"step2": "50% 30%"}` | Optional focal point per photo (by file name) |
 | `alts` | `{"hero": "A bride holding…"}` | Optional alt text per photo. Sensible defaults otherwise |
+| `clients` | `{items: [{name, role?, image?, url?}]}` | Optional "Selected clients" section |
+| `featured` | `{items: [{outlet, title?, year?, url?}]}` | Optional "As seen in" press section |
+| `videos` | `{items: [{name, role?, quote?, file or embed, poster}]}` | Optional video testimonials. `python tools/video.py raw.mov <slug> <name>` makes the mp4 and poster |
+| `title` | `"Luxury Makeup Artist in Mumbai \| Name"` | Optional page title (default `<business> · Bridal hair in <city>`) |
 
 In headings, `*asterisks*` set words in the accent italic.
 

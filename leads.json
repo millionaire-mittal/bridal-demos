@@ -1332,6 +1332,39 @@
       "silkEdge": "#BDA97F"
     },
     "title": "Luxury Makeup Artist in Mumbai | Yashaswini Gupta",
+    "clients": {
+      "navLabel": "Clients",
+      "heading": "Selected *clients.*",
+      "text": "[CONFIRM WITH CLIENT: names she is happy to show]",
+      "items": [
+        {"name": "[Client name]", "role": "[Role]"},
+        {"name": "[Client name]", "role": "[Role]"},
+        {"name": "[Client name]", "role": "[Role]"},
+        {"name": "[Client name]", "role": "[Role]"},
+        {"name": "[Client name]", "role": "[Role]"},
+        {"name": "[Client name]", "role": "[Role]"}
+      ]
+    },
+    "featured": {
+      "navLabel": "Press",
+      "heading": "As seen *in.*",
+      "text": "[CONFIRM WITH CLIENT: publications and features]",
+      "items": [
+        {"outlet": "[Publication name]", "title": "[Headline or feature title]", "year": "[Year]"},
+        {"outlet": "[Publication name]", "title": "[Headline or feature title]", "year": "[Year]"},
+        {"outlet": "[Publication name]", "title": "[Headline or feature title]", "year": "[Year]"}
+      ]
+    },
+    "videos": {
+      "navLabel": "Stories",
+      "heading": "Hear it *from them.*",
+      "text": "[Video testimonials: files to be supplied]",
+      "items": [
+        {"name": "[Client name]", "role": "[Role]", "quote": "[Quote, word for word]", "poster": "video-placeholder.jpg"},
+        {"name": "[Client name]", "role": "[Role]", "quote": "[Quote, word for word]", "poster": "video-placeholder.jpg"},
+        {"name": "[Client name]", "role": "[Role]", "quote": "[Quote, word for word]", "poster": "video-placeholder.jpg"}
+      ]
+    },
     "description": "Yashaswini Gupta is a luxury makeup artist based in Mumbai, available globally for bridal, party, shoot and editorial makeup. DM on Instagram to enquire.",
     "cta": "Enquire now",
     "hero": {

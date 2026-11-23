@@ -18,7 +18,7 @@ The quickest route for a new client is the `/new-demo` command.
 
 Required: `slug business wordmark first_name city accent hero about journey reviews looks booking studio_lines`, plus at least one of `phone email instagram`
 
-Optional: `full_name area phone email instagram socials language fonts motif colors description pull reels guides looks_text looks_heading journey_heading portfolio_url positions alts cta farewell`
+Optional: `full_name area phone email instagram socials language fonts motif colors description pull reels guides looks_text looks_heading journey_heading portfolio_url positions alts cta farewell title clients featured videos`
 
 `alice-wilford` in `leads.json` is the complete reference. Field rules and presets are in README.md. `build.py` prints exactly what's wrong if a lead or photo doesn't fit.
 
@@ -42,3 +42,13 @@ Take `accent` from their logo or Instagram grid. One hex is enough, because the 
 ## Instagram-only stylists
 
 Many stylists only take bookings by DM. Give them an `instagram` object (see `vkxglam-london`) so the page offers a DM button next to the enquiry form. If the stylist's own photo isn't confirmed, keep the labelled `portrait.jpg` and `at-work.jpg` placeholders and say so in your report. Never guess who the person in a photo is.
+
+## Clients, press and video testimonials (optional sections)
+
+Add `clients` (selected clients), `featured` (press) and `videos` (video testimonials) to a lead and the demo grows a dedicated section for each. Leave them out and nothing changes. Only list names, outlets and quotes the stylist has confirmed. Never infer who is in a photo.
+
+- `clients`: `{items: [{name, role?, image?, url?}]}`. With any `image` it shows portrait cards, otherwise a typographic list.
+- `featured`: `{items: [{outlet, title?, year?, url?}]}`. Outlet names are set as text, so no logos are needed.
+- `videos`: `{items: [{name, role?, quote?, file | embed, poster}]}`. `file` is an mp4 in `demos/<slug>/video/`, or `embed` is a YouTube or Vimeo embed URL. Run `python tools/video.py raw.mov <slug> <name>` to compress a raw clip (keep each under about 25 MB) and make its poster, then use `"file": "<name>.mp4", "poster": "video-<name>.jpg"`. Quotes go in word for word, and the audio can't be transcribed by Claude, so ask the user for the words.
+- Each of the three also takes `label navLabel heading text`.
+
