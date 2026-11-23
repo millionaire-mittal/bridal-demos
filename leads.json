@@ -1293,5 +1293,231 @@
       "look6": "Rose henna on a bride’s hand with orange bangles on a groom’s jacket",
       "look7": "Deep red bridal henna on two hands with bangles and a diamond ring"
     }
+  },
+  {
+    "slug": "yashaswini-mumbai",
+    "business": "Yashaswini Gupta",
+    "wordmark": [
+      "YASHASWINI G",
+      "ARTISTRY"
+    ],
+    "first_name": "Yashaswini",
+    "full_name": "Yashaswini Gupta",
+    "city": "Mumbai",
+    "instagram": {
+      "url": "https://www.instagram.com/yashaswinig.artistry/",
+      "handle": "yashaswinig.artistry",
+      "cta": "DM to enquire",
+      "button": "DM on Instagram"
+    },
+    "socials": {
+      "instagram": "https://www.instagram.com/yashaswinig.artistry/"
+    },
+    "language": "english",
+    "fonts": "italian",
+    "motif": "willow",
+    "accent": "#8E7140",
+    "colors": {
+      "ivory": "#F8F4EC",
+      "blush": "#EAE1D3",
+      "blush2": "#F2EBE0",
+      "accent": "#86693A",
+      "accentDark": "#5F4A27",
+      "ink": "#16130F",
+      "muted": "#5F574B",
+      "deep": "#17130F",
+      "deep2": "#241E18",
+      "line": "#A8935F",
+      "silk": "#E4D9C5",
+      "silkEdge": "#BDA97F"
+    },
+    "title": "Luxury Makeup Artist in Mumbai | Yashaswini Gupta",
+    "description": "Yashaswini Gupta is a luxury makeup artist based in Mumbai, available globally for bridal, party, shoot and editorial makeup. DM on Instagram to enquire.",
+    "cta": "Enquire now",
+    "hero": {
+      "greeting": [
+        "Luxury",
+        "makeup."
+      ],
+      "eyebrow": "Luxury makeup artist  ·  Mumbai  ·  Available globally",
+      "lead": "Bridal, party, shoot and editorial makeup by Yashaswini Gupta. Based in Mumbai, available globally.",
+      "facts": [
+        "Bridal · Party · Shoots · Editorial",
+        "Mumbai, India",
+        "Available globally"
+      ],
+      "detail_caption": "Soft glam, sculpted glow"
+    },
+    "pull": {
+      "label": "Every look starts with a conversation.",
+      "text": "Tell me about the day, the shoot or the event, and we’ll *plan the look together.*",
+      "roots_word": "Mumbai.",
+      "roots": "Luxury makeup for brides, parties, shoots and editorials, from Mumbai to wherever you are."
+    },
+    "about": {
+      "heading": "The artist behind *the look.*",
+      "sub": "From Spatulas to Spoolies. Mumbai, available globally.",
+      "paragraphs": [
+        "I’m Yashaswini, a luxury makeup artist based in Mumbai. I do bridal, party, shoot and editorial makeup.",
+        "I’m available globally, so wherever your day, your shoot or your event is, we can plan it together.",
+        "The best way to reach me is Instagram. Send a DM to @yashaswinig.artistry with your date, your location and the look you have in mind."
+      ],
+      "signature": "Yashaswini"
+    },
+    "journey_heading": "From first message *to the final look.*",
+    "journey": [
+      {
+        "kicker": "01 · Your message",
+        "title": "Send a DM",
+        "short": "Send a DM",
+        "text": "Message @yashaswinig.artistry on Instagram with your date, your location and the look you have in mind."
+      },
+      {
+        "kicker": "02 · The look",
+        "title": "Plan your look",
+        "short": "Your look",
+        "text": "Share your outfit, your references and the mood you want, and we’ll shape the makeup around it."
+      },
+      {
+        "kicker": "03 · The day",
+        "title": "Bridal, party or shoot",
+        "short": "The day",
+        "text": "Bridal, party and shoot makeup, done to suit you and the occasion."
+      },
+      {
+        "kicker": "04 · Editorial",
+        "title": "Editorial and beyond",
+        "short": "Editorial",
+        "text": "Editorial makeup for shoots and editorials, wherever they happen."
+      }
+    ],
+    "reviews": [
+      {
+        "text": "[Client testimonial, word for word, from Instagram or a message]",
+        "name": "[Client name]",
+        "placeholder": true
+      },
+      {
+        "text": "[Client testimonial, word for word]",
+        "name": "[Client name]",
+        "placeholder": true
+      },
+      {
+        "text": "[Client testimonial, word for word]",
+        "name": "[Client name]",
+        "placeholder": true
+      }
+    ],
+    "looks_heading": "The work, *up close.*",
+    "looks_text": "Bridal, party, shoot and editorial makeup from Mumbai.",
+    "looks": [
+      {
+        "tag": "Evening glam",
+        "title": "Rose-gold shimmer"
+      },
+      {
+        "tag": "Soft glam",
+        "title": "Warm glow, red and gold"
+      },
+      {
+        "tag": "Evening glam",
+        "title": "Sculpted evening glam"
+      },
+      {
+        "tag": "Soft glam",
+        "title": "Smoky eyes, rose lip"
+      },
+      {
+        "tag": "Glossy glam",
+        "title": "Bronzed glow, glossy lip"
+      },
+      {
+        "tag": "Shimmer",
+        "title": "Lilac shimmer eyes"
+      },
+      {
+        "tag": "Soft glam",
+        "title": "Polished, camera-ready skin"
+      }
+    ],
+    "booking": {
+      "label": "Let’s talk",
+      "heading": "Check *your date.*",
+      "intro": "Send me a DM on Instagram with your date, your location and the look you have in mind. I’ll reply with availability.",
+      "facts": [
+        "Enquire by Instagram DM",
+        "Based in Mumbai, available globally",
+        "Bridal · Party · Shoots · Editorial",
+        "Pricing on enquiry"
+      ],
+      "services": [
+        {
+          "title": "Bridal",
+          "text": "Your wedding-day makeup",
+          "image": "look2.jpg",
+          "quote": "Luxury bridal makeup, planned around you."
+        },
+        {
+          "title": "Party",
+          "text": "Parties, events and celebrations",
+          "image": "look4.jpg",
+          "quote": "Luxury party makeup for the nights that matter."
+        },
+        {
+          "title": "Shoots",
+          "text": "Makeup for photoshoots",
+          "image": "look5.jpg",
+          "quote": "Makeup for shoots, camera-ready."
+        },
+        {
+          "title": "Editorial",
+          "text": "Editorial makeup",
+          "image": "look3.jpg",
+          "quote": "Editorial makeup, available globally."
+        }
+      ],
+      "thanks_text": "Your enquiry is in. I’ll be in touch about"
+    },
+    "studio_lines": [
+      "Mumbai, India",
+      "Available globally",
+      "Bookings by Instagram DM"
+    ],
+    "positions": {
+      "hero": "50% 20%",
+      "detail": "50% 35%",
+      "party": "50% 30%",
+      "party-2": "50% 35%",
+      "step1": "50% 30%",
+      "step2": "50% 30%",
+      "step3": "50% 25%",
+      "step4": "50% 30%",
+      "look1": "50% 30%",
+      "look2": "50% 30%",
+      "look3": "50% 30%",
+      "look4": "50% 20%",
+      "look5": "50% 25%",
+      "look6": "50% 30%",
+      "look7": "50% 30%"
+    },
+    "alts": {
+      "hero": "A woman with long soft waves in a cream draped gown with a sheer sleeve",
+      "detail": "Close-up of soft glam makeup with a diamond necklace and a sequined bodice",
+      "portrait": "Placeholder for a portrait of Yashaswini",
+      "at-work": "Placeholder for a photo of Yashaswini doing makeup",
+      "party": "A woman with long honey-brown hair, glowing skin and a jewelled hair clip",
+      "party-2": "A woman with a sleek low bun, lilac shimmer eyes and a pearl choker",
+      "step1": "A woman in a red and gold embroidered outfit with a maang tikka and an emerald choker, at night",
+      "step2": "A woman with a sleek bun and an ornate navy blouse beside a white brick wall",
+      "step3": "A woman with long honey-brown hair in a black and gold chain-print shirt",
+      "step4": "A woman in a sequined maroon strapless set, photographed at night in front of a lit building",
+      "look1": "A woman in a sequined maroon strapless set at night",
+      "look2": "A woman in red and gold with a maang tikka and emerald choker",
+      "look3": "A woman in a sequined maroon strapless set with a diamond necklace",
+      "look4": "A woman with long soft waves, smoky eyes and a rose lip",
+      "look5": "A woman with a bronzed glow, glossy lip and a jewelled hair clip",
+      "look6": "A woman with a sleek bun, lilac shimmer eyes and a pearl choker",
+      "look7": "A woman with soft waves and polished skin in a cream gown"
+    }
   }
 ]
