@@ -1552,5 +1552,232 @@
       "look6": "A woman with a sleek bun, lilac shimmer eyes and a pearl choker",
       "look7": "A woman with soft waves and polished skin in a cream gown"
     }
+  },
+  {
+    "slug": "henna-by-inshis",
+    "business": "Henna by Inshis",
+    "wordmark": [
+      "HENNA",
+      "BY INSHIS"
+    ],
+    "first_name": "Inshira",
+    "city": "Solothurn",
+    "area": "Switzerland",
+    "phone": "0779259633",
+    "instagram": {
+      "url": "https://www.instagram.com/hennabyinshis/",
+      "handle": "hennabyinshis",
+      "cta": "DM or WhatsApp to book",
+      "button": "DM on Instagram"
+    },
+    "socials": {
+      "instagram": "https://www.instagram.com/hennabyinshis/"
+    },
+    "language": "english",
+    "fonts": "boho",
+    "motif": "eucalyptus",
+    "accent": "#9C5A3C",
+    "colors": {
+      "ivory": "#FAF5EC",
+      "blush": "#EFE0D0",
+      "blush2": "#F6ECDF",
+      "accent": "#9A573A",
+      "accentDark": "#6F3B25",
+      "ink": "#2A1C14",
+      "muted": "#675549",
+      "deep": "#33231A",
+      "deep2": "#432F23",
+      "line": "#B59A62",
+      "silk": "#E9D5BD",
+      "silkEdge": "#C4A27A"
+    },
+    "title": "Bridal, Party & Henna Night Mehndi in Solothurn | Henna by Inshis",
+    "description": "Henna by Inshis creates bespoke bridal, party and henna-night mehndi in Solothurn, Switzerland. Book via WhatsApp or Instagram DM.",
+    "cta": "Enquire now",
+    "hero": {
+      "greeting": [
+        "Bespoke",
+        "henna."
+      ],
+      "eyebrow": "Professional Henna Artist  ·  Solothurn, Switzerland",
+      "lead": "Intricate bridal, party and henna-night mehndi, designed around your story and occasion.",
+      "facts": [
+        "Bridal · Party · Henna night",
+        "Solothurn, Switzerland",
+        "Book by WhatsApp or Instagram DM"
+      ],
+      "detail_caption": "Lotus palm, fine detail"
+    },
+    "pull": {
+      "label": "Designed around your day.",
+      "text": "Tell me about the occasion and the look you love, and we’ll *plan your mehndi together.*",
+      "roots_word": "Solothurn.",
+      "roots": "Bespoke bridal, party and henna-night mehndi in Solothurn, Switzerland."
+    },
+    "about": {
+      "heading": "The artist behind *the henna.*",
+      "sub": "Professional henna artist in Solothurn, Switzerland.",
+      "paragraphs": [
+        "I’m Inshira, a professional henna artist based in Solothurn, Switzerland. I create intricate, personal mehndi designs for life’s meaningful celebrations.",
+        "I do bridal henna, party henna and henna nights, and every design is made around you and your occasion.",
+        "The best way to book is a WhatsApp message on 0779259633 or a DM to @hennabyinshis on Instagram."
+      ],
+      "signature": "Inshira"
+    },
+    "journey_heading": "From first message *to the henna.*",
+    "journey": [
+      {
+        "kicker": "01 · Your message",
+        "title": "Get in touch",
+        "short": "Get in touch",
+        "text": "Message me on WhatsApp (0779259633) or send a DM to @hennabyinshis on Instagram."
+      },
+      {
+        "kicker": "02 · The design",
+        "title": "Talk through your design",
+        "short": "Your design",
+        "text": "Tell me about your event, your date and the style you love, and we’ll shape the design together."
+      },
+      {
+        "kicker": "03 · Your date",
+        "title": "Confirm your date",
+        "short": "Your date",
+        "text": "We’ll talk through availability, location and booking details."
+      },
+      {
+        "kicker": "04 · The henna",
+        "title": "Your henna appointment",
+        "short": "Your henna",
+        "text": "Bridal, party or henna night, with a design made for your occasion."
+      }
+    ],
+    "reviews": [
+      {
+        "text": "[CLIENT TO PROVIDE: copy word for word from Google, Instagram, Facebook or a website]",
+        "name": "[CLIENT TO PROVIDE]",
+        "placeholder": true
+      },
+      {
+        "text": "[CLIENT TO PROVIDE: copy word for word]",
+        "name": "[CLIENT TO PROVIDE]",
+        "placeholder": true
+      },
+      {
+        "text": "[CLIENT TO PROVIDE: copy word for word]",
+        "name": "[CLIENT TO PROVIDE]",
+        "placeholder": true
+      }
+    ],
+    "looks_heading": "The work, *up close.*",
+    "looks_text": "Bridal, party and henna-night mehndi from Solothurn.",
+    "looks": [
+      {
+        "tag": "Bridal",
+        "title": "Lotus motifs, hands and feet"
+      },
+      {
+        "tag": "Custom",
+        "title": "Lotus palm, fine bands"
+      },
+      {
+        "tag": "Party",
+        "title": "Fine finger bands"
+      },
+      {
+        "tag": "Bridal",
+        "title": "Storytelling bridal design"
+      },
+      {
+        "tag": "Bridal",
+        "title": "Swans and a couple, in henna"
+      },
+      {
+        "tag": "Henna night",
+        "title": "Lattice and swan motifs"
+      },
+      {
+        "tag": "Bridal",
+        "title": "A bridal setting, gold and silk"
+      }
+    ],
+    "booking": {
+      "label": "Let’s talk",
+      "heading": "Book your *henna.*",
+      "intro": "Send me a WhatsApp message on 0779259633 or a DM on Instagram to talk about your event, your design and your date. Designs are created for each occasion and client.",
+      "facts": [
+        "Enquire by WhatsApp or Instagram DM",
+        "Solothurn, Switzerland",
+        "Bridal · Party · Henna night",
+        "Pricing on enquiry"
+      ],
+      "services": [
+        {
+          "title": "Bridal Henna",
+          "text": "Bespoke bridal mehndi",
+          "image": "look7.jpg",
+          "quote": "Intricate, personalised designs for the wedding celebration."
+        },
+        {
+          "title": "Party Henna",
+          "text": "Birthdays, celebrations and gatherings",
+          "image": "look3.jpg",
+          "quote": "Henna for parties, festivals and gatherings."
+        },
+        {
+          "title": "Henna Night",
+          "text": "For brides, family and friends",
+          "image": "look5.jpg",
+          "quote": "A dedicated henna night for the people who matter."
+        },
+        {
+          "title": "Custom / Occasion Henna",
+          "text": "Bespoke designs for your occasion",
+          "image": "look1.jpg",
+          "quote": "Designs made for engagements, festivals and other meaningful occasions."
+        }
+      ],
+      "thanks_text": "Your enquiry is in. I’ll be in touch about"
+    },
+    "studio_lines": [
+      "Solothurn, Switzerland",
+      "WhatsApp 0779259633",
+      "Instagram DM @hennabyinshis"
+    ],
+    "positions": {
+      "hero": "50% 25%",
+      "detail": "50% 40%",
+      "party": "50% 40%",
+      "party-2": "50% 35%",
+      "step1": "50% 45%",
+      "step2": "50% 45%",
+      "step3": "50% 30%",
+      "step4": "50% 40%",
+      "look1": "50% 40%",
+      "look2": "50% 40%",
+      "look3": "50% 40%",
+      "look4": "50% 45%",
+      "look5": "50% 45%",
+      "look6": "50% 30%",
+      "look7": "50% 45%"
+    },
+    "alts": {
+      "hero": "A bride in a red saree resting a henna-covered hand against her cheek",
+      "detail": "Lotus mandala henna on a palm with banded fingers",
+      "portrait": "Placeholder for a portrait of Inshira",
+      "at-work": "Placeholder for a photo of Inshira applying henna",
+      "party": "Hands with black-brown henna holding gold jhumka earrings, in a red and pink outfit",
+      "party-2": "A hand with detailed henna held in front of a woman’s face, in a red embroidered top",
+      "step1": "Palms with a henna couple scene, beneath a red and yellow lehenga",
+      "step2": "Crossed forearms with henna swans and a couple on the palm, in a pink dupatta",
+      "step3": "Raised crossed forearms with swan and lattice henna",
+      "step4": "Lotus henna on hands and feet, on a wooden floor in front of a plum dress",
+      "look1": "Lotus henna on hands and feet with red nails, on asphalt",
+      "look2": "Lotus mandala henna on palm, hand and feet, on a wooden floor",
+      "look3": "Hands with fine banded henna holding gold jhumka earrings",
+      "look4": "Henna swans, a couple scene and bridal bands on crossed forearms",
+      "look5": "Palms with a henna couple and swan design",
+      "look6": "Raised crossed forearms with swan, lattice and floral henna",
+      "look7": "A bride in a silk saree with gold jewellery, seated with a veena"
+    }
   }
 ]
