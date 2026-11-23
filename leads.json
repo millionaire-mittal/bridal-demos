@@ -1878,18 +1878,18 @@
     ],
     "reviews": [
       {
-        "text": "[CLIENT TO PROVIDE: copy word for word from Google, Instagram, WeddingWire or a website]",
-        "name": "[CLIENT TO PROVIDE]",
+        "text": "Client review",
+        "name": "Client name",
         "placeholder": true
       },
       {
-        "text": "[CLIENT TO PROVIDE: copy word for word]",
-        "name": "[CLIENT TO PROVIDE]",
+        "text": "Client review",
+        "name": "Client name",
         "placeholder": true
       },
       {
-        "text": "[CLIENT TO PROVIDE: copy word for word]",
-        "name": "[CLIENT TO PROVIDE]",
+        "text": "Client review",
+        "name": "Client name",
         "placeholder": true
       }
     ],
