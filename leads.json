@@ -1779,5 +1779,230 @@
       "look6": "Raised crossed forearms with swan, lattice and floral henna",
       "look7": "A bride in a silk saree with gold jewellery, seated with a veena"
     }
+  },
+  {
+    "slug": "makeup-by-lovely",
+    "business": "Makeup By Lovely",
+    "wordmark": [
+      "MAKEUP",
+      "BY LOVELY"
+    ],
+    "first_name": "Lovely",
+    "city": "[CONFIRM WITH CLIENT]",
+    "instagram": {
+      "url": "https://www.instagram.com/makeitlovelymakeupstudio/",
+      "handle": "makeitlovelymakeupstudio",
+      "cta": "DM to book",
+      "button": "DM to book"
+    },
+    "socials": {
+      "instagram": "https://www.instagram.com/makeitlovelymakeupstudio/"
+    },
+    "language": "english",
+    "fonts": "soft-modern",
+    "motif": "laurel",
+    "accent": "#B48463",
+    "colors": {
+      "ivory": "#FBF6EF",
+      "blush": "#F2E0D6",
+      "blush2": "#F8ECE3",
+      "accent": "#A97A58",
+      "accentDark": "#7E5238",
+      "ink": "#2D211C",
+      "muted": "#6B5A50",
+      "deep": "#3A2A22",
+      "deep2": "#4A372E",
+      "line": "#C0A06B",
+      "silk": "#EBD6C4",
+      "silkEdge": "#C9A98B"
+    },
+    "title": "Bridal, Engagement & Reception Makeup Artist | Makeup By Lovely",
+    "description": "Makeup By Lovely creates bridal, engagement and reception makeup, with a decade of experience across London and India. DM to book.",
+    "cta": "DM to book",
+    "hero": {
+      "greeting": [
+        "Bridal",
+        "beauty."
+      ],
+      "eyebrow": "Bridal Makeup Artist  ·  Accepting bridal bookings",
+      "lead": "Bridal, engagement and reception makeup, shaped by a decade of experience across London and India.",
+      "facts": [
+        "A decade of experience",
+        "London ↠ India",
+        "Bridal · Engagement · Reception"
+      ],
+      "detail_caption": "[Photo to come]"
+    },
+    "pull": {
+      "label": "Made for every celebration.",
+      "text": "Tell me about your day, your outfit and the look you love, and we’ll *plan your makeup together.*",
+      "roots_word": "London ↠ India.",
+      "roots": "A decade of bridal, engagement and reception makeup, across London and India."
+    },
+    "about": {
+      "heading": "The artist behind *the makeup.*",
+      "sub": "A decade of experience. London ↠ India.",
+      "paragraphs": [
+        "I’m Lovely, a makeup artist with ten years of experience and a global background across London and India.",
+        "I do bridal, engagement and reception makeup, shaped around you, your features and your outfit.",
+        "I’m accepting bridal makeup bookings. The best way to reach me is a DM to @makeitlovelymakeupstudio on Instagram."
+      ],
+      "signature": "Lovely"
+    },
+    "journey_heading": "From first message *to the final look.*",
+    "journey": [
+      {
+        "kicker": "01 · Your message",
+        "title": "Send a DM",
+        "short": "Send a DM",
+        "text": "Message @makeitlovelymakeupstudio on Instagram with your date and the celebration you’re planning."
+      },
+      {
+        "kicker": "02 · The look",
+        "title": "Plan your look",
+        "short": "Your look",
+        "text": "Share your outfit and the mood you want, and we’ll shape the makeup around it. [CONFIRM WITH CLIENT: consultation and trial details]"
+      },
+      {
+        "kicker": "03 · The day",
+        "title": "Your wedding day",
+        "short": "The day",
+        "text": "Your wedding-day makeup, tailored to your features, your outfit and your celebration."
+      },
+      {
+        "kicker": "04 · Every celebration",
+        "title": "Engagement and reception",
+        "short": "Every celebration",
+        "text": "Polished looks for engagement ceremonies and refined makeup for receptions and evening celebrations."
+      }
+    ],
+    "reviews": [
+      {
+        "text": "[CLIENT TO PROVIDE: copy word for word from Google, Instagram, WeddingWire or a website]",
+        "name": "[CLIENT TO PROVIDE]",
+        "placeholder": true
+      },
+      {
+        "text": "[CLIENT TO PROVIDE: copy word for word]",
+        "name": "[CLIENT TO PROVIDE]",
+        "placeholder": true
+      },
+      {
+        "text": "[CLIENT TO PROVIDE: copy word for word]",
+        "name": "[CLIENT TO PROVIDE]",
+        "placeholder": true
+      }
+    ],
+    "looks_heading": "The work, *up close.*",
+    "looks_text": "Bridal, engagement, reception and party makeup. [Photos to come]",
+    "looks": [
+      {
+        "tag": "Bridal",
+        "title": "[Photo to come]"
+      },
+      {
+        "tag": "Bridal",
+        "title": "[Photo to come]"
+      },
+      {
+        "tag": "Engagement",
+        "title": "[Photo to come]"
+      },
+      {
+        "tag": "Reception",
+        "title": "[Photo to come]"
+      },
+      {
+        "tag": "Party",
+        "title": "[Photo to come]"
+      },
+      {
+        "tag": "Bridal",
+        "title": "[Photo to come]"
+      },
+      {
+        "tag": "Occasion",
+        "title": "[Photo to come]"
+      }
+    ],
+    "booking": {
+      "label": "Let’s talk",
+      "heading": "Check *your date.*",
+      "intro": "Send me a DM on Instagram with your date and the celebration you’re planning. I’m accepting bridal makeup bookings, and I’ll talk you through availability, location and travel.",
+      "facts": [
+        "Enquire by Instagram DM",
+        "Accepting bridal bookings",
+        "Based in: [CONFIRM WITH CLIENT]",
+        "Pricing on enquiry"
+      ],
+      "services": [
+        {
+          "title": "Bridal Makeup",
+          "text": "Your wedding-day makeup",
+          "image": "look1.jpg",
+          "quote": "Bridal makeup, tailored to your features, outfit and celebration."
+        },
+        {
+          "title": "Engagement Makeup",
+          "text": "Engagements and pre-wedding celebrations",
+          "image": "look3.jpg",
+          "quote": "Polished makeup for your engagement."
+        },
+        {
+          "title": "Reception Makeup",
+          "text": "Receptions and evening celebrations",
+          "image": "look4.jpg",
+          "quote": "Refined makeup for your reception."
+        },
+        {
+          "title": "Party & Occasion Makeup",
+          "text": "Parties, events and photoshoots [CONFIRM WITH CLIENT]",
+          "image": "look5.jpg",
+          "quote": "Makeup for parties, events and celebrations."
+        }
+      ],
+      "thanks_text": "Your enquiry is in. I’ll be in touch about"
+    },
+    "studio_lines": [
+      "Instagram DM @makeitlovelymakeupstudio",
+      "A decade of experience",
+      "London ↠ India"
+    ],
+    "positions": {
+      "hero": "50% 30%",
+      "detail": "50% 30%",
+      "party": "50% 30%",
+      "party-2": "50% 30%",
+      "step1": "50% 30%",
+      "step2": "50% 30%",
+      "step3": "50% 30%",
+      "step4": "50% 30%",
+      "look1": "50% 30%",
+      "look2": "50% 30%",
+      "look3": "50% 30%",
+      "look4": "50% 30%",
+      "look5": "50% 30%",
+      "look6": "50% 30%",
+      "look7": "50% 30%"
+    },
+    "alts": {
+      "hero": "Placeholder for a bridal portrait",
+      "detail": "Placeholder for a close-up of the makeup",
+      "portrait": "Placeholder for a portrait of Lovely",
+      "at-work": "Placeholder for a photo of Lovely doing makeup",
+      "party": "Placeholder for a party look",
+      "party-2": "Placeholder for a party look",
+      "step1": "Placeholder for a bridal look",
+      "step2": "Placeholder for an engagement look",
+      "step3": "Placeholder for a reception look",
+      "step4": "Placeholder for a bridal close-up",
+      "look1": "Placeholder for a bridal look",
+      "look2": "Placeholder for a bridal look",
+      "look3": "Placeholder for an engagement look",
+      "look4": "Placeholder for a reception look",
+      "look5": "Placeholder for a party look",
+      "look6": "Placeholder for a bridal close-up",
+      "look7": "Placeholder for an occasion look"
+    }
   }
 ]
