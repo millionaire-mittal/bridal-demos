@@ -1831,7 +1831,7 @@
         "London ↠ India",
         "Bridal · Engagement · Reception"
       ],
-      "detail_caption": "[Photo to come]"
+      "detail_caption": "Soft glow, bridal green and gold"
     },
     "pull": {
       "label": "Made for every celebration.",
@@ -1894,35 +1894,35 @@
       }
     ],
     "looks_heading": "The work, *up close.*",
-    "looks_text": "Bridal, engagement, reception and party makeup. [Photos to come]",
+    "looks_text": "Bridal, engagement and reception looks.",
     "looks": [
       {
         "tag": "Bridal",
-        "title": "[Photo to come]"
+        "title": "Red and gold bridal"
+      },
+      {
+        "tag": "Evening",
+        "title": "Smoky eyes, gold choker"
+      },
+      {
+        "tag": "Evening",
+        "title": "Sleek bun, black and gold"
       },
       {
         "tag": "Bridal",
-        "title": "[Photo to come]"
-      },
-      {
-        "tag": "Engagement",
-        "title": "[Photo to come]"
-      },
-      {
-        "tag": "Reception",
-        "title": "[Photo to come]"
-      },
-      {
-        "tag": "Party",
-        "title": "[Photo to come]"
+        "title": "Soft glow, green and pearl"
       },
       {
         "tag": "Bridal",
-        "title": "[Photo to come]"
+        "title": "Pink bridal, soft eyes"
       },
       {
-        "tag": "Occasion",
-        "title": "[Photo to come]"
+        "tag": "Evening",
+        "title": "Waves, silver shimmer"
+      },
+      {
+        "tag": "Bridal",
+        "title": "Bridal portrait, red and green"
       }
     ],
     "booking": {
@@ -1945,19 +1945,19 @@
         {
           "title": "Engagement Makeup",
           "text": "Engagements and pre-wedding celebrations",
-          "image": "look3.jpg",
+          "image": "look5.jpg",
           "quote": "Polished makeup for your engagement."
         },
         {
           "title": "Reception Makeup",
           "text": "Receptions and evening celebrations",
-          "image": "look4.jpg",
+          "image": "look2.jpg",
           "quote": "Refined makeup for your reception."
         },
         {
           "title": "Party & Occasion Makeup",
           "text": "Parties, events and photoshoots [CONFIRM WITH CLIENT]",
-          "image": "look5.jpg",
+          "image": "look6.jpg",
           "quote": "Makeup for parties, events and celebrations."
         }
       ],
@@ -1969,40 +1969,40 @@
       "London ↠ India"
     ],
     "positions": {
-      "hero": "50% 30%",
-      "detail": "50% 30%",
+      "hero": "50% 22%",
+      "detail": "50% 40%",
       "party": "50% 30%",
-      "party-2": "50% 30%",
-      "step1": "50% 30%",
-      "step2": "50% 30%",
-      "step3": "50% 30%",
-      "step4": "50% 30%",
+      "party-2": "50% 25%",
+      "step1": "50% 25%",
+      "step2": "50% 35%",
+      "step3": "50% 35%",
+      "step4": "50% 20%",
       "look1": "50% 30%",
-      "look2": "50% 30%",
-      "look3": "50% 30%",
-      "look4": "50% 30%",
-      "look5": "50% 30%",
-      "look6": "50% 30%",
-      "look7": "50% 30%"
+      "look2": "50% 25%",
+      "look3": "50% 25%",
+      "look4": "50% 25%",
+      "look5": "50% 35%",
+      "look6": "50% 25%",
+      "look7": "50% 35%"
     },
     "alts": {
-      "hero": "Placeholder for a bridal portrait",
-      "detail": "Placeholder for a close-up of the makeup",
+      "hero": "A bride in a red lehenga with green and gold jewellery and chooda, one hand to her chin",
+      "detail": "Close-up of a bride with soft glowing makeup, a pearl and emerald maang tikka and a nath",
       "portrait": "Placeholder for a portrait of Lovely",
       "at-work": "Placeholder for a photo of Lovely doing makeup",
-      "party": "Placeholder for a party look",
-      "party-2": "Placeholder for a party look",
-      "step1": "Placeholder for a bridal look",
-      "step2": "Placeholder for an engagement look",
-      "step3": "Placeholder for a reception look",
-      "step4": "Placeholder for a bridal close-up",
-      "look1": "Placeholder for a bridal look",
-      "look2": "Placeholder for a bridal look",
-      "look3": "Placeholder for an engagement look",
-      "look4": "Placeholder for a reception look",
-      "look5": "Placeholder for a party look",
-      "look6": "Placeholder for a bridal close-up",
-      "look7": "Placeholder for an occasion look"
+      "party": "A woman with waves and silver shimmer eyes in a black beaded blouse",
+      "party-2": "A woman with a sleek low bun and a black and gold sequinned lehenga, in a salon",
+      "step1": "A bride with a pearl maang tikka, nath and a green and gold choker, in a deep red outfit",
+      "step2": "A bride in a pink embroidered lehenga seated on a teal sofa",
+      "step3": "A bride in a red embroidered lehenga with green jewellery and a kalira, standing",
+      "step4": "A woman with smoky eyes, a nude lip and a gold choker in a black saree",
+      "look1": "A bride in a red embroidered lehenga with green jewellery, standing",
+      "look2": "A woman with smoky eyes, a nude lip and a gold choker in a black saree",
+      "look3": "A woman with a sleek low bun and a black and gold sequinned lehenga",
+      "look4": "A bride with a pearl maang tikka, nath and a green and gold choker, in a deep red outfit",
+      "look5": "A bride in a pink embroidered lehenga seated on a teal sofa",
+      "look6": "A woman with waves and silver shimmer eyes in a black beaded blouse",
+      "look7": "A bride in red with green and gold jewellery, hand resting at her chin"
     }
   }
 ]
