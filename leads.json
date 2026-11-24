@@ -2230,5 +2230,242 @@
       "look6": "Placeholder for a bridal henna close-up",
       "look7": "Placeholder for a party henna photo"
     }
+  },
+  {
+    "slug": "cotton-craaft",
+    "business": "Cotton Craaft",
+    "wordmark": [
+      "COTTON",
+      "CRAAFT"
+    ],
+    "first_name": "Cotton Craaft",
+    "city": "[CONFIRM WITH CLIENT]",
+    "instagram": {
+      "url": "https://www.instagram.com/cotton_craaft/",
+      "handle": "cotton_craaft",
+      "cta": "Enquire for full catalogue",
+      "button": "DM to shop"
+    },
+    "socials": {
+      "instagram": "https://www.instagram.com/cotton_craaft/"
+    },
+    "language": "english",
+    "fonts": "boho",
+    "motif": "eucalyptus",
+    "accent": "#6B7A4F",
+    "colors": {
+      "ivory": "#FBF8F1",
+      "blush": "#EEE8DA",
+      "blush2": "#F5F0E4",
+      "accent": "#66754A",
+      "accentDark": "#46532F",
+      "ink": "#232A1F",
+      "muted": "#5E6455",
+      "deep": "#2E3A2A",
+      "deep2": "#3B4936",
+      "line": "#A5AE86",
+      "silk": "#E4E1CC",
+      "silkEdge": "#B9BE9A"
+    },
+    "title": "100% Cotton Bedsheets, Quilts & Curtains | Cotton Craaft",
+    "description": "Cotton Craaft offers thoughtfully crafted 100% cotton bedsheets, quilts, curtains and home furnishings with hand block prints. DM to shop or enquire for the full catalogue.",
+    "cta": "DM to shop",
+    "hero": {
+      "greeting": [
+        "Home",
+        "comfort."
+      ],
+      "eyebrow": "Bedsheets & Home Furnishings  ·  Worldwide shipping",
+      "lead": "100% cotton bedsheets, quilts, curtains and more, with hand-block-printed character for beautiful everyday living.",
+      "facts": [
+        "100% cotton · Hand block prints",
+        "Bedsheets · Quilts · Curtains & more",
+        "Worldwide shipping"
+      ],
+      "detail_caption": "Block-print florals"
+    },
+    "pull": {
+      "label": "Thoughtfully crafted home comfort.",
+      "text": "Soft cotton, hand block prints and *beautiful everyday living.*",
+      "roots_word": "Cotton.",
+      "roots": "Bedsheets, quilts, curtains and more, with worldwide shipping."
+    },
+    "about": {
+      "heading": "About *Cotton Craaft.*",
+      "sub": "Bedsheets & home furnishings. 100% cotton, hand block prints.",
+      "paragraphs": [
+        "Cotton Craaft makes thoughtfully crafted home comfort: bedsheets, quilts, curtains and more, in 100% cotton with hand block prints.",
+        "It was founded by Kalpna Karva six years ago and has grown into a home furnishing brand that serves customers across India. Worldwide shipping is available too.",
+        "The easiest way to shop is Instagram. Send a DM to @cotton_craaft, or ask for the full catalogue."
+      ],
+      "signature": "Cotton Craaft"
+    },
+    "journey_heading": "From first message *to your home.*",
+    "journey": [
+      {
+        "kicker": "01 · Browse",
+        "title": "Browse the pieces",
+        "short": "Browse",
+        "text": "Start with the gallery, or send a DM to see the full catalogue."
+      },
+      {
+        "kicker": "02 · Choose",
+        "title": "Choose your print",
+        "short": "Your print",
+        "text": "Tell us the print, size and colour you’re looking for."
+      },
+      {
+        "kicker": "03 · Your order",
+        "title": "Confirm by DM",
+        "short": "Your order",
+        "text": "Send a DM on Instagram to check availability and place your order."
+      },
+      {
+        "kicker": "04 · Delivery",
+        "title": "Worldwide shipping",
+        "short": "Delivery",
+        "text": "Ask about shipping availability, timelines and charges for your location."
+      }
+    ],
+    "reviews": [
+      {
+        "text": "The quality of the cotton paired with the artistic animal prints makes this bag stand out. A definite buy.",
+        "name": "A customer, via Instagram"
+      },
+      {
+        "text": "Received The Quilts and Bedcover Superb Quality Super soft and Luxurious These are Awesome Loved it",
+        "name": "A customer, via Instagram"
+      },
+      {
+        "text": "The quality is excellent, the bags, runners and bed sheets are stylish, sturdy, good size, and exactly as described.",
+        "name": "A customer, via Instagram"
+      }
+    ],
+    "looks_heading": "The collection, *up close.*",
+    "looks_text": "Bedsheets, quilts, curtains and more. DM for the full catalogue.",
+    "looks": [
+      {
+        "tag": "Bedcover",
+        "title": "Indigo elephant appliqué bedcover"
+      },
+      {
+        "tag": "Bedsheet",
+        "title": "Floral block-print bedsheet"
+      },
+      {
+        "tag": "Curtains",
+        "title": "Pink floral block-print curtains"
+      },
+      {
+        "tag": "Bedsheet",
+        "title": "Dandelion print bedsheet and quilt"
+      },
+      {
+        "tag": "Curtains",
+        "title": "Yellow and green block-print curtains"
+      },
+      {
+        "tag": "Bedsheet",
+        "title": "Striped bedsheet, red flower motifs"
+      },
+      {
+        "tag": "Quilt",
+        "title": "Floral block-print quilt"
+      }
+    ],
+    "booking": {
+      "label": "Shop by DM",
+      "heading": "Enquire for *the full catalogue.*",
+      "intro": "Looking for a particular print, size, colour or home-furnishing piece? Send a DM to view the full Cotton Craaft catalogue and current availability. Worldwide shipping: DM for availability, timelines and charges to your location.",
+      "question": "What are you looking for?",
+      "labels": {
+        "venue": "Country or city",
+        "venuePlaceholder": "Where should we ship to?",
+        "msg": "Which print, size or colour?",
+        "msgPlaceholder": "Tell us what you have in mind"
+      },
+      "hide": [
+        "date",
+        "people",
+        "time"
+      ],
+      "facts": [
+        "Shop by Instagram DM",
+        "100% cotton · Hand block prints",
+        "Worldwide shipping",
+        "Based in: [CONFIRM WITH CLIENT]"
+      ],
+      "services": [
+        {
+          "title": "Bedsheets",
+          "text": "100% cotton, hand block prints",
+          "image": "look2.jpg",
+          "quote": "Cotton bedsheets in hand-block-printed designs."
+        },
+        {
+          "title": "Quilts",
+          "text": "Cotton quilts for comfort",
+          "image": "step3.jpg",
+          "quote": "Cotton quilts for layering and comfort."
+        },
+        {
+          "title": "Curtains",
+          "text": "Cotton curtains for your home",
+          "image": "look3.jpg",
+          "quote": "Cotton curtains to suit a thoughtfully styled home."
+        },
+        {
+          "title": "More home furnishings",
+          "text": "Enquire for the current collection",
+          "image": "look1.jpg",
+          "quote": "Explore additional home furnishings: enquire for the current collection."
+        }
+      ],
+      "submit": "Send my enquiry",
+      "thanks_text": "Your enquiry is in. We’ll reply to your message about",
+      "thanks_fallback": "your order"
+    },
+    "studio_lines": [
+      "Bedsheets & home furnishings",
+      "Worldwide shipping",
+      "Shop by Instagram DM @cotton_craaft"
+    ],
+    "positions": {
+      "hero": "50% 40%",
+      "detail": "50% 50%",
+      "portrait": "50% 40%",
+      "party": "50% 50%",
+      "party-2": "50% 40%",
+      "step1": "50% 50%",
+      "step2": "50% 50%",
+      "step3": "50% 40%",
+      "step4": "50% 40%",
+      "look1": "50% 50%",
+      "look2": "50% 45%",
+      "look3": "50% 40%",
+      "look4": "50% 50%",
+      "look5": "50% 40%",
+      "look6": "50% 50%",
+      "look7": "50% 40%"
+    },
+    "alts": {
+      "hero": "A cotton quilt with blue block-printed flowers draped over a wooden chair",
+      "detail": "A bed with a white floral block-print sheet and matching pillow",
+      "portrait": "A woman in a pale blue outfit seated among folded home textiles",
+      "at-work": "A cream quilt with green leaf motifs, held up to show its pattern",
+      "party": "A cotton quilt with orange and green motifs draped over a wooden chair",
+      "party-2": "Cotton curtains with a yellow and green block-print pattern beside a window",
+      "step1": "A bed with a striped cotton sheet, red flower motifs and a beige border",
+      "step2": "A bed with a pale sheet printed with grey dandelion motifs and a quilt",
+      "step3": "A cotton quilt with orange and green motifs draped over a wooden chair",
+      "step4": "Cotton curtains with a yellow and green block-print pattern beside a window",
+      "look1": "A bed with an indigo and white elephant appliqué bedcover and matching pillows",
+      "look2": "A bed with a white floral block-print sheet and matching pillow",
+      "look3": "Cotton curtains with a pink floral block-print pattern and a border",
+      "look4": "A bed with a pale sheet printed with grey dandelion motifs and a quilt",
+      "look5": "Cotton curtains with a yellow and green block-print pattern beside a window",
+      "look6": "A bed with a striped cotton sheet, red flower motifs and a beige border",
+      "look7": "A woman reading in bed under a white quilt with floral block-print motifs"
+    }
   }
 ]

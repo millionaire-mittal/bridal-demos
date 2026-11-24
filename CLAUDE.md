@@ -52,3 +52,7 @@ Add `clients` (selected clients), `featured` (press) and `videos` (video testimo
 - `videos`: `{items: [{name, role?, quote?, file | embed, poster}]}`. `file` is an mp4 in `demos/<slug>/video/`, or `embed` is a YouTube or Vimeo embed URL. Run `python tools/video.py raw.mov <slug> <name>` to compress a raw clip (keep each under about 25 MB) and make its poster, then use `"file": "<name>.mp4", "poster": "video-<name>.jpg"`. Quotes go in word for word, and the audio can't be transcribed by Claude, so ask the user for the words.
 - Each of the three also takes `label navLabel heading text`.
 
+
+## Non-bridal clients (booking form labels)
+
+The enquiry form defaults to bridal wording (wedding date, venue, who needs styling, ready by). For other kinds of business, set these optional keys inside `booking`: `question` (the chip question), `labels` (`date venue venuePlaceholder people time msg msgPlaceholder`), `hide` (any of `date people time venue` to drop a field) and `thanks_fallback` (the word after "about" on the thank-you screen). See `cotton-craaft` in `leads.json`. Leave them out and nothing changes.

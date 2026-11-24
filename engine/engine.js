@@ -147,6 +147,8 @@ var guides = !G || !G.items || !G.items.length ? '' : '<section class="guides" i
 
 var s0 = BK.services[0];
 var opt = function(a){ return a.map(function(o){ return '<option>'+esc(o)+'</option>'; }).join(''); };
+var BL = BK.labels || {}, BH = BK.hide || [];
+var fld = function(id, html){ return BH.indexOf(id) > -1 ? '' : html; };
 var book = '<section class="book blush" id="book"><i class="rp" data-rib=".96" data-rib-m=".95" style="top:3%"></i><div class="wrap b-grid"><div class="z" id="bookMain">'+
  chap(BK.label)+'<h2 data-blur>'+md(BK.heading)+'</h2><p class="intro" data-fade>'+esc(BK.intro)+'</p>'+
  '<p class="price" data-fade>'+BK.facts.map(function(x){ return '<span>'+esc(x).replace(/\[(.+?)\]/g,'<b class="ph" title="Placeholder: replace before going live">$1</b>')+'</span>'; }).join('')+'</p>'+
@@ -155,11 +157,11 @@ var book = '<section class="book blush" id="book"><i class="rp" data-rib=".96" d
  '</div></fieldset><div class="fields">'+
  '<div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" autocomplete="name" required></div>'+
  '<div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>'+
- '<div class="field"><label for="f-date">Wedding date</label><input id="f-date" name="date" type="date"></div>'+
- '<div class="field"><label for="f-venue">Venue</label><input id="f-venue" name="venue" placeholder="Venue or town"></div>'+
- '<div class="field"><label for="f-people">Who needs styling?</label><select id="f-people" name="people">'+opt(BK.people||['Just me','Me + 1 to 3','Me + 4 to 7','Me + 8 or more'])+'</select></div>'+
- '<div class="field"><label for="f-time">Ready by</label><select id="f-time" name="time">'+opt(BK.times||['Not sure yet','Before 11:00','11:00 to 13:00','After 13:00'])+'</select></div>'+
- '<div class="field full"><label for="f-msg">Anything else?</label><textarea id="f-msg" name="msg" placeholder="Your dress, your inspiration, your accessories…"></textarea></div></div>'+
+ fld('date','<div class="field"><label for="f-date">'+esc(BL.date||'Wedding date')+'</label><input id="f-date" name="date" type="date"></div>')+
+ fld('venue','<div class="field"><label for="f-venue">'+esc(BL.venue||'Venue')+'</label><input id="f-venue" name="venue" placeholder="'+esc(BL.venuePlaceholder||'Venue or town')+'"></div>')+
+ fld('people','<div class="field"><label for="f-people">'+esc(BL.people||'Who needs styling?')+'</label><select id="f-people" name="people">'+opt(BK.people||['Just me','Me + 1 to 3','Me + 4 to 7','Me + 8 or more'])+'</select></div>')+
+ fld('time','<div class="field"><label for="f-time">'+esc(BL.time||'Ready by')+'</label><select id="f-time" name="time">'+opt(BK.times||['Not sure yet','Before 11:00','11:00 to 13:00','After 13:00'])+'</select></div>')+
+ '<div class="field full"><label for="f-msg">'+esc(BL.msg||'Anything else?')+'</label><textarea id="f-msg" name="msg" placeholder="'+esc(BL.msgPlaceholder||'Your dress, your inspiration, your accessories…')+'"></textarea></div></div>'+
  '<div class="form-foot">'+btn('', BK.submit||'Send my enquiry', 'button')+(IG ? igLink('btn btn-ghost', '<i class="dot"></i><span>'+esc(IG.button || 'DM on Instagram')+'</span>') : '')+(contactBits ? '<small>Or '+contactBits+'</small>' : '')+'</div></form>'+
  '<div class="thanks" role="status" aria-live="polite"><h3>'+esc(BK.thanksWord||'Thank you')+'<span id="tName"></span>.</h3><p>'+esc(BK.thanksText||'Your enquiry is on its way.')+' <span id="tDate">'+esc(BK.thanksDateFallback||'your date')+'</span> very soon.</p></div></div>'+
  '<aside class="b-aside" aria-label="Your selection"><svg class="bow" id="bow" viewBox="0 0 120 120" aria-hidden="true">'+
@@ -525,7 +527,7 @@ $$('input[name="svc"]').forEach(function(r){ r.addEventListener('change', functi
 }); });
 $('#bookForm').addEventListener('submit', function(e){
   e.preventDefault();
-  var nm = $('#f-name').value.trim(), dt = $('#f-date').value;
+  var nm = $('#f-name').value.trim(), dt = $('#f-date') ? $('#f-date').value : '';
   $('#tName').textContent = nm ? ', ' + nm.split(' ')[0] : '';
   if (dt){ var p = dt.split('-'); var M=['January','February','March','April','May','June','July','August','September','October','November','December']; $('#tDate').textContent = (+p[2])+' '+M[+p[1]-1]+' '+p[0]; }
   $('#bookMain').classList.add('sent');

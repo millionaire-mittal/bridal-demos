@@ -34,7 +34,7 @@ SCROLL_THROUGH = """async () => {
 FORM_TEST = """() => {
   document.getElementById('f-name').value = 'Asha Rao';
   document.getElementById('f-email').value = 'asha@example.com';
-  document.getElementById('f-date').value = '2027-06-12';
+  var fd = document.getElementById('f-date'); if (fd) fd.value = '2027-06-12';
   document.getElementById('bookForm').dispatchEvent(new Event('submit', {cancelable: true}));
   const main = document.getElementById('bookMain');
   return {sent: main.classList.contains('sent'), thanks: main.querySelector('.thanks').innerText.trim()};

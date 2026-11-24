@@ -373,7 +373,9 @@ def site_config(lead: dict) -> dict:
                          for s in bk["services"]],
             "thanksWord": L["thanks"],
             "thanksText": bk.get("thanks_text") or f"Your enquiry is with {first}. She’ll be in touch about",
-            "submit": "Send my enquiry",
+            "submit": bk.get("submit", "Send my enquiry"),
+            **{k: bk[k] for k in ("question", "labels", "hide", "people", "times") if k in bk},
+            **({"thanksDateFallback": bk["thanks_fallback"]} if bk.get("thanks_fallback") else {}),
         },
         "footer": {"studio": lead["studio_lines"], "credit": "Demo site · concept by Codzo"},
     }
