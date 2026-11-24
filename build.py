@@ -311,7 +311,8 @@ def site_config(lead: dict) -> dict:
     cfg = {
         "meta": {"title": lead.get("title") or f"{lead['business']} · Bridal hair in {lead['city']}",
                  "description": lead.get("description") or h["lead"]},
-        "brand": {"line1": lead["wordmark"][0], "line2": lead["wordmark"][1], "name": lead["business"]},
+        "brand": {"line1": lead["wordmark"][0], "line2": lead["wordmark"][1], "name": lead["business"],
+                  **({"logo": f"img/{lead['logo']}"} if lead.get("logo") else {})},
         "person": {"first": first, "full": lead.get("full_name") or first, "phone": lead.get("phone", ""),
                    "email": lead.get("email", ""), "instagram": instagram(lead),
                    "socials": [{"label": k.capitalize() if k != "tiktok" else "TikTok", **({"url": v} if v else {})}

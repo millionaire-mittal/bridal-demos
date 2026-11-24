@@ -44,9 +44,10 @@ var IG = P.instagram && P.instagram.url ? P.instagram : null;
 var igLink = function(cls, label){ return '<a class="'+cls+'" href="'+esc(IG.url)+'" target="_blank" rel="noopener">'+label+'</a>'; };
 var contactBits = [P.phone ? 'call '+esc(P.phone) : '', P.email ? esc(P.email) : ''].filter(Boolean).join(' &nbsp;·&nbsp; ');
 var brand = '<span class="b1">'+esc(B.line1)+'</span><span class="b2">'+esc(B.line2)+'</span>';
+if (B.logo) brand = '<img class="b-logo" src="'+esc(B.logo)+'" alt="'+esc(B.name)+' logo" width="48" height="48"><span class="b-txt">'+brand+'</span>';
 
 var nav = '<a class="skip" href="#main">Skip to content</a>'+
- '<header class="nav" id="nav"><a class="brand" href="#top" aria-label="'+esc(B.name)+', back to top">'+brand+'</a>'+
+ '<header class="nav" id="nav"><a class="brand'+(B.logo?' has-logo':'')+'" href="#top" aria-label="'+esc(B.name)+', back to top">'+brand+'</a>'+
  '<nav aria-label="Primary"><a href="#about">'+esc(P.first)+'</a><a href="#journey">'+esc(J.navLabel||'Your journey')+'</a>'+(R ? '<a href="#reels">'+esc(R.label)+'</a>' : '')+(CL ? '<a href="#clients">'+esc(CL.navLabel||CL.label)+'</a>' : '')+(FT ? '<a href="#featured">'+esc(FT.navLabel||FT.label)+'</a>' : '')+(V ? '<a href="#voices">'+esc(V.navLabel||V.label)+'</a>' : '')+'<a href="#words">'+esc(W.label)+'</a><a href="#work">'+esc(K.label)+'</a></nav>'+
  '<a class="btn btn-sm" href="#book"><i class="dot"></i><span>'+esc(cta)+'</span></a></header>';
 
@@ -172,7 +173,7 @@ var book = '<section class="book blush" id="book"><i class="rp" data-rib=".96" d
 
 var foot = '<footer class="foot"><svg class="bot in" data-bot="sprig" aria-hidden="true"></svg>'+
  '<a class="totop" href="#top" aria-label="Back to top"><svg viewBox="0 0 30 150" aria-hidden="true"><path d="M15 0 C 6 30, 24 55, 14 85 C 6 108, 22 122, 15 146" stroke-width="6"/><path d="M15 0 C 6 30, 24 55, 14 85 C 6 108, 22 122, 15 146" stroke-width="1" style="stroke:var(--silk-edge)"/></svg><span>Back to top</span></a>'+
- '<div class="wrap"><div class="f-grid"><div><a class="brand" href="#top" style="align-items:flex-start">'+brand+'</a><span class="ciao">'+esc((S.words && S.words.farewell)||'See you soon.')+'</span></div>'+
+ '<div class="wrap"><div class="f-grid"><div><a class="brand'+(B.logo?' has-logo':'')+'" href="#top" style="align-items:flex-start">'+brand+'</a><span class="ciao">'+esc((S.words && S.words.farewell)||'See you soon.')+'</span></div>'+
  '<div><h4>Studio</h4><p>'+(F.studio||[]).map(esc).join('<br>')+'</p></div>'+
  '<div><h4>Contact</h4><ul>'+(P.phone ? '<li><a href="tel:'+esc(String(P.phone).replace(/\s/g,''))+'">'+esc(P.phone)+'</a></li>' : '')+(P.email ? '<li><a href="mailto:'+esc(P.email)+'">'+esc(P.email)+'</a></li>' : '')+(IG ? '<li>'+igLink('', 'Instagram DM · @'+esc(IG.handle))+'</li>' : '')+'</ul></div>'+
  '<div><h4>Follow</h4><ul>'+(P.socials||[]).map(function(x){ return '<li>'+(x.url ? '<a href="'+esc(x.url)+'">'+esc(x.label)+'</a>' : esc(x.label))+'</li>'; }).join('')+'</ul></div></div>'+
