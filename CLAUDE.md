@@ -56,3 +56,7 @@ Add `clients` (selected clients), `featured` (press) and `videos` (video testimo
 ## Non-bridal clients (booking form labels)
 
 The enquiry form defaults to bridal wording (wedding date, venue, who needs styling, ready by). For other kinds of business, set these optional keys inside `booking`: `question` (the chip question), `labels` (`date venue venuePlaceholder people time msg msgPlaceholder`), `hide` (any of `date people time venue` to drop a field) and `thanks_fallback` (the word after "about" on the thank-you screen). See `cotton-craaft` in `leads.json`. Leave them out and nothing changes.
+
+## Terms, aftercare and other info cards (optional)
+
+`info`: `{label, navLabel, heading, text?, cards: [{title, kind: "bullets" | "steps", items: [str], note?}]}` adds a section of side-by-side cards after the work gallery. Use it for the client's own terms and conditions or aftercare, word for word. See `henna-by-prabh`.

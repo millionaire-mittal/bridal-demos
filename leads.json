@@ -2107,14 +2107,12 @@
     ],
     "reviews": [
       {
-        "text": "Client review",
-        "name": "Client name",
-        "placeholder": true
+        "text": "You were so patient, kind and took everything I said into consideration. I couldn’t be more happier with the results.",
+        "name": "A client, via Instagram"
       },
       {
-        "text": "Client review",
-        "name": "Client name",
-        "placeholder": true
+        "text": "The detail is so pretty and the stain came out beautiful! I’ve had so many compliments on it.",
+        "name": "A client, via Instagram"
       },
       {
         "text": "Client review",
@@ -2122,6 +2120,34 @@
         "placeholder": true
       }
     ],
+    "info": {
+      "label": "Good to know",
+      "navLabel": "Terms & care",
+      "heading": "Terms & *aftercare.*",
+      "cards": [
+        {
+          "title": "Terms and conditions",
+          "kind": "bullets",
+          "items": [
+            "A non-refundable deposit will be taken at the time of booking to secure your booking.",
+            "Please note, I will only stay at a booking for the discussed time, and extra time will come with a fee.",
+            "The nature of the booking must be specified so I can curate an accurate quote i.e bridal party, Lohri, Eid, etc."
+          ]
+        },
+        {
+          "title": "Henna aftercare",
+          "kind": "steps",
+          "items": [
+            "Let henna dry for 30–40 mins and stay warm",
+            "Seal with sealant (2 parts lemon juice + 1 part sugar)",
+            "Leave on for at least 6–8 hours",
+            "Do not wash with water and avoid it for a few days",
+            "Remove with Vicks or any type of oil",
+            "Allow 48 hours for the stain to fully develop"
+          ]
+        }
+      ]
+    },
     "looks_heading": "The work, *up close.*",
     "looks_text": "Bridal, corporate, party and occasion henna from Bedford.",
     "looks": [

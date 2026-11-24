@@ -395,6 +395,12 @@ def site_config(lead: dict) -> dict:
             "heading": ft.get("heading", "As seen *in.*"), "text": ft.get("text", ""), "more": ft.get("more", "Read"),
             "items": [{"outlet": f["outlet"], "title": f.get("title", ""), "year": str(f.get("year", "")), "url": f.get("url", "")}
                       for f in ft["items"]]}
+    inf = lead.get("info")
+    if inf:
+        cfg["info"] = {"label": inf.get("label", "Good to know"), "navLabel": inf.get("navLabel", "Good to know"),
+                       "heading": inf.get("heading", "Good to *know.*"), "text": inf.get("text", ""),
+                       "cards": [{"title": c["title"], "kind": c.get("kind", "bullets"), "items": list(c["items"]),
+                                  **({"note": c["note"]} if c.get("note") else {})} for c in inf["cards"]]}
     if vd:
         cfg["videos"] = {
             "label": vd.get("label", "Client stories"), "navLabel": vd.get("navLabel", "Stories"),
