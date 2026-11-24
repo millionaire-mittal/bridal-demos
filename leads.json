@@ -2004,5 +2004,231 @@
       "look6": "A woman with waves and silver shimmer eyes in a black beaded blouse",
       "look7": "A bride in red with green and gold jewellery, hand resting at her chin"
     }
+  },
+  {
+    "slug": "henna-by-prabh",
+    "business": "Henna by Prabh",
+    "wordmark": [
+      "HENNA",
+      "BY PRABH"
+    ],
+    "first_name": "Prabh",
+    "city": "Bedford",
+    "area": "UK",
+    "instagram": {
+      "url": "https://www.instagram.com/henna.by.prabh/",
+      "handle": "henna.by.prabh",
+      "cta": "DM to book",
+      "button": "DM to book"
+    },
+    "socials": {
+      "instagram": "https://www.instagram.com/henna.by.prabh/"
+    },
+    "language": "english",
+    "fonts": "boho",
+    "motif": "olive",
+    "accent": "#A0573A",
+    "colors": {
+      "ivory": "#FAF4EA",
+      "blush": "#F0DFCE",
+      "blush2": "#F7EBDD",
+      "accent": "#9C5638",
+      "accentDark": "#703A24",
+      "ink": "#2B1C14",
+      "muted": "#685446",
+      "deep": "#34231A",
+      "deep2": "#45301F",
+      "line": "#B8985E",
+      "silk": "#EAD4BA",
+      "silkEdge": "#C6A279"
+    },
+    "title": "Bridal, Corporate, Party & Occasion Henna in Bedford | Henna by Prabh",
+    "description": "Henna by Prabh creates bespoke bridal, corporate, party and occasion mehndi in Bedford, with UK-wide bookings open for 2026–27. DM to book.",
+    "cta": "DM to book",
+    "hero": {
+      "greeting": [
+        "Bespoke",
+        "henna."
+      ],
+      "eyebrow": "Henna & Mendhi Artist  ·  Bedford, UK",
+      "lead": "Bridal, corporate, party and occasion mehndi, with UK-wide bookings open for 2026–27.",
+      "facts": [
+        "Bridal · Corporate · Party · Occasion",
+        "Bedford and surrounding areas",
+        "UK-wide bookings · 2026–27 diary open"
+      ],
+      "detail_caption": "[Photo to come]"
+    },
+    "pull": {
+      "label": "Designed around your day.",
+      "text": "Tell me about the occasion and the look you love, and we’ll *plan your mehndi together.*",
+      "roots_word": "Bedford.",
+      "roots": "Bespoke bridal, corporate, party and occasion mehndi in Bedford, with UK-wide bookings."
+    },
+    "about": {
+      "heading": "The artist behind *the henna.*",
+      "sub": "Henna & mendhi artist in Bedford, UK.",
+      "paragraphs": [
+        "I’m Prabh, a henna and mendhi artist based in Bedford and the surrounding areas. I create bespoke mehndi designs for bridal, corporate, party and occasion bookings.",
+        "My 2026–27 diary is now open for UK-wide bookings, so wherever your celebration is, get in touch.",
+        "The best way to book is a DM to @henna.by.prabh on Instagram."
+      ],
+      "signature": "Prabh"
+    },
+    "journey_heading": "From first message *to the henna.*",
+    "journey": [
+      {
+        "kicker": "01 · Your message",
+        "title": "Send a DM",
+        "short": "Send a DM",
+        "text": "Message @henna.by.prabh on Instagram with your date, your location and the occasion."
+      },
+      {
+        "kicker": "02 · The design",
+        "title": "Talk through your design",
+        "short": "Your design",
+        "text": "Share your event and the style you love, and we’ll shape the design together. [CONFIRM WITH CLIENT]"
+      },
+      {
+        "kicker": "03 · Your date",
+        "title": "Confirm your date",
+        "short": "Your date",
+        "text": "We’ll talk through availability, location, travel and booking details."
+      },
+      {
+        "kicker": "04 · The henna",
+        "title": "Your henna appointment",
+        "short": "Your henna",
+        "text": "Bridal, corporate, party or occasion henna, with a design made for you."
+      }
+    ],
+    "reviews": [
+      {
+        "text": "Client review",
+        "name": "Client name",
+        "placeholder": true
+      },
+      {
+        "text": "Client review",
+        "name": "Client name",
+        "placeholder": true
+      },
+      {
+        "text": "Client review",
+        "name": "Client name",
+        "placeholder": true
+      }
+    ],
+    "looks_heading": "The work, *up close.*",
+    "looks_text": "Bridal, corporate, party and occasion henna. [Photos to come]",
+    "looks": [
+      {
+        "tag": "Bridal",
+        "title": "[Photo to come]"
+      },
+      {
+        "tag": "Bridal",
+        "title": "[Photo to come]"
+      },
+      {
+        "tag": "Corporate",
+        "title": "[Photo to come]"
+      },
+      {
+        "tag": "Party",
+        "title": "[Photo to come]"
+      },
+      {
+        "tag": "Occasion",
+        "title": "[Photo to come]"
+      },
+      {
+        "tag": "Bridal",
+        "title": "[Photo to come]"
+      },
+      {
+        "tag": "Party",
+        "title": "[Photo to come]"
+      }
+    ],
+    "booking": {
+      "label": "Let’s talk",
+      "heading": "Book your *henna.*",
+      "intro": "Send me a DM on Instagram with your date, your location and the occasion. My 2026–27 diary is open for UK-wide bookings. Designs are created for each occasion and client.",
+      "facts": [
+        "Enquire by Instagram DM",
+        "Bedford and surrounding areas",
+        "UK-wide bookings · 2026–27 diary open",
+        "Pricing on enquiry"
+      ],
+      "services": [
+        {
+          "title": "Bridal Henna",
+          "text": "Weddings and pre-wedding celebrations",
+          "image": "look1.jpg",
+          "quote": "Bespoke bridal mehndi, designed around you."
+        },
+        {
+          "title": "Corporate Henna",
+          "text": "Corporate events and private bookings",
+          "image": "look3.jpg",
+          "quote": "Henna for corporate events and workplace celebrations."
+        },
+        {
+          "title": "Party Henna",
+          "text": "Parties, celebrations and gatherings",
+          "image": "look4.jpg",
+          "quote": "Henna for parties, festivals and gatherings."
+        },
+        {
+          "title": "Occasion Henna",
+          "text": "Bespoke designs for your occasion [CONFIRM WITH CLIENT]",
+          "image": "look5.jpg",
+          "quote": "Designs made for engagements, festivals and other meaningful occasions."
+        }
+      ],
+      "thanks_text": "Your enquiry is in. I’ll be in touch about"
+    },
+    "studio_lines": [
+      "Bedford and surrounding areas, UK",
+      "UK-wide bookings · 2026–27 open",
+      "Instagram DM @henna.by.prabh"
+    ],
+    "positions": {
+      "hero": "50% 30%",
+      "detail": "50% 30%",
+      "party": "50% 30%",
+      "party-2": "50% 30%",
+      "step1": "50% 30%",
+      "step2": "50% 30%",
+      "step3": "50% 30%",
+      "step4": "50% 30%",
+      "look1": "50% 30%",
+      "look2": "50% 30%",
+      "look3": "50% 30%",
+      "look4": "50% 30%",
+      "look5": "50% 30%",
+      "look6": "50% 30%",
+      "look7": "50% 30%"
+    },
+    "alts": {
+      "hero": "Placeholder for a bridal henna photo",
+      "detail": "Placeholder for a close-up of a henna design",
+      "portrait": "Placeholder for a portrait of Prabh",
+      "at-work": "Placeholder for a photo of Prabh applying henna",
+      "party": "Placeholder for a party henna photo",
+      "party-2": "Placeholder for a party henna photo",
+      "step1": "Placeholder for a bridal henna photo",
+      "step2": "Placeholder for a corporate henna photo",
+      "step3": "Placeholder for a party henna photo",
+      "step4": "Placeholder for an occasion henna photo",
+      "look1": "Placeholder for a bridal henna photo",
+      "look2": "Placeholder for a bridal henna photo",
+      "look3": "Placeholder for a corporate henna photo",
+      "look4": "Placeholder for a party henna photo",
+      "look5": "Placeholder for an occasion henna photo",
+      "look6": "Placeholder for a bridal henna close-up",
+      "look7": "Placeholder for a party henna photo"
+    }
   }
 ]
