@@ -2013,7 +2013,10 @@
       "BY PRABH"
     ],
     "first_name": "Prabh",
+    "logo": "logo.png",
     "city": "Bedford",
+    "phone": "07432 719523",
+    "email": "henna.by.prabh.bedford@gmail.com",
     "area": "UK",
     "instagram": {
       "url": "https://www.instagram.com/henna.by.prabh/",
@@ -2057,7 +2060,7 @@
         "Bedford and surrounding areas",
         "UK-wide bookings · 2026–27 diary open"
       ],
-      "detail_caption": "[Photo to come]"
+      "detail_caption": "Peacock palm, fine detail"
     },
     "pull": {
       "label": "Designed around your day.",
@@ -2120,35 +2123,35 @@
       }
     ],
     "looks_heading": "The work, *up close.*",
-    "looks_text": "Bridal, corporate, party and occasion henna. [Photos to come]",
+    "looks_text": "Bridal, corporate, party and occasion henna from Bedford.",
     "looks": [
       {
-        "tag": "Bridal",
-        "title": "[Photo to come]"
+        "tag": "Palm",
+        "title": "Floral palm design"
       },
       {
-        "tag": "Bridal",
-        "title": "[Photo to come]"
+        "tag": "Palm",
+        "title": "Peacock palm design"
       },
       {
-        "tag": "Corporate",
-        "title": "[Photo to come]"
+        "tag": "Hands",
+        "title": "Rose and swirl hands"
       },
       {
-        "tag": "Party",
-        "title": "[Photo to come]"
+        "tag": "Hands",
+        "title": "Fine floral lace"
       },
       {
-        "tag": "Occasion",
-        "title": "[Photo to come]"
+        "tag": "Hands",
+        "title": "Delicate floral henna"
       },
       {
-        "tag": "Bridal",
-        "title": "[Photo to come]"
+        "tag": "Hands",
+        "title": "Roses on the back of the hand"
       },
       {
-        "tag": "Party",
-        "title": "[Photo to come]"
+        "tag": "Detail",
+        "title": "Palm flowers, close up"
       }
     ],
     "booking": {
@@ -2157,7 +2160,7 @@
       "intro": "Send me a DM on Instagram with your date, your location and the occasion. My 2026–27 diary is open for UK-wide bookings. Designs are created for each occasion and client.",
       "facts": [
         "Enquire by Instagram DM",
-        "Bedford and surrounding areas",
+        "Bedford and surrounding areas · open to travel",
         "UK-wide bookings · 2026–27 diary open",
         "Pricing on enquiry"
       ],
@@ -2195,40 +2198,41 @@
       "Instagram DM @henna.by.prabh"
     ],
     "positions": {
-      "hero": "50% 30%",
-      "detail": "50% 30%",
-      "party": "50% 30%",
-      "party-2": "50% 30%",
-      "step1": "50% 30%",
-      "step2": "50% 30%",
-      "step3": "50% 30%",
-      "step4": "50% 30%",
-      "look1": "50% 30%",
-      "look2": "50% 30%",
-      "look3": "50% 30%",
-      "look4": "50% 30%",
-      "look5": "50% 30%",
-      "look6": "50% 30%",
-      "look7": "50% 30%"
+      "hero": "50% 40%",
+      "detail": "50% 50%",
+      "portrait": "50% 30%",
+      "party": "50% 40%",
+      "party-2": "50% 40%",
+      "step1": "50% 50%",
+      "step2": "50% 40%",
+      "step3": "50% 50%",
+      "step4": "50% 40%",
+      "look1": "50% 45%",
+      "look2": "50% 50%",
+      "look3": "50% 40%",
+      "look4": "50% 40%",
+      "look5": "50% 50%",
+      "look6": "50% 40%",
+      "look7": "50% 50%"
     },
     "alts": {
-      "hero": "Placeholder for a bridal henna photo",
-      "detail": "Placeholder for a close-up of a henna design",
-      "portrait": "Placeholder for a portrait of Prabh",
+      "hero": "A palm with floral henna, leaves and fine dots, held up in front of a green plant",
+      "detail": "Close-up of a peacock henna design on a palm",
+      "portrait": "A smiling woman with long dark waves, a gold choker and a white embroidered outfit",
       "at-work": "Placeholder for a photo of Prabh applying henna",
-      "party": "Placeholder for a party henna photo",
-      "party-2": "Placeholder for a party henna photo",
-      "step1": "Placeholder for a bridal henna photo",
-      "step2": "Placeholder for a corporate henna photo",
-      "step3": "Placeholder for a party henna photo",
-      "step4": "Placeholder for an occasion henna photo",
-      "look1": "Placeholder for a bridal henna photo",
-      "look2": "Placeholder for a bridal henna photo",
-      "look3": "Placeholder for a corporate henna photo",
-      "look4": "Placeholder for a party henna photo",
-      "look5": "Placeholder for an occasion henna photo",
-      "look6": "Placeholder for a bridal henna close-up",
-      "look7": "Placeholder for a party henna photo"
+      "party": "Hands with a rose and swirl henna design, resting on a green outfit above a gold clutch",
+      "party-2": "Two hands with fine floral henna, resting on red roses",
+      "step1": "A palm with a peacock and floral henna design, in front of green leaves",
+      "step2": "Two hands with fine floral henna, resting on red roses",
+      "step3": "A hand with fine floral henna held in another hand, with a diamond ring",
+      "step4": "Hands with a rose and swirl henna design, resting on a green outfit above a gold clutch",
+      "look1": "A palm with floral henna, leaves and fine dots, held up in front of a green plant",
+      "look2": "A palm with a peacock and floral henna design, in front of green leaves",
+      "look3": "Hands with a rose and swirl henna design, resting on a green outfit above a gold clutch",
+      "look4": "Two hands with fine floral henna, resting on red roses",
+      "look5": "A hand with fine floral henna held in another hand, with a diamond ring",
+      "look6": "Hands with a rose and swirl henna design, in close up",
+      "look7": "Close-up of flower and leaf henna on a palm"
     }
   },
   {
