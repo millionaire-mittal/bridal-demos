@@ -60,3 +60,7 @@ The enquiry form defaults to bridal wording (wedding date, venue, who needs styl
 ## Terms, aftercare and other info cards (optional)
 
 `info`: `{label, navLabel, heading, text?, cards: [{title, kind: "bullets" | "steps", items: [str], note?}]}` adds a section of side-by-side cards after the work gallery. Use it for the client's own terms and conditions or aftercare, word for word. See `henna-by-prabh`.
+
+## German salon demo (Elis Coiffeur) and the extra optional blocks
+
+`language: "german"` sets `lang="de"` and German chapter numbers. The fixed interface wording can be overridden per lead, all optional: `labels` (`journey about about_link secondary words work more reels review_suffix`; `more: ""` hides the portfolio link), `ui` (`skip aboutNav top studio contact follow dm call or soon phTitle stickyLabel`), `credit`, `cta_url` (makes every main button open that URL), `hero.cta2` (second hero link, e.g. a `tel:` link), `sticky` (a mobile contact bar of `{label, url}` buttons), `booking.no_form` with `booking.ctas` (replaces the enquiry form by buttons), and three new sections: `services_section` (cards with optional image and status), `spotlight` (a dark highlight section with cards and CTAs, used for Extensions) and `faq` (`{label, heading, items: [{q, a}]}`). See `elis-coiffeur` in `leads.json`. `ROUTE` in `build.py` is the URL folder (`bridal`); a `/salon/` route would also need `vercel.json` to copy the demos there.

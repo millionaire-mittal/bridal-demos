@@ -18,6 +18,7 @@ from pathlib import Path
 
 # Where the demos are deployed. Used for absolute link-preview (og:) URLs.
 BASE_URL = "https://bridal-demos.vercel.app"
+ROUTE = "bridal"   # URL folder the demos are served from. vercel.json copies demos into site/bridal/ (change both together)
 
 HERE = Path(__file__).resolve().parent
 DEMOS = HERE / "demos"
@@ -45,6 +46,9 @@ LANGUAGES = {
     "spanish": dict(chapters=["Uno", "Dos", "Tres", "Cuatro", "Cinco", "Seis"], scroll="Desliza",
                     farewell="¡Hasta pronto!", greeting=["Hola,", "guapa."], thanks="Gracias",
                     booking_label="Hasta pronto", roots_word="Raíces.", about_word="Encantada."),
+    "german":  dict(chapters=["Eins", "Zwei", "Drei", "Vier", "Fünf", "Sechs", "Sieben", "Acht", "Neun", "Zehn"], scroll="Scrollen",
+                    farewell="Bis bald.", greeting=["Hallo,", "schön."], thanks="Danke",
+                    booking_label="Termin", roots_word="Wurzeln.", about_word="Schön, dich zu sehen.", html="de"),
     "hindi":   dict(chapters=["Ek", "Do", "Teen", "Chaar", "Paanch", "Chhah"], scroll="Scroll",
                     farewell="Phir milenge.", greeting=["Namaste,", "dulhan."], thanks="Shukriya",
                     booking_label="Milte hain", roots_word="Jadein.", about_word="Namaste."),
@@ -107,6 +111,10 @@ def images_needed(lead: dict) -> list[str]:
         need += [f"reel{i}.jpg" for i in range(1, len(reels["items"]) + 1)]
     need += [f"guide{i}.jpg" for i in range(1, len(lead.get("guides") or []) + 1)]
     need += [s["image"] for s in lead["booking"]["services"] if s.get("image")]
+    sp = lead.get("spotlight")
+    if sp and sp.get("image"):
+        need.append(sp["image"])
+    need += [x["image"] for x in (lead.get("services_section") or {}).get("items", []) if x.get("image")]
     return list(dict.fromkeys(need))
 
 
@@ -280,6 +288,7 @@ DEFAULT_JOURNEY_HEADING = "From first hello *to the last dance.*"
 def site_config(lead: dict) -> dict:
     L = LANGUAGES[lead.get("language", "english")]
     first, alts, pos = lead["first_name"], lead.get("alts") or {}, lead.get("positions") or {}
+    lb = lead.get("labels") or {}
 
     def img(name, alt):
         key = name.rsplit(".", 1)[0]
@@ -301,7 +310,8 @@ def site_config(lead: dict) -> dict:
     pull = lead.get("pull") or {}
     reels = lead.get("reels")
     reviews = [{"text": r["text"].strip(),
-                "name": r["name"] + (" · review placeholder" if r.get("placeholder") else "")}
+                "name": r["name"] + (lb.get("review_suffix", " · review placeholder") if r.get("placeholder") else ""),
+                **({"placeholder": True} if r.get("placeholder") else {})}
                for r in lead["reviews"]]
 
     def short_quote(r):
@@ -319,10 +329,12 @@ def site_config(lead: dict) -> dict:
                                for k, v in (lead.get("socials") or {}).items()]},
         "theme": {"motif": lead.get("motif", "olive"), "colors": palette(lead), "fonts": fonts},
         "words": {"chapters": L["chapters"], "scroll": L["scroll"], "cta": lead.get("cta", "Check your date"),
+                  **({"ctaUrl": lead["cta_url"]} if lead.get("cta_url") else {}),
                   "farewell": lead.get("farewell") or L["farewell"]},
         "hero": {
             "eyebrow": h.get("eyebrow") or f"Bridal hair by {first}  ·  " + ", ".join(x for x in (lead.get("area"), lead["city"]) if x),
-            "greetingScript": greet[0], "greeting": greet[1], "lead": h["lead"], "secondary": "See the work",
+            "greetingScript": greet[0], "greeting": greet[1], "lead": h["lead"], "secondary": lb.get("secondary", "See the work"),
+            **({"cta2": h["cta2"]} if h.get("cta2") else {}),
             "facts": h["facts"], "image": img("hero.jpg", f"A bride styled by {first}"),
             "detail": img("detail.jpg", "A close-up of a bridal hair detail"), "detailCaption": h["detail_caption"],
         },
@@ -333,14 +345,14 @@ def site_config(lead: dict) -> dict:
             "roots": pull.get("roots") or f"Calm hands, a clear plan and styles made to last, from your trial to the last dance.",
         },
         "about": {
-            "label": f"Meet {first}", "heading": a.get("heading") or f"Hi, I’m *{first}.*",
+            "label": lb.get("about", f"Meet {first}"), "heading": a.get("heading") or f"Hi, I’m *{first}.*",
             "sub": a["sub"], "paragraphs": a["paragraphs"], "signature": a.get("signature", first),
-            "link": "How your day unfolds",
+            "link": lb.get("about_link", "How your day unfolds"),
             "portrait": img("portrait.jpg", f"{lead.get('full_name') or first}, smiling"),
             "atWork": img("at-work.jpg", f"{first} styling a bride’s hair"),
         },
         "journey": {
-            "label": "Your journey", "navLabel": "Your journey",
+            "label": lb.get("journey", "Your journey"), "navLabel": lb.get("journey", "Your journey"),
             "heading": lead.get("journey_heading", DEFAULT_JOURNEY_HEADING),
             "steps": [{"kicker": s.get("kicker") or f"{i:02d} · {s.get('short') or s['title']}",
                        "title": s["title"], "short": s.get("short") or s["title"], "text": s["text"],
@@ -349,16 +361,17 @@ def site_config(lead: dict) -> dict:
                       for i, s in enumerate(lead["journey"], 1)],
         },
         "reels": reels and {
-            "label": "Behind the scenes", "heading": reels.get("heading", "Real mornings, *real brides.*"),
+            "label": lb.get("reels", "Behind the scenes"), "heading": reels.get("heading", "Real mornings, *real brides.*"),
+            **({"cta": reels["cta"]} if reels.get("cta") else {}),
             "text": reels["text"], "note": reels.get("note") or f"{first}’s reel plays here on the live site.",
             "items": [{**img(f"reel{i}.jpg", r["title"]), "title": r["title"], "duration": r.get("duration", "")}
                       for i, r in enumerate(reels["items"], 1)],
         },
-        "testimonials": {"label": "Kind words", "photo": img("party.jpg", "A bride and her bridal party"),
+        "testimonials": {"label": lb.get("words", "Kind words"), "photo": img("party.jpg", "A bride and her bridal party"),
                          "photoSmall": img("party-2.jpg", "A bridal party celebrating"), "items": reviews},
-        "work": {"label": "The work", "heading": lead.get("looks_heading", "The work, *up close.*"),
+        "work": {"label": lb.get("work", "The work"), "heading": lead.get("looks_heading", "The work, *up close.*"),
                  "text": lead.get("looks_text", "Every bride, her own style."),
-                 "moreLabel": "Full portfolio", "moreUrl": lead.get("portfolio_url") or "#work",
+                 "moreLabel": lb.get("more", "Full portfolio"), "moreUrl": lead.get("portfolio_url") or ("" if lb.get("more") == "" else "#work"),
                  "items": [{**img(f"look{i}.jpg", f"{x['title']}, bridal hair by {first}"), "tag": x["tag"], "title": x["title"]}
                            for i, x in enumerate(lead["looks"], 1)]},
         "guides": {"heading": "For the *bride.*", "label": lead.get("guides_label", f"Honest answers, from {first}"),
@@ -375,10 +388,11 @@ def site_config(lead: dict) -> dict:
             "thanksWord": L["thanks"],
             "thanksText": bk.get("thanks_text") or f"Your enquiry is with {first}. She’ll be in touch about",
             "submit": bk.get("submit", "Send my enquiry"),
+            **({"noForm": True, "ctas": bk.get("ctas", [])} if bk.get("no_form") else {}),
             **{k: bk[k] for k in ("question", "labels", "hide", "people", "times") if k in bk},
             **({"thanksDateFallback": bk["thanks_fallback"]} if bk.get("thanks_fallback") else {}),
         },
-        "footer": {"studio": lead["studio_lines"], "credit": "Demo site · concept by Codzo"},
+        "footer": {"studio": lead["studio_lines"], "credit": lead.get("credit", "Demo site · concept by Codzo")},
     }
 
     # optional sections (only added when the lead has them, so other demos are unchanged)
@@ -395,6 +409,25 @@ def site_config(lead: dict) -> dict:
             "heading": ft.get("heading", "As seen *in.*"), "text": ft.get("text", ""), "more": ft.get("more", "Read"),
             "items": [{"outlet": f["outlet"], "title": f.get("title", ""), "year": str(f.get("year", "")), "url": f.get("url", "")}
                       for f in ft["items"]]}
+    if lead.get("ui"):
+        cfg["ui"] = lead["ui"]
+    if lead.get("sticky"):
+        cfg["sticky"] = lead["sticky"]
+    sp = lead.get("spotlight")
+    if sp:
+        cfg["spotlight"] = {k: sp[k] for k in ("label", "navLabel", "heading", "text", "text2", "ctas", "cards") if k in sp}
+        cfg["spotlight"]["image"] = img(sp["image"], sp.get("alt", sp["heading"]))
+    ss = lead.get("services_section")
+    if ss:
+        cfg["servicesSec"] = {"label": ss.get("label", "Services"), "navLabel": ss.get("navLabel", ss.get("label", "Services")),
+                              "heading": ss.get("heading", "Services"), "text": ss.get("text", ""),
+                              "items": [{"title": x["title"], "text": x["text"], "status": x.get("status", ""),
+                                         **({"image": img(x["image"], x["title"])} if x.get("image") else {})} for x in ss["items"]]}
+    fq = lead.get("faq")
+    if fq:
+        cfg["faq"] = {"label": fq.get("label", "FAQ"), "navLabel": fq.get("navLabel", fq.get("label", "FAQ")),
+                      "heading": fq.get("heading", "Questions"), "text": fq.get("text", ""),
+                      "items": [{"q": x["q"], "a": x["a"]} for x in fq["items"]]}
     inf = lead.get("info")
     if inf:
         cfg["info"] = {"label": inf.get("label", "Good to know"), "navLabel": inf.get("navLabel", "Good to know"),
@@ -414,7 +447,7 @@ def site_config(lead: dict) -> dict:
 
 
 PAGE = """<!DOCTYPE html>
-<html lang="en">
+<html lang="__LANG__">
 <head>
 <meta charset="utf-8">
 <script>if(!/\\/$/.test(location.pathname)&&!/\\.html$/.test(location.pathname))location.replace(location.pathname+"/"+location.search+location.hash);</script>
@@ -452,9 +485,10 @@ def build(lead: dict) -> Path:
         raise LeadError("\n  - " + "\n  - ".join(errs))
     cfg = site_config(lead)
     site = json.dumps(cfg, ensure_ascii=False, indent=1).replace("</", "<\\/")
-    url = f"{BASE_URL}/bridal/{lead['slug']}/"
+    url = f"{BASE_URL}/{ROUTE}/{lead['slug']}/"
     html = PAGE
-    for key, val in (("__TITLE__", escape(cfg["meta"]["title"])),
+    for key, val in (("__LANG__", LANGUAGES[lead.get("language", "english")].get("html", "en")),
+                     ("__TITLE__", escape(cfg["meta"]["title"])),
                      ("__DESCRIPTION__", escape(cfg["meta"]["description"])),
                      ("__THEME__", cfg["theme"]["colors"]["ivory"]), ("__URL__", url),
                      ("__CSS__", (ENGINE / "engine.css").read_text(encoding="utf-8")),

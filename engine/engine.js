@@ -39,23 +39,35 @@ if (S.meta && S.meta.description){ var m = document.createElement('meta'); m.nam
 
 /* ---------- sections ---------- */
 var B = S.brand, P = S.person, H = S.hero, PL = S.pull, A = S.about, J = S.journey, R = S.reels, W = S.testimonials, K = S.work, G = S.guides, BK = S.booking, F = S.footer || {};
-var CL = S.clients, FT = S.featured, V = S.videos, INFO = S.info;   // optional: selected clients, press features, video testimonials
+var CL = S.clients, FT = S.featured, V = S.videos, INFO = S.info;
+var SV = S.servicesSec, SP = S.spotlight, FQ = S.faq;   // optional: services cards, a highlighted spotlight section, FAQ   // optional: selected clients, press features, video testimonials
 var IG = P.instagram && P.instagram.url ? P.instagram : null;
 var igLink = function(cls, label){ return '<a class="'+cls+'" href="'+esc(IG.url)+'" target="_blank" rel="noopener">'+label+'</a>'; };
-var contactBits = [P.phone ? 'call '+esc(P.phone) : '', P.email ? esc(P.email) : ''].filter(Boolean).join(' &nbsp;·&nbsp; ');
+var U = S.ui || {};
+var u = function(k, d){ return U[k] != null ? U[k] : d; };      // optional per-lead wording for the fixed interface text
+var ctaHref = (S.words && S.words.ctaUrl) || '#book';
+var isExt = function(h){ return /^https?:/.test(h); };
+var aBtn = function(href, label, cls){ return '<a class="'+(cls||'btn')+'" href="'+esc(href)+'"'+(isExt(href)?' target="_blank" rel="noopener"':'')+'><i class="dot"></i><span>'+esc(label)+'</span></a>'; };
+var aLink = function(o){ return '<a class="link" href="'+esc(o.url)+'"'+(isExt(o.url)?' target="_blank" rel="noopener"':'')+'>'+esc(o.label)+'</a>'; };
+var phTxt = function(t){ return esc(t).replace(/\[(.+?)\]/g,'<b class="ph" title="'+esc(u('phTitle','Placeholder: replace before going live'))+'">$1</b>'); };
+var contactBits = [P.phone ? esc(u('call','call'))+' '+esc(P.phone) : '', P.email ? esc(P.email) : ''].filter(Boolean).join(' &nbsp;·&nbsp; ');
 var brand = '<span class="b1">'+esc(B.line1)+'</span><span class="b2">'+esc(B.line2)+'</span>';
 if (B.logo) brand = '<img class="b-logo" src="'+esc(B.logo)+'" alt="'+esc(B.name)+' logo" width="48" height="48"><span class="b-txt">'+brand+'</span>';
 
-var nav = '<a class="skip" href="#main">Skip to content</a>'+
+var secHead = function(o){ return '<div class="sec-head z"><div>'+chap(o.label)+'<h2 data-blur>'+md(o.heading)+'</h2></div>'+(o.text ? '<p data-fade>'+esc(o.text)+'</p>' : '')+'</div>'; };
+var linkTag = function(url, cls, inner, extra){ return url ? '<a class="'+cls+'" href="'+esc(url)+'" target="_blank" rel="noopener"'+(extra||'')+'>'+inner+'</a>' : '<div class="'+cls+'"'+(extra||'')+'>'+inner+'</div>'; };
+var initials = function(n){ return String(n).replace(/[^A-Za-zÀ-ɏ ]/g,'').split(/\s+/).filter(Boolean).slice(0,2).map(function(w){ return w.charAt(0).toUpperCase(); }).join(''); };
+
+var nav = '<a class="skip" href="#main">'+esc(u('skip','Skip to content'))+'</a>'+
  '<header class="nav" id="nav"><a class="brand'+(B.logo?' has-logo':'')+'" href="#top" aria-label="'+esc(B.name)+', back to top">'+brand+'</a>'+
- '<nav aria-label="Primary"><a href="#about">'+esc(P.first)+'</a><a href="#journey">'+esc(J.navLabel||'Your journey')+'</a>'+(R ? '<a href="#reels">'+esc(R.label)+'</a>' : '')+(CL ? '<a href="#clients">'+esc(CL.navLabel||CL.label)+'</a>' : '')+(FT ? '<a href="#featured">'+esc(FT.navLabel||FT.label)+'</a>' : '')+(V ? '<a href="#voices">'+esc(V.navLabel||V.label)+'</a>' : '')+'<a href="#words">'+esc(W.label)+'</a><a href="#work">'+esc(K.label)+'</a>'+(INFO ? '<a href="#info">'+esc(INFO.navLabel||INFO.label)+'</a>' : '')+'</nav>'+
- '<a class="btn btn-sm" href="#book"><i class="dot"></i><span>'+esc(cta)+'</span></a></header>';
+ '<nav aria-label="Primary"><a href="#about">'+esc(u('aboutNav',P.first))+'</a>'+(SV ? '<a href="#services">'+esc(SV.navLabel||SV.label)+'</a>' : '')+(SP ? '<a href="#spot">'+esc(SP.navLabel||SP.label)+'</a>' : '')+'<a href="#journey">'+esc(J.navLabel||'Your journey')+'</a>'+(R ? '<a href="#reels">'+esc(R.label)+'</a>' : '')+(CL ? '<a href="#clients">'+esc(CL.navLabel||CL.label)+'</a>' : '')+(FT ? '<a href="#featured">'+esc(FT.navLabel||FT.label)+'</a>' : '')+(V ? '<a href="#voices">'+esc(V.navLabel||V.label)+'</a>' : '')+'<a href="#words">'+esc(W.label)+'</a><a href="#work">'+esc(K.label)+'</a>'+(INFO ? '<a href="#info">'+esc(INFO.navLabel||INFO.label)+'</a>' : '')+(FQ ? '<a href="#faq">'+esc(FQ.navLabel||FQ.label)+'</a>' : '')+'</nav>'+
+ '<a class="btn btn-sm" href="'+esc(ctaHref)+'"'+(isExt(ctaHref)?' target="_blank" rel="noopener"':'')+'><i class="dot"></i><span>'+esc(cta)+'</span></a></header>';
 
 var hero = '<section class="hero" id="top"><div class="wrap hero-grid"><div class="hero-copy z">'+
  '<p class="eyebrow" data-fade>'+esc(H.eyebrow)+'</p>'+
  '<h1 data-blur>'+(H.greetingScript ? '<span class="script">'+esc(H.greetingScript)+'</span> ' : '')+md(H.greeting)+'</h1>'+
  '<p class="lead" data-fade style="--d:500ms">'+esc(H.lead)+'</p>'+
- '<div class="cta-row" data-fade style="--d:700ms">'+btn('#book', cta)+(IG ? igLink('link', esc(IG.cta || ('DM @'+IG.handle+' on Instagram'))) : '<a class="link" href="#work">'+esc(H.secondary||'See the work')+'</a>')+'</div>'+
+ '<div class="cta-row" data-fade style="--d:700ms">'+aBtn(ctaHref, cta)+(H.cta2 ? aLink(H.cta2) : (IG ? igLink('link', esc(IG.cta || ('DM @'+IG.handle+' on Instagram'))) : '<a class="link" href="#work">'+esc(H.secondary||'See the work')+'</a>'))+'</div>'+
  '<p class="meta" data-fade style="--d:900ms">'+(H.facts||[]).map(function(x){ return '<span>'+esc(x)+'</span>'; }).join('')+'</p></div>'+
  '<div class="hero-art z"><svg class="bot" data-bot="hero" aria-hidden="true"></svg>'+
  '<figure class="arch-wrap hero-arch" data-reveal><div class="arch">'+img(H.image,' fetchpriority="high"')+'</div></figure>'+
@@ -78,6 +90,14 @@ var about = '<section class="uno blush" id="about"><i class="rp" data-rib=".93" 
  '<span class="signature" data-fade style="--d:400ms">'+esc(A.signature||P.first)+'</span><a class="link" href="#journey" data-fade style="--d:500ms">'+esc(A.link||'How your day unfolds')+'</a></div></div>'+
  '<i class="rp" data-rib=".95" data-rib-m=".95" style="top:72%"></i><i class="rp" data-rib=".9" data-rib-m=".94" style="top:96%"></i></section>';
 
+var services = !SV || !SV.items || !SV.items.length ? '' : '<section class="svcs" id="services"><div class="wrap">'+secHead(SV)+'<div class="sv-grid z">'+
+ SV.items.map(function(x,i){ return '<article class="sv-card" data-fade style="--d:'+(i%3*110)+'ms">'+(x.image ? '<div class="sv-img">'+img(x.image)+'</div>' : '')+'<div class="sv-body"><h3>'+esc(x.title)+'</h3><p>'+esc(x.text)+'</p>'+(x.status ? '<p class="sv-status">'+phTxt(x.status)+'</p>' : '')+'</div></article>'; }).join('')+'</div></div></section>';
+
+var spot = !SP ? '' : '<section class="spot" id="spot"><div class="wrap spot-grid"><div class="spot-art z"><figure class="arch-wrap" data-reveal><div class="arch">'+img(SP.image)+'</div></figure></div>'+
+ '<div class="spot-copy z">'+chap(SP.label)+'<h2 data-blur>'+md(SP.heading)+'</h2><p class="spot-lead" data-fade>'+esc(SP.text)+'</p>'+(SP.text2 ? '<p class="spot-text" data-fade>'+esc(SP.text2)+'</p>' : '')+
+ '<div class="spot-cards">'+(SP.cards||[]).map(function(c,i){ return '<div class="spot-card" data-fade style="--d:'+(i*100)+'ms"><h3>'+esc(c.title)+'</h3><p>'+esc(c.text)+'</p>'+(c.status ? '<p class="sv-status">'+phTxt(c.status)+'</p>' : '')+'</div>'; }).join('')+'</div>'+
+ '<div class="cta-row" data-fade>'+(SP.ctas||[]).map(function(c,i){ return aBtn(c.url, c.label, i ? 'btn btn-ghost' : 'btn'); }).join('')+'</div></div></div></section>';
+
 var n = J.steps.length;
 var journey = '<section class="journey" id="journey" aria-label="'+esc(J.heading.replace(/\*/g,''))+'" style="--jh:'+(n*100+40)+'vh">'+
  '<i class="rp" data-rib=".975" data-rib-m=".96" style="top:3%"></i><i class="rp" data-rib=".985" data-rib-m=".965" style="top:30%"></i><i class="rp" data-rib=".97" data-rib-m=".96" style="top:62%"></i><i class="rp" data-rib=".9" data-rib-m=".94" style="top:97%"></i>'+
@@ -94,16 +114,12 @@ var journey = '<section class="journey" id="journey" aria-label="'+esc(J.heading
  '</ol></div></div></section>';
 
 var reels = !R || !R.items || !R.items.length ? '' : '<section class="reels" id="reels"><i class="rp" data-rib=".95" data-rib-m=".96" style="top:2%"></i><i class="rp" data-rib=".985" data-rib-m=".97" style="top:40%"></i><i class="rp" data-rib=".98" data-rib-m=".97" style="top:97%"></i>'+
- '<div class="r-sticky"><div class="wrap r-head z"><div>'+chap(R.label)+'<h2 data-blur>'+md(R.heading)+'</h2></div><p data-fade>'+esc(R.text)+'</p></div>'+
+ '<div class="r-sticky"><div class="wrap r-head z"><div>'+chap(R.label)+'<h2 data-blur>'+md(R.heading)+'</h2></div><p data-fade>'+esc(R.text)+'</p>'+(R.cta ? '<div class="r-cta" data-fade>'+aLink(R.cta)+'</div>' : '')+'</div>'+
  '<div class="r-track z" id="rTrack">'+R.items.map(function(r){ return '<figure class="reel"><div class="arch">'+img(r)+
    '<button class="play" type="button" aria-label="Play reel: '+esc(r.title)+'">'+PLAY+'</button><span class="soon" role="status"></span></div>'+
    '<figcaption><b>'+esc(r.title)+'</b><span>'+esc(r.duration||'')+'</span></figcaption></figure>'; }).join('')+'</div></div></section>';
 
 /* optional sections: selected clients, featured in, video testimonials (each only renders when its lead has data) */
-var secHead = function(o){ return '<div class="sec-head z"><div>'+chap(o.label)+'<h2 data-blur>'+md(o.heading)+'</h2></div>'+(o.text ? '<p data-fade>'+esc(o.text)+'</p>' : '')+'</div>'; };
-var linkTag = function(url, cls, inner, extra){ return url ? '<a class="'+cls+'" href="'+esc(url)+'" target="_blank" rel="noopener"'+(extra||'')+'>'+inner+'</a>' : '<div class="'+cls+'"'+(extra||'')+'>'+inner+'</div>'; };
-var initials = function(n){ return String(n).replace(/[^A-Za-zÀ-ɏ ]/g,'').split(/\s+/).filter(Boolean).slice(0,2).map(function(w){ return w.charAt(0).toUpperCase(); }).join(''); };
-
 var clients = !CL || !CL.items || !CL.items.length ? '' : (function(){
   var hasImg = CL.items.some(function(c){ return c.image; });
   var body = hasImg
@@ -138,11 +154,13 @@ var words = '<section class="words blush" id="words"><i class="rp" data-rib=".7"
 var work = '<section class="work" id="work"><div class="wrap"><div class="work-head"><div class="z">'+chap(K.label)+'<h2 data-blur>'+md(K.heading)+'</h2></div><p class="z" data-fade>'+esc(K.text)+'</p></div>'+
  '<div class="work-grid">'+K.items.slice(0,7).map(function(w,i){ return '<figure class="wk wk'+(i+1)+' z"><div class="frame" data-reveal><div class="ph-img"'+(i===6?' style="aspect-ratio:4/3.2"':'')+'>'+img(w)+'</div></div>'+
    '<figcaption><span class="label">'+esc(w.tag)+'</span><b>'+esc(w.title)+'</b></figcaption></figure>'; }).join('')+'</div>'+
- '<div class="work-cta z">'+btn('#book', cta)+(K.moreUrl ? '<a class="link" href="'+esc(K.moreUrl)+'">'+esc(K.moreLabel||'Full portfolio')+'</a>' : '')+'</div></div>'+
+ '<div class="work-cta z">'+aBtn(ctaHref, cta)+(K.moreUrl && K.moreLabel ? '<a class="link" href="'+esc(K.moreUrl)+'">'+esc(K.moreLabel||'Full portfolio')+'</a>' : '')+'</div></div>'+
  '<i class="rp" data-rib=".02" data-rib-m=".04" style="top:6%"></i><i class="rp" data-rib=".5" data-rib-m=".04" style="top:27%"></i><i class="rp" data-rib=".55" data-rib-m=".96" style="top:46%"></i><i class="rp" data-rib=".9" data-rib-m=".96" style="top:62%"></i><i class="rp" data-rib=".97" data-rib-m=".96" style="top:96%"></i></section>';
 
 var info = !INFO || !INFO.cards || !INFO.cards.length ? '' : '<section class="info" id="info"><div class="wrap">'+secHead(INFO)+'<div class="i-grid z">'+
  INFO.cards.map(function(c,i){ return '<div class="i-card" data-fade style="--d:'+(i*120)+'ms"><h3>'+esc(c.title)+'</h3><'+(c.kind==='steps'?'ol':'ul')+' class="i-list'+(c.kind==='steps'?' steps':'')+'">'+c.items.map(function(x){ return '<li>'+esc(x)+'</li>'; }).join('')+'</'+(c.kind==='steps'?'ol':'ul')+'>'+(c.note?'<p class="i-note">'+esc(c.note)+'</p>':'')+'</div>'; }).join('')+'</div></div></section>';
+var faq = !FQ || !FQ.items || !FQ.items.length ? '' : '<section class="faq" id="faq"><div class="wrap">'+secHead(FQ)+'<div class="faq-list z">'+
+ FQ.items.map(function(x,i){ return '<details class="faq-item" data-fade style="--d:'+(i%2*80)+'ms"><summary>'+esc(x.q)+'</summary><p>'+phTxt(x.a)+'</p></details>'; }).join('')+'</div></div></section>';
 var guides = !G || !G.items || !G.items.length ? '' : '<section class="guides" id="guides"><i class="rp" data-rib=".975" data-rib-m=".96" style="top:40%"></i><i class="rp" data-rib=".95" data-rib-m=".95" style="top:99%"></i>'+
  '<div class="wrap"><div class="g-head z"><h2 data-blur>'+md(G.heading)+'</h2><p class="label" data-fade>'+esc(G.label)+'</p></div><div class="g-grid z">'+
  G.items.map(function(g,i){ return '<a class="g-card" href="'+esc(g.url||'#guides')+'" data-fade style="--d:'+(i*120)+'ms"><div class="g-img">'+img({src:g.src, alt:''})+'</div><div class="g-body"><span class="label">'+esc(G.kicker||'Guide')+'</span><h3>'+esc(g.title)+'</h3><p>'+esc(g.text)+'</p><span class="more">'+esc(G.more||'Read the guide')+'</span></div></a>'; }).join('')+
@@ -155,18 +173,18 @@ var fld = function(id, html){ return BH.indexOf(id) > -1 ? '' : html; };
 var book = '<section class="book blush" id="book"><i class="rp" data-rib=".96" data-rib-m=".95" style="top:3%"></i><div class="wrap b-grid"><div class="z" id="bookMain">'+
  chap(BK.label)+'<h2 data-blur>'+md(BK.heading)+'</h2><p class="intro" data-fade>'+esc(BK.intro)+'</p>'+
  '<p class="price" data-fade>'+BK.facts.map(function(x){ return '<span>'+esc(x).replace(/\[(.+?)\]/g,'<b class="ph" title="Placeholder: replace before going live">$1</b>')+'</span>'; }).join('')+'</p>'+
- '<form id="bookForm" novalidate><fieldset><legend class="label">'+esc(BK.question||'What are you planning?')+'</legend><div class="svc">'+
+ (BK.noForm ? '<div class="book-cta" data-fade>'+(BK.ctas||[]).map(function(c,i){ return aBtn(c.url, c.label, i ? 'btn btn-ghost' : 'btn'); }).join('')+'</div>' : '<form id="bookForm" novalidate><fieldset><legend class="label">'+esc(BK.question||'What are you planning?')+'</legend><div class="svc">'+
  BK.services.map(function(v,i){ return '<div><input type="radio" name="svc" id="s-'+esc(v.id)+'" value="'+esc(v.id)+'"'+(i===0?' checked':'')+'><label for="s-'+esc(v.id)+'"><b>'+esc(v.title)+'</b><small>'+esc(v.text)+'</small></label></div>'; }).join('')+
  '</div></fieldset><div class="fields">'+
- '<div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" autocomplete="name" required></div>'+
- '<div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>'+
+ '<div class="field"><label for="f-name">'+esc(u('name','Your name'))+'</label><input id="f-name" name="name" autocomplete="name" required></div>'+
+ '<div class="field"><label for="f-email">'+esc(u('email','Email'))+'</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>'+
  fld('date','<div class="field"><label for="f-date">'+esc(BL.date||'Wedding date')+'</label><input id="f-date" name="date" type="date"></div>')+
  fld('venue','<div class="field"><label for="f-venue">'+esc(BL.venue||'Venue')+'</label><input id="f-venue" name="venue" placeholder="'+esc(BL.venuePlaceholder||'Venue or town')+'"></div>')+
  fld('people','<div class="field"><label for="f-people">'+esc(BL.people||'Who needs styling?')+'</label><select id="f-people" name="people">'+opt(BK.people||['Just me','Me + 1 to 3','Me + 4 to 7','Me + 8 or more'])+'</select></div>')+
  fld('time','<div class="field"><label for="f-time">'+esc(BL.time||'Ready by')+'</label><select id="f-time" name="time">'+opt(BK.times||['Not sure yet','Before 11:00','11:00 to 13:00','After 13:00'])+'</select></div>')+
  '<div class="field full"><label for="f-msg">'+esc(BL.msg||'Anything else?')+'</label><textarea id="f-msg" name="msg" placeholder="'+esc(BL.msgPlaceholder||'Your dress, your inspiration, your accessories…')+'"></textarea></div></div>'+
- '<div class="form-foot">'+btn('', BK.submit||'Send my enquiry', 'button')+(IG ? igLink('btn btn-ghost', '<i class="dot"></i><span>'+esc(IG.button || 'DM on Instagram')+'</span>') : '')+(contactBits ? '<small>Or '+contactBits+'</small>' : '')+'</div></form>'+
- '<div class="thanks" role="status" aria-live="polite"><h3>'+esc(BK.thanksWord||'Thank you')+'<span id="tName"></span>.</h3><p>'+esc(BK.thanksText||'Your enquiry is on its way.')+' <span id="tDate">'+esc(BK.thanksDateFallback||'your date')+'</span> very soon.</p></div></div>'+
+ '<div class="form-foot">'+btn('', BK.submit||'Send my enquiry', 'button')+(IG ? igLink('btn btn-ghost', '<i class="dot"></i><span>'+esc(IG.button || 'DM on Instagram')+'</span>') : '')+(contactBits ? '<small>'+esc(u('or','Or'))+' '+contactBits+'</small>' : '')+'</div></form>'+
+ '<div class="thanks" role="status" aria-live="polite"><h3>'+esc(BK.thanksWord||'Thank you')+'<span id="tName"></span>.</h3><p>'+esc(BK.thanksText||'Your enquiry is on its way.')+' <span id="tDate">'+esc(BK.thanksDateFallback||'your date')+'</span> '+esc(u('soon','very soon.'))+'</p></div>')+'</div>'+
  '<aside class="b-aside" aria-label="Your selection"><svg class="bow" id="bow" viewBox="0 0 120 120" aria-hidden="true">'+
  '<path class="bandp" pathLength="1" style="--i:0" d="M60 62 C 40 40, 10 38, 14 58 C 18 76, 44 70, 60 62"/><path class="bandp" pathLength="1" style="--i:1" d="M60 62 C 80 40, 110 38, 106 58 C 102 76, 76 70, 60 62"/><path class="bandp" pathLength="1" style="--i:2" d="M58 64 C 52 80, 44 96, 34 112"/><path class="bandp" pathLength="1" style="--i:2" d="M62 64 C 70 82, 78 98, 90 110"/>'+
  '<path pathLength="1" style="--i:0" d="M60 62 C 40 40, 10 38, 14 58 C 18 76, 44 70, 60 62"/><path pathLength="1" style="--i:1" d="M60 62 C 80 40, 110 38, 106 58 C 102 76, 76 70, 60 62"/><path pathLength="1" style="--i:2" d="M58 64 C 52 80, 44 96, 34 112"/><path pathLength="1" style="--i:2" d="M62 64 C 70 82, 78 98, 90 110"/><path pathLength="1" style="--i:3" d="M55 58 Q 60 54 65 58 Q 66 64 60 67 Q 54 64 55 58Z"/></svg>'+
@@ -174,15 +192,16 @@ var book = '<section class="book blush" id="book"><i class="rp" data-rib=".96" d
  '<p class="s-title" id="sTitle">'+esc(s0.title)+'</p><p class="s-quote" id="sQuote">'+esc(s0.quote)+'</p><svg class="bot" data-bot="bloom" aria-hidden="true"></svg></aside></div></section>';
 
 var foot = '<footer class="foot"><svg class="bot in" data-bot="sprig" aria-hidden="true"></svg>'+
- '<a class="totop" href="#top" aria-label="Back to top"><svg viewBox="0 0 30 150" aria-hidden="true"><path d="M15 0 C 6 30, 24 55, 14 85 C 6 108, 22 122, 15 146" stroke-width="6"/><path d="M15 0 C 6 30, 24 55, 14 85 C 6 108, 22 122, 15 146" stroke-width="1" style="stroke:var(--silk-edge)"/></svg><span>Back to top</span></a>'+
+ '<a class="totop" href="#top" aria-label="'+esc(u('top','Back to top'))+'"><svg viewBox="0 0 30 150" aria-hidden="true"><path d="M15 0 C 6 30, 24 55, 14 85 C 6 108, 22 122, 15 146" stroke-width="6"/><path d="M15 0 C 6 30, 24 55, 14 85 C 6 108, 22 122, 15 146" stroke-width="1" style="stroke:var(--silk-edge)"/></svg><span>'+esc(u('top','Back to top'))+'</span></a>'+
  '<div class="wrap"><div class="f-grid"><div><a class="brand'+(B.logo?' has-logo':'')+'" href="#top" style="align-items:flex-start">'+brand+'</a><span class="ciao">'+esc((S.words && S.words.farewell)||'See you soon.')+'</span></div>'+
- '<div><h4>Studio</h4><p>'+(F.studio||[]).map(esc).join('<br>')+'</p></div>'+
- '<div><h4>Contact</h4><ul>'+(P.phone ? '<li><a href="tel:'+esc(String(P.phone).replace(/\s/g,''))+'">'+esc(P.phone)+'</a></li>' : '')+(P.email ? '<li><a href="mailto:'+esc(P.email)+'">'+esc(P.email)+'</a></li>' : '')+(IG ? '<li>'+igLink('', 'Instagram DM · @'+esc(IG.handle))+'</li>' : '')+'</ul></div>'+
- '<div><h4>Follow</h4><ul>'+(P.socials||[]).map(function(x){ return '<li>'+(x.url ? '<a href="'+esc(x.url)+'">'+esc(x.label)+'</a>' : esc(x.label))+'</li>'; }).join('')+'</ul></div></div>'+
+ '<div><h4>'+esc(u('studio','Studio'))+'</h4><p>'+(F.studio||[]).map(esc).join('<br>')+'</p></div>'+
+ '<div><h4>'+esc(u('contact','Contact'))+'</h4><ul>'+(P.phone ? '<li><a href="tel:'+esc(String(P.phone).replace(/\s/g,''))+'">'+esc(P.phone)+'</a></li>' : '')+(P.email ? '<li><a href="mailto:'+esc(P.email)+'">'+esc(P.email)+'</a></li>' : '')+(IG ? '<li>'+igLink('', esc(u('dm','Instagram DM'))+' · @'+esc(IG.handle))+'</li>' : '')+'</ul></div>'+
+ '<div><h4>'+esc(u('follow','Follow'))+'</h4><ul>'+(P.socials||[]).map(function(x){ return '<li>'+(x.url ? '<a href="'+esc(x.url)+'">'+esc(x.label)+'</a>' : esc(x.label))+'</li>'; }).join('')+'</ul></div></div>'+
  '<div class="f-bottom"><span>© '+new Date().getFullYear()+' '+esc(B.name)+'</span><span>'+esc(F.credit||'Website concept by Codzo')+'</span></div></div></footer>';
 
+var sticky = !S.sticky || !S.sticky.length ? '' : '<div class="sticky-cta" role="group" aria-label="'+esc(u('stickyLabel','Contact'))+'">'+S.sticky.map(function(c,i){ return aBtn(c.url, c.label, i ? 'btn btn-ghost' : 'btn'); }).join('')+'</div>';
 document.body.insertAdjacentHTML('afterbegin', nav+'<main id="main"><svg id="ribbon" aria-hidden="true" focusable="false"><path class="band" id="ribBand"/><path class="edge" id="ribEdge"/><path class="edge2" id="ribEdge2"/></svg>'+
-  hero+pull+about+journey+reels+clients+featured+voices+words+work+info+guides+book+'</main>'+foot+'<canvas id="petals" aria-hidden="true"></canvas>');
+  hero+pull+about+services+spot+journey+reels+clients+featured+voices+words+work+info+faq+guides+book+'</main>'+foot+sticky+'<canvas id="petals" aria-hidden="true"></canvas>');
 
 /* ===================== effects ===================== */
 var RM = document.documentElement.classList.contains('rm');
@@ -528,7 +547,7 @@ $$('input[name="svc"]').forEach(function(r){ r.addEventListener('change', functi
   setTimeout(function(){ sImg.src = d.img; sImg.alt = d.alt; sImg.style.objectPosition = d.pos; sImg.classList.remove('fade'); }, RM ? 0 : 380);
   $('#sTitle').textContent = d.t; $('#sQuote').textContent = d.q;
 }); });
-$('#bookForm').addEventListener('submit', function(e){
+var bf = $('#bookForm'); if (bf) bf.addEventListener('submit', function(e){
   e.preventDefault();
   var nm = $('#f-name').value.trim(), dt = $('#f-date') ? $('#f-date').value : '';
   $('#tName').textContent = nm ? ', ' + nm.split(' ')[0] : '';

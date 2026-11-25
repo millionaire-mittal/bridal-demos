@@ -32,6 +32,7 @@ SCROLL_THROUGH = """async () => {
 }"""
 
 FORM_TEST = """() => {
+  if (!document.getElementById('bookForm')) return {sent: true, thanks: '(this page has no enquiry form)'};
   document.getElementById('f-name').value = 'Asha Rao';
   document.getElementById('f-email').value = 'asha@example.com';
   var fd = document.getElementById('f-date'); if (fd) fd.value = '2027-06-12';
@@ -44,7 +45,7 @@ PLACEHOLDERS = """() => {
   const txt = document.body.innerText;
   const brackets = [...new Set((txt.match(/\\[[^\\]\\n]{1,60}\\]/g) || []))];
   const marked = [...document.querySelectorAll('.ph')].map(e => e.textContent);
-  const reviews = (txt.match(/review placeholder/gi) || []).length;
+  const reviews = ((window.SITE && window.SITE.testimonials && window.SITE.testimonials.items) || []).filter(i => i.placeholder).length;
   return {brackets, marked, reviews};
 }"""
 

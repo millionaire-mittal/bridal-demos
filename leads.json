@@ -2497,5 +2497,424 @@
       "look6": "A bed with a striped cotton sheet, red flower motifs and a beige border",
       "look7": "A woman reading in bed under a white quilt with floral block-print motifs"
     }
+  },
+  {
+    "slug": "elis-coiffeur",
+    "logo": "logo.png",
+    "business": "Elis Coiffeur",
+    "wordmark": [
+      "ELIS",
+      "COIFFEUR"
+    ],
+    "first_name": "Elis Coiffeur",
+    "city": "Weil am Rhein",
+    "area": "Deutschland",
+    "phone": "07621 9492191",
+    "instagram": {
+      "url": "https://www.instagram.com/elis_coiffeurr/",
+      "handle": "elis_coiffeurr",
+      "cta": "Termin per DM anfragen",
+      "button": "Per DM schreiben"
+    },
+    "socials": {
+      "instagram": "https://www.instagram.com/elis_coiffeurr/"
+    },
+    "language": "german",
+    "fonts": "soft-modern",
+    "motif": "laurel",
+    "accent": "#A87B4F",
+    "colors": {
+      "ivory": "#FAF6F0",
+      "blush": "#EDE3D8",
+      "blush2": "#F5EEE5",
+      "accent": "#A47649",
+      "accentDark": "#6E4C2E",
+      "ink": "#1F1712",
+      "muted": "#675A4F",
+      "deep": "#2A1E17",
+      "deep2": "#38291F",
+      "line": "#B9975F",
+      "silk": "#E6D8C4",
+      "silkEdge": "#C2A57A"
+    },
+    "title": "Balayage, Farbe & Extensions in Weil am Rhein | Elis Coiffeur",
+    "description": "Elis Coiffeur ist ein Friseursalon in Weil am Rhein für Damen & Herren – mit Balayage, Farbe, Extensions und Schnitt. Termine per DM oder Anruf.",
+    "cta": "Termin per DM anfragen",
+    "cta_url": "https://www.instagram.com/elis_coiffeurr/",
+    "credit": "Demo-Seite · Konzept von Codzo",
+    "labels": {
+      "journey": "Salon-Erlebnis",
+      "about": "Über uns",
+      "about_link": "Zum Ablauf",
+      "words": "Stimmen",
+      "work": "Galerie",
+      "more": "",
+      "reels": "Instagram",
+      "review_suffix": ""
+    },
+    "ui": {
+      "skip": "Zum Inhalt springen",
+      "aboutNav": "Über uns",
+      "top": "Nach oben",
+      "studio": "Salon",
+      "contact": "Kontakt",
+      "follow": "Folgen",
+      "dm": "Instagram-DM",
+      "call": "ruf an",
+      "or": "Oder",
+      "soon": "sehr bald.",
+      "phTitle": "Platzhalter: vor der Freigabe ersetzen",
+      "stickyLabel": "Kontakt aufnehmen"
+    },
+    "sticky": [
+      {
+        "label": "Termin per DM",
+        "url": "https://www.instagram.com/elis_coiffeurr/"
+      },
+      {
+        "label": "Anrufen",
+        "url": "tel:076219492191"
+      }
+    ],
+    "hero": {
+      "greeting": [
+        "Balayage, Farbe",
+        "& Extensions"
+      ],
+      "eyebrow": "Friseursalon in Weil am Rhein",
+      "lead": "Elis Coiffeur ist dein Salon für Damen & Herren in Weil am Rhein – mit Fokus auf Balayage, Farbe, Extensions und präzise Schnitte.",
+      "facts": [
+        "Damen & Herren",
+        "Balayage · Color Expert · Extensions · Schnitt",
+        "Termine per DM oder Anruf"
+      ],
+      "detail_caption": "Weiche Wellen, helle Strähnen",
+      "cta2": {
+        "label": "Jetzt anrufen",
+        "url": "tel:076219492191"
+      }
+    },
+    "pull": {
+      "label": "Individuelle Beratung.",
+      "text": "Erzähl uns, was du dir wünschst, und wir finden *gemeinsam deinen Look.*",
+      "roots_word": "Weil am Rhein.",
+      "roots": "Dein Friseursalon für Damen & Herren: Balayage, Farbe, Extensions und Schnitt."
+    },
+    "about": {
+      "heading": "Dein Salon *in Weil am Rhein.*",
+      "sub": "Damen & Herren. Balayage, Color Expert, Extensions, Schnitt.",
+      "paragraphs": [
+        "Elis Coiffeur ist ein Friseursalon in Weil am Rhein für Damen und Herren.",
+        "Unser Fokus liegt auf Balayage, Farbe und Extensions. Dazu kommen Schnitte, die zu dir passen.",
+        "Termine vereinbarst du per Instagram-DM an @elis_coiffeurr oder telefonisch unter 07621 9492191."
+      ],
+      "signature": "Elis Coiffeur"
+    },
+    "services_section": {
+      "label": "Leistungen",
+      "navLabel": "Leistungen",
+      "heading": "Unsere *Leistungen.*",
+      "text": "Balayage, Farbe, Extensions, Schnitt und Styling für Damen & Herren.",
+      "items": [
+        {
+          "title": "Balayage",
+          "text": "Handgemalte, dimensionale Balayage für weiche, natürlich wirkende Farbverläufe.",
+          "image": "look1.jpg"
+        },
+        {
+          "title": "Farbe",
+          "text": "Professionelle Haarfarbe, Farbberatung, Ansätze und individuelle Farbergebnisse.",
+          "image": "look3.jpg"
+        },
+        {
+          "title": "Extensions",
+          "text": "Mehr Länge, mehr Volumen, eine neue Farbdimension. Mehr dazu im nächsten Abschnitt.",
+          "image": "extensions.jpg"
+        },
+        {
+          "title": "Schnitt",
+          "text": "Damen- und Herrenschnitte, abgestimmt auf Gesichtsform, Haarstruktur und persönlichen Stil.",
+          "image": "look5.jpg"
+        },
+        {
+          "title": "Styling & Finish",
+          "text": "Föhnen, Styling und Finish für den Alltag oder besondere Anlässe.",
+          "image": "look6.jpg",
+          "status": "[MIT KUNDIN BESTÄTIGEN]"
+        }
+      ]
+    },
+    "spotlight": {
+      "label": "Länge. Volumen. Bewegung.",
+      "navLabel": "Extensions",
+      "heading": "Hair *Extensions*",
+      "text": "Ob mehr Länge, mehr Volumen oder eine neue Farbdimension – Extensions können individuell auf deine Haare und deinen Wunschlook abgestimmt werden.",
+      "text2": "Vereinbare einen Beratungstermin, um die passende Methode, Länge und Farbe für dich zu finden.",
+      "image": "spot.jpg",
+      "alt": "Lange, gewellte Haare mit hellen Strähnen",
+      "cards": [
+        {
+          "title": "Mehr Länge",
+          "text": "Für mehr Länge und einen längeren, volleren Look.",
+          "status": "[MIT KUNDIN BESTÄTIGEN]"
+        },
+        {
+          "title": "Mehr Volumen",
+          "text": "Für mehr Fülle, Dichte und Volumen – besonders bei feinerem oder dünnerem Haar.",
+          "status": "[MIT KUNDIN BESTÄTIGEN]"
+        },
+        {
+          "title": "Individuelle Beratung",
+          "text": "Farbe, Länge und Methode werden im Beratungsgespräch auf deine Haare und deinen Wunschlook abgestimmt.",
+          "status": "[MIT KUNDIN BESTÄTIGEN]"
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Termin per DM anfragen",
+          "url": "https://www.instagram.com/elis_coiffeurr/"
+        },
+        {
+          "label": "Jetzt anrufen",
+          "url": "tel:076219492191"
+        }
+      ]
+    },
+    "journey_heading": "Von der Anfrage *zum neuen Look.*",
+    "journey": [
+      {
+        "kicker": "01 · Anfrage",
+        "title": "Termin anfragen",
+        "short": "Anfrage",
+        "text": "Schreib uns eine DM an @elis_coiffeurr oder ruf an: 07621 9492191."
+      },
+      {
+        "kicker": "02 · Beratung",
+        "title": "Beratung",
+        "short": "Beratung",
+        "text": "Wir besprechen deinen Wunsch zu Farbe, Schnitt oder Extensions. [MIT KUNDIN BESTÄTIGEN]"
+      },
+      {
+        "kicker": "03 · Im Salon",
+        "title": "Dein Termin im Salon",
+        "short": "Im Salon",
+        "text": "Du kommst zu uns nach Weil am Rhein. [MIT KUNDIN BESTÄTIGEN]"
+      },
+      {
+        "kicker": "04 · Dein Look",
+        "title": "Dein Ergebnis",
+        "short": "Dein Look",
+        "text": "Balayage, Farbe, Extensions oder Schnitt, abgestimmt auf dich."
+      }
+    ],
+    "reels": {
+      "heading": "Aktuelles auf *Instagram.*",
+      "text": "Einblicke und neue Looks von @elis_coiffeurr.",
+      "note": "Das Reel wird auf der Live-Seite abgespielt.",
+      "cta": {
+        "label": "Folge @elis_coiffeurr",
+        "url": "https://www.instagram.com/elis_coiffeurr/"
+      },
+      "items": [
+        {
+          "title": "[Platzhalter: Reel]"
+        },
+        {
+          "title": "[Platzhalter: Reel]"
+        },
+        {
+          "title": "[Platzhalter: Post]"
+        },
+        {
+          "title": "[Platzhalter: Reel]"
+        }
+      ]
+    },
+    "reviews": [
+      {
+        "text": "Kundenbewertung",
+        "name": "Kundenbewertungen werden ergänzt – wortwörtlich aus verifizierten Quellen übernommen.",
+        "placeholder": true
+      },
+      {
+        "text": "Kundenbewertung",
+        "name": "Kundenbewertungen werden ergänzt – wortwörtlich aus verifizierten Quellen übernommen.",
+        "placeholder": true
+      },
+      {
+        "text": "Kundenbewertung",
+        "name": "Kundenbewertungen werden ergänzt – wortwörtlich aus verifizierten Quellen übernommen.",
+        "placeholder": true
+      }
+    ],
+    "looks_heading": "Eindrücke *aus dem Salon.*",
+    "looks_text": "Balayage, Farbe, Schnitt und Styling. [Bildauswahl mit Kundin bestätigen]",
+    "looks": [
+      {
+        "tag": "Balayage",
+        "title": "Weiche Wellen, helle Strähnen"
+      },
+      {
+        "tag": "Balayage",
+        "title": "Natürlicher Farbverlauf"
+      },
+      {
+        "tag": "Farbe",
+        "title": "Dunkler Ansatz, helle Längen"
+      },
+      {
+        "tag": "Schnitt",
+        "title": "Stufenschnitt mit Bewegung"
+      },
+      {
+        "tag": "Schnitt",
+        "title": "Langer Stufenschnitt"
+      },
+      {
+        "tag": "Styling",
+        "title": "Wellen für den Abend"
+      },
+      {
+        "tag": "Balayage",
+        "title": "Heller Verlauf, glatt gestylt"
+      }
+    ],
+    "faq": {
+      "label": "FAQ",
+      "navLabel": "FAQ",
+      "heading": "Häufige *Fragen.*",
+      "items": [
+        {
+          "q": "Bieten Sie Balayage an?",
+          "a": "Ja, Balayage gehört zu den Schwerpunkten von Elis Coiffeur. Bitte kontaktiere den Salon per Instagram-DM oder telefonisch für aktuelle Verfügbarkeit und Beratung."
+        },
+        {
+          "q": "Bieten Sie Farbberatung an?",
+          "a": "Farbe ist ein Schwerpunkt des Salons. Bitte kontaktiere den Salon per Instagram-DM oder telefonisch für aktuelle Verfügbarkeit und Beratung."
+        },
+        {
+          "q": "Bieten Sie Hair Extensions an?",
+          "a": "Ja, Extensions sind Teil des Angebots von Elis Coiffeur."
+        },
+        {
+          "q": "Welche Extensions-Methode verwenden Sie?",
+          "a": "Bitte vereinbare einen Beratungstermin per DM oder Anruf, um die passende Methode für dein Haar zu besprechen."
+        },
+        {
+          "q": "Wie lange halten Extensions?",
+          "a": "Die Haltbarkeit hängt von Methode, Haarstruktur, Pflege und Nachterminen ab. Bitte sprich dies im Beratungsgespräch mit dem Salon durch."
+        },
+        {
+          "q": "Kann ich Extensions bei feinem oder dünnem Haar bekommen?",
+          "a": "Bitte vereinbare eine individuelle Beratung, um zu klären, ob Extensions für dein Haar geeignet sind."
+        },
+        {
+          "q": "Wie viel kosten Extensions?",
+          "a": "Bitte kontaktiere den Salon für aktuelle Preise und Angebote."
+        },
+        {
+          "q": "Bieten Sie Schnitte für Damen und Herren an?",
+          "a": "Ja, Elis Coiffeur ist ein Friseursalon für Damen und Herren, und Schnitt gehört zum Angebot. Bitte kontaktiere den Salon per Instagram-DM oder telefonisch für Verfügbarkeit und Beratung."
+        },
+        {
+          "q": "Wie vereinbare ich einen Termin oder Beratungstermin?",
+          "a": "Du kannst einen Termin per Instagram-DM oder telefonisch unter 07621 9492191 vereinbaren."
+        },
+        {
+          "q": "Wo befindet sich der Salon?",
+          "a": "Der Salon befindet sich in Weil am Rhein, Deutschland. Adresse: Schillerstraße 2, 79576 Weil am Rhein [MIT KUNDIN BESTÄTIGEN]"
+        },
+        {
+          "q": "Wie viel kosten die Leistungen?",
+          "a": "Bitte kontaktiere den Salon per Instagram-DM oder telefonisch für aktuelle Verfügbarkeit, Preise und Beratung."
+        }
+      ]
+    },
+    "booking": {
+      "label": "Kontakt",
+      "heading": "Termin *anfragen.*",
+      "intro": "Schreib uns eine DM auf Instagram oder ruf an. Wir besprechen mit dir Verfügbarkeit und Beratung.",
+      "no_form": true,
+      "ctas": [
+        {
+          "label": "Termin per DM anfragen",
+          "url": "https://www.instagram.com/elis_coiffeurr/"
+        },
+        {
+          "label": "Jetzt anrufen",
+          "url": "tel:076219492191"
+        }
+      ],
+      "facts": [
+        "Telefon: 07621 9492191",
+        "Instagram: @elis_coiffeurr",
+        "Weil am Rhein, Deutschland",
+        "Schillerstraße 2, 79576 Weil am Rhein [MIT KUNDIN BESTÄTIGEN]"
+      ],
+      "services": [
+        {
+          "title": "Termin per DM",
+          "text": "Instagram",
+          "image": "look1.jpg",
+          "quote": "Schreib uns eine DM für deinen Termin."
+        },
+        {
+          "title": "Termin per Anruf",
+          "text": "07621 9492191",
+          "image": "look2.jpg",
+          "quote": "Ruf uns an: 07621 9492191."
+        }
+      ]
+    },
+    "studio_lines": [
+      "Weil am Rhein, Deutschland",
+      "Telefon 07621 9492191",
+      "Termine per DM oder Anruf"
+    ],
+    "positions": {
+      "hero": "50% 30%",
+      "detail": "50% 50%",
+      "portrait": "50% 35%",
+      "party": "50% 40%",
+      "party-2": "50% 40%",
+      "step1": "50% 30%",
+      "step2": "50% 30%",
+      "step3": "50% 30%",
+      "step4": "50% 30%",
+      "look1": "50% 35%",
+      "look2": "50% 35%",
+      "look3": "50% 30%",
+      "look4": "50% 30%",
+      "look5": "50% 30%",
+      "look6": "50% 30%",
+      "look7": "50% 35%",
+      "extensions": "50% 30%",
+      "spot": "50% 35%"
+    },
+    "alts": {
+      "hero": "Eine Frau mit langen, gewellten Haaren und hellen Strähnen im Salon, eine Hand im Haar",
+      "detail": "Lange, gewellte Haare mit hellen Strähnen",
+      "portrait": "Eine Frau mit hellbraunen, gewellten Haaren und blonden Strähnen vor dem Salon-Schriftzug",
+      "at-work": "Ein Stylist legt einer Kundin langes, gestuftes Haar",
+      "party": "Eine Frau mit langen, hell gesträhnten Wellen und einem pinken Top im Salonstuhl",
+      "party-2": "Lange, braune Haare mit weichem Stufenschnitt",
+      "step1": "Eine Frau mit langen, hell gesträhnten Wellen und einem pinken Top im Salonstuhl",
+      "step2": "Eine Frau mit glatt gestyltem, hell gesträhntem Haar mit Pony",
+      "step3": "Ein Stylist legt einer Kundin langes, gestuftes Haar",
+      "step4": "Lange Wellen mit dunklem Ansatz und blonden Längen",
+      "look1": "Eine Frau mit langen, hell gesträhnten Wellen und einem pinken Top im Salonstuhl",
+      "look2": "Eine Frau mit gewellten Haaren und blonden Strähnen vor dem Salon-Schriftzug",
+      "look3": "Lange Wellen mit dunklem Ansatz und blonden Längen",
+      "look4": "Ein Stylist legt einer Kundin langes, gestuftes Haar",
+      "look5": "Lange, braune Haare mit weichem Stufenschnitt",
+      "look6": "Eine Frau mit langen, dunklen Wellen in einem Paillettenkleid",
+      "look7": "Eine Frau mit glatt gestyltem, hell gesträhntem Haar mit Pony",
+      "extensions": "Lange, gewellte Haare mit hellen Strähnen",
+      "spot": "Lange, gewellte Haare mit hellen Strähnen",
+      "reel1": "Platzhalter für ein Reel",
+      "reel2": "Platzhalter für ein Reel",
+      "reel3": "Platzhalter für einen Post",
+      "reel4": "Platzhalter für ein Reel"
+    }
   }
 ]
