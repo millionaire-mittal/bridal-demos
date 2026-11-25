@@ -2916,5 +2916,372 @@
       "reel3": "Platzhalter für einen Post",
       "reel4": "Platzhalter für ein Reel"
     }
+  },
+  {
+    "slug": "isa-hairstudio",
+    "logo": "logo.png",
+    "logo_round": false,
+    "business": "Coiffeur Isa Yüksel",
+    "wordmark": [
+      "İSA",
+      "HAIRSTUDIO"
+    ],
+    "first_name": "İsa",
+    "full_name": "İsa Yüksel",
+    "city": "Wettingen",
+    "area": "Schweiz",
+    "phone": "+41 76 574 34 68",
+    "instagram": {
+      "url": "https://www.instagram.com/isa.hairstudio/",
+      "handle": "isa.hairstudio",
+      "cta": "Instagram ansehen",
+      "button": "Instagram ansehen"
+    },
+    "socials": {
+      "instagram": "https://www.instagram.com/isa.hairstudio/"
+    },
+    "language": "german-ch",
+    "fonts": "soft-modern",
+    "motif": "laurel",
+    "accent": "#8A5A2B",
+    "colors": {
+      "ivory": "#FAF6EF",
+      "blush": "#EEE4D6",
+      "blush2": "#F6EFE4",
+      "accent": "#85562A",
+      "accentDark": "#5E3A18",
+      "ink": "#20170F",
+      "muted": "#675A4C",
+      "deep": "#2B1F15",
+      "deep2": "#3A2A1C",
+      "line": "#B9975F",
+      "silk": "#E7D9C3",
+      "silkEdge": "#C3A679"
+    },
+    "title": "Coiffeur & Hair Stylist in Wettingen | İsa Yüksel",
+    "description": "Coiffeur Isa Yüksel in Wettingen bietet persönliche Beratung, präzise Schnitte und individuelles Hairstyling. Termin online vereinbaren oder per Instagram DM anfragen.",
+    "cta": "Termin vereinbaren",
+    "cta_url": "http://coiffeurisa.ch/termin/",
+    "credit": "Demo-Seite · Konzept von Codzo",
+    "labels": {
+      "journey": "Salon-Erlebnis",
+      "about": "Über İsa",
+      "about_link": "Zum Ablauf",
+      "words": "Stimmen",
+      "work": "Galerie",
+      "more": "",
+      "reels": "Instagram",
+      "review_suffix": ""
+    },
+    "ui": {
+      "skip": "Zum Inhalt springen",
+      "aboutNav": "Über İsa",
+      "top": "Nach oben",
+      "studio": "Salon",
+      "contact": "Kontakt",
+      "follow": "Folgen",
+      "dm": "Instagram-DM",
+      "call": "ruf an",
+      "or": "Oder",
+      "soon": "sehr bald.",
+      "phTitle": "Platzhalter: vor der Freigabe ersetzen",
+      "stickyLabel": "Kontakt aufnehmen"
+    },
+    "sticky": [
+      {
+        "label": "Termin vereinbaren",
+        "url": "http://coiffeurisa.ch/termin/"
+      },
+      {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/isa.hairstudio/"
+      }
+    ],
+    "hero": {
+      "greeting": [
+        "Dein Look,",
+        "individuell gestaltet"
+      ],
+      "eyebrow": "Hair Stylist in Wettingen",
+      "lead": "Coiffeur Isa Yüksel in Wettingen – für persönliche Beratung, präzise Schnitte und individuelles Hairstyling.",
+      "facts": [
+        "Beratung · Schnitt · Styling",
+        "Wettingen, Schweiz",
+        "Termin online, per DM oder Telefon"
+      ],
+      "detail_caption": "Weiche Wellen",
+      "cta2": {
+        "label": "Instagram ansehen",
+        "url": "https://www.instagram.com/isa.hairstudio/"
+      }
+    },
+    "pull": {
+      "label": "Persönliche Beratung.",
+      "text": "Sag uns, was dir gefällt, und wir gestalten *deinen Look gemeinsam.*",
+      "roots_word": "Wettingen.",
+      "roots": "Coiffeur Isa Yüksel: persönliche Beratung, präzise Schnitte und Hairstyling für deinen individuellen Look."
+    },
+    "about": {
+      "heading": "Dein Coiffeur *in Wettingen.*",
+      "sub": "İsa Yüksel, Hair Stylist. Coiffeur Isa Yüksel in Wettingen.",
+      "paragraphs": [
+        "İsa Yüksel ist Hair Stylist. Der Salon heisst Coiffeur Isa Yüksel und befindet sich in Wettingen.",
+        "Im Mittelpunkt stehen die persönliche Beratung und dein individueller Look.",
+        "Einen Termin vereinbarst du online, per Instagram-DM an @isa.hairstudio oder telefonisch unter +41 76 574 34 68."
+      ],
+      "signature": "İsa Yüksel"
+    },
+    "services_section": {
+      "label": "Leistungen",
+      "navLabel": "Leistungen",
+      "heading": "Unsere *Leistungen.*",
+      "text": "Beratung, Schnitt, Farbe und Styling.",
+      "items": [
+        {
+          "title": "Beratung",
+          "text": "Eine persönliche Beratung hilft, Stil, Haarstruktur und Wunschlook gemeinsam zu besprechen.",
+          "image": "step2.jpg",
+          "status": "[MIT KUNDEN BESTÄTIGEN]"
+        },
+        {
+          "title": "Schnitt",
+          "text": "Ein individueller Schnitt, abgestimmt auf Gesichtsform, Haartyp und persönlichen Stil.",
+          "image": "look3.jpg",
+          "status": "[MIT KUNDEN BESTÄTIGEN]"
+        },
+        {
+          "title": "Farbe",
+          "text": "Individuelle Farbberatung und professionelle Farbkonzepte für deinen Look.",
+          "image": "look5.jpg",
+          "status": "[MIT KUNDEN BESTÄTIGEN]"
+        },
+        {
+          "title": "Styling",
+          "text": "Styling und Finish für den Alltag oder besondere Anlässe.",
+          "image": "look1.jpg",
+          "status": "[MIT KUNDEN BESTÄTIGEN]"
+        }
+      ]
+    },
+    "journey_heading": "Von der Anfrage *zum neuen Look.*",
+    "journey": [
+      {
+        "kicker": "01 · Anfrage",
+        "title": "Terminanfrage",
+        "short": "Anfrage",
+        "text": "Vereinbare deinen Termin online, per Instagram-DM oder telefonisch."
+      },
+      {
+        "kicker": "02 · Beratung",
+        "title": "Persönliche Beratung",
+        "short": "Beratung",
+        "text": "Wir besprechen Stil, Haarstruktur und Wunschlook. [MIT KUNDEN BESTÄTIGEN]"
+      },
+      {
+        "kicker": "03 · Abstimmung",
+        "title": "Gemeinsame Abstimmung",
+        "short": "Abstimmung",
+        "text": "Dein Wunschlook wird gemeinsam abgestimmt. [MIT KUNDEN BESTÄTIGEN]"
+      },
+      {
+        "kicker": "04 · Im Salon",
+        "title": "Dein Termin im Salon",
+        "short": "Im Salon",
+        "text": "Du kommst zu uns nach Wettingen. [MIT KUNDEN BESTÄTIGEN]"
+      }
+    ],
+    "reels": {
+      "heading": "Aktuelles auf *Instagram.*",
+      "text": "Einblicke und neue Looks von @isa.hairstudio.",
+      "note": "Das Reel wird auf der Live-Seite abgespielt.",
+      "cta": {
+        "label": "Folge @isa.hairstudio",
+        "url": "https://www.instagram.com/isa.hairstudio/"
+      },
+      "items": [
+        {
+          "title": "[Platzhalter: Reel]"
+        },
+        {
+          "title": "[Platzhalter: Reel]"
+        },
+        {
+          "title": "[Platzhalter: Post]"
+        },
+        {
+          "title": "[Platzhalter: Reel]"
+        }
+      ]
+    },
+    "reviews": [
+      {
+        "text": "Kundenbewertung",
+        "name": "Kundenbewertungen werden ergänzt – wortwörtlich aus verifizierten Quellen übernommen.",
+        "placeholder": true
+      },
+      {
+        "text": "Kundenbewertung",
+        "name": "Kundenbewertungen werden ergänzt – wortwörtlich aus verifizierten Quellen übernommen.",
+        "placeholder": true
+      },
+      {
+        "text": "Kundenbewertung",
+        "name": "Kundenbewertungen werden ergänzt – wortwörtlich aus verifizierten Quellen übernommen.",
+        "placeholder": true
+      }
+    ],
+    "looks_heading": "Eindrücke *aus dem Salon.*",
+    "looks_text": "Schnitt, Styling und Salon. [Bildauswahl mit Kunden bestätigen]",
+    "looks": [
+      {
+        "tag": "Styling",
+        "title": "Weiche Wellen, helle Strähnen"
+      },
+      {
+        "tag": "Salon",
+        "title": "Lange Wellen im Salon"
+      },
+      {
+        "tag": "Schnitt",
+        "title": "Kurzer Schnitt mit Volumen"
+      },
+      {
+        "tag": "Styling",
+        "title": "Lange, glänzende Längen"
+      },
+      {
+        "tag": "Styling",
+        "title": "Wellen mit Volumen"
+      },
+      {
+        "tag": "Styling",
+        "title": "Volle, gelockte Längen"
+      },
+      {
+        "tag": "Salon",
+        "title": "Blick in den Salon"
+      }
+    ],
+    "faq": {
+      "label": "FAQ",
+      "navLabel": "FAQ",
+      "heading": "Häufige *Fragen.*",
+      "items": [
+        {
+          "q": "Wo befindet sich der Salon?",
+          "a": "Der Salon befindet sich in Wettingen, Schweiz. Adresse: Alberich-Zwyssigstrasse 81, 5430 Wettingen [MIT KUNDEN BESTÄTIGEN]"
+        },
+        {
+          "q": "Wie vereinbare ich einen Termin?",
+          "a": "Du kannst einen Termin über die Terminseite des Salons, per Instagram-DM oder telefonisch unter +41 76 574 34 68 vereinbaren."
+        },
+        {
+          "q": "Bieten Sie Beratung an?",
+          "a": "Bitte kontaktiere den Salon für aktuelle Verfügbarkeit, Preise und Beratung."
+        },
+        {
+          "q": "Bieten Sie Schnitte an?",
+          "a": "Bitte kontaktiere den Salon für aktuelle Verfügbarkeit, Preise und Beratung."
+        },
+        {
+          "q": "Bieten Sie Farbe und Styling an?",
+          "a": "Bitte kontaktiere den Salon für aktuelle Verfügbarkeit, Preise und Beratung."
+        },
+        {
+          "q": "Wie viel kosten die Leistungen?",
+          "a": "Bitte kontaktiere den Salon für aktuelle Verfügbarkeit, Preise und Beratung."
+        },
+        {
+          "q": "Kann ich meinen Wunschlook vorab besprechen?",
+          "a": "Bitte kontaktiere den Salon per Instagram-DM oder telefonisch, um deinen Wunschlook vorab zu besprechen."
+        }
+      ]
+    },
+    "booking": {
+      "label": "Kontakt",
+      "heading": "Termin *vereinbaren.*",
+      "intro": "Vereinbare deinen Termin online, per Instagram-DM oder telefonisch.",
+      "no_form": true,
+      "ctas": [
+        {
+          "label": "Termin vereinbaren",
+          "url": "http://coiffeurisa.ch/termin/"
+        },
+        {
+          "label": "Instagram ansehen",
+          "url": "https://www.instagram.com/isa.hairstudio/"
+        },
+        {
+          "label": "Anrufen",
+          "url": "tel:+41765743468"
+        }
+      ],
+      "facts": [
+        "Telefon: +41 76 574 34 68",
+        "Instagram: @isa.hairstudio",
+        "Wettingen, Schweiz",
+        "Alberich-Zwyssigstrasse 81, 5430 Wettingen [MIT KUNDEN BESTÄTIGEN]"
+      ],
+      "services": [
+        {
+          "title": "Termin online",
+          "text": "coiffeurisa.ch/termin",
+          "image": "look1.jpg",
+          "quote": "Vereinbare deinen Termin über die Terminseite."
+        },
+        {
+          "title": "Termin per DM oder Telefon",
+          "text": "+41 76 574 34 68",
+          "image": "look4.jpg",
+          "quote": "Schreib uns auf Instagram oder ruf an: +41 76 574 34 68."
+        }
+      ]
+    },
+    "studio_lines": [
+      "Wettingen, Schweiz",
+      "Telefon +41 76 574 34 68",
+      "Termin online, per DM oder Telefon"
+    ],
+    "positions": {
+      "hero": "50% 30%",
+      "detail": "50% 50%",
+      "portrait": "50% 40%",
+      "party": "50% 35%",
+      "party-2": "50% 35%",
+      "step1": "50% 40%",
+      "step2": "50% 30%",
+      "step3": "50% 30%",
+      "step4": "50% 35%",
+      "look1": "50% 30%",
+      "look2": "50% 35%",
+      "look3": "50% 30%",
+      "look4": "50% 30%",
+      "look5": "50% 30%",
+      "look6": "50% 30%",
+      "look7": "50% 50%"
+    },
+    "alts": {
+      "hero": "Eine Frau mit langen, weichen Wellen und hellen Strähnen im Salon",
+      "detail": "Lange, braune Wellen mit hellen Strähnen",
+      "portrait": "Eine Frau in einem Top mit Perlenkragen im Salon, im Hintergrund das Salon-Schild",
+      "at-work": "Ein Stylist legt einer Kundin im Salonstuhl das Haar",
+      "party": "Eine lächelnde Frau mit Brille und langen, rotbraunen Wellen",
+      "party-2": "Eine Frau mit langen, kupferfarbenen Wellen und Volumen",
+      "step1": "Eine Frau in einem Top mit Perlenkragen im Salon, im Hintergrund das Salon-Schild",
+      "step2": "Eine Frau mit langen, blonden Wellen, ein Stylist legt das Haar",
+      "step3": "Eine Frau mit kurzem, voluminösem Schnitt und ein Stylist hinter ihr",
+      "step4": "Eine Frau mit langen, braunen Wellen und hellen Strähnen im Salon",
+      "look1": "Eine Frau mit langen, weichen Wellen und hellen Strähnen im Salon",
+      "look2": "Eine Frau mit langen, braunen Wellen und hellen Strähnen im Salon",
+      "look3": "Eine Frau mit kurzem, voluminösem Schnitt und ein Stylist hinter ihr",
+      "look4": "Eine Frau mit langen, braunen Wellen und hellen Strähnen vor Salonspiegeln",
+      "look5": "Eine Frau mit langen, kupferfarbenen Wellen und Volumen",
+      "look6": "Eine lächelnde Frau mit Brille und langen, rotbraunen Wellen",
+      "look7": "Blick in den Salon mit Stühlen, Spiegeln und Pflanzen",
+      "reel1": "Platzhalter für ein Reel",
+      "reel2": "Platzhalter für ein Reel",
+      "reel3": "Platzhalter für einen Post",
+      "reel4": "Platzhalter für ein Reel"
+    }
   }
 ]

@@ -52,7 +52,7 @@ var aLink = function(o){ return '<a class="link" href="'+esc(o.url)+'"'+(isExt(o
 var phTxt = function(t){ return esc(t).replace(/\[(.+?)\]/g,'<b class="ph" title="'+esc(u('phTitle','Placeholder: replace before going live'))+'">$1</b>'); };
 var contactBits = [P.phone ? esc(u('call','call'))+' '+esc(P.phone) : '', P.email ? esc(P.email) : ''].filter(Boolean).join(' &nbsp;·&nbsp; ');
 var brand = '<span class="b1">'+esc(B.line1)+'</span><span class="b2">'+esc(B.line2)+'</span>';
-if (B.logo) brand = '<img class="b-logo" src="'+esc(B.logo)+'" alt="'+esc(B.name)+' logo" width="48" height="48"><span class="b-txt">'+brand+'</span>';
+if (B.logo) brand = '<img class="b-logo'+(B.logoRound===false?' sq':'')+'" src="'+esc(B.logo)+'" alt="'+esc(B.name)+' logo" width="48" height="48"><span class="b-txt">'+brand+'</span>';
 
 var secHead = function(o){ return '<div class="sec-head z"><div>'+chap(o.label)+'<h2 data-blur>'+md(o.heading)+'</h2></div>'+(o.text ? '<p data-fade>'+esc(o.text)+'</p>' : '')+'</div>'; };
 var linkTag = function(url, cls, inner, extra){ return url ? '<a class="'+cls+'" href="'+esc(url)+'" target="_blank" rel="noopener"'+(extra||'')+'>'+inner+'</a>' : '<div class="'+cls+'"'+(extra||'')+'>'+inner+'</div>'; };

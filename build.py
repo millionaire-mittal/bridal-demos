@@ -49,6 +49,9 @@ LANGUAGES = {
     "german":  dict(chapters=["Eins", "Zwei", "Drei", "Vier", "Fünf", "Sechs", "Sieben", "Acht", "Neun", "Zehn"], scroll="Scrollen",
                     farewell="Bis bald.", greeting=["Hallo,", "schön."], thanks="Danke",
                     booking_label="Termin", roots_word="Wurzeln.", about_word="Schön, dich zu sehen.", html="de"),
+    "german-ch": dict(chapters=["Eins", "Zwei", "Drei", "Vier", "Fünf", "Sechs", "Sieben", "Acht", "Neun", "Zehn"], scroll="Scrollen",
+                    farewell="Bis bald.", greeting=["Hallo,", "schön."], thanks="Danke",
+                    booking_label="Termin", roots_word="Wurzeln.", about_word="Schön, dich zu sehen.", html="de-CH"),
     "hindi":   dict(chapters=["Ek", "Do", "Teen", "Chaar", "Paanch", "Chhah"], scroll="Scroll",
                     farewell="Phir milenge.", greeting=["Namaste,", "dulhan."], thanks="Shukriya",
                     booking_label="Milte hain", roots_word="Jadein.", about_word="Namaste."),
@@ -322,7 +325,8 @@ def site_config(lead: dict) -> dict:
         "meta": {"title": lead.get("title") or f"{lead['business']} · Bridal hair in {lead['city']}",
                  "description": lead.get("description") or h["lead"]},
         "brand": {"line1": lead["wordmark"][0], "line2": lead["wordmark"][1], "name": lead["business"],
-                  **({"logo": f"img/{lead['logo']}"} if lead.get("logo") else {})},
+                  **({"logo": f"img/{lead['logo']}"} if lead.get("logo") else {}),
+                  **({"logoRound": False} if lead.get("logo_round") is False else {})},
         "person": {"first": first, "full": lead.get("full_name") or first, "phone": lead.get("phone", ""),
                    "email": lead.get("email", ""), "instagram": instagram(lead),
                    "socials": [{"label": k.capitalize() if k != "tiktok" else "TikTok", **({"url": v} if v else {})}
@@ -460,6 +464,7 @@ PAGE = """<!DOCTYPE html>
 <meta property="og:title" content="__TITLE__">
 <meta property="og:description" content="__DESCRIPTION__">
 <meta property="og:url" content="__URL__">
+<link rel="alternate" hreflang="__LANG__" href="__URL__">
 <meta property="og:image" content="__URL__img/hero.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">

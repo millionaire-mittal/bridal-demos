@@ -12,6 +12,7 @@
 <meta property="og:title" content="Balayage, Farbe &amp; Extensions in Weil am Rhein | Elis Coiffeur">
 <meta property="og:description" content="Elis Coiffeur ist ein Friseursalon in Weil am Rhein für Damen &amp; Herren – mit Balayage, Farbe, Extensions und Schnitt. Termine per DM oder Anruf.">
 <meta property="og:url" content="https://bridal-demos.vercel.app/bridal/elis-coiffeur/">
+<link rel="alternate" hreflang="de" href="https://bridal-demos.vercel.app/bridal/elis-coiffeur/">
 <meta property="og:image" content="https://bridal-demos.vercel.app/bridal/elis-coiffeur/img/hero.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -78,7 +79,7 @@ h2 em,h1 em,.pull-text em{font-style:italic}
 .brand{display:flex;flex-direction:column;align-items:center;text-decoration:none;line-height:1}
 .brand .b1{font-family:var(--display);font-size:22px;letter-spacing:.14em}
 .brand .b2{font-size:8.5px;letter-spacing:.62em;margin-top:5px;margin-right:-.62em}
-.brand.has-logo{flex-direction:row;gap:12px}.b-txt{display:flex;flex-direction:column;align-items:center}.b-logo{width:48px;height:48px;border-radius:50%;display:block;flex:none}.foot .b-logo{width:72px;height:72px}
+.brand.has-logo{flex-direction:row;gap:12px}.b-txt{display:flex;flex-direction:column;align-items:center}.b-logo{width:48px;height:48px;border-radius:50%;display:block;flex:none}.foot .b-logo{width:72px;height:72px}.b-logo.sq{border-radius:8px}
 .nav nav{display:flex;gap:30px}
 .nav nav a{font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;padding:8px 0;color:var(--ink);background:linear-gradient(var(--peach),var(--peach)) left bottom/0 1px no-repeat;transition:background-size .5s var(--ease)}
 .nav nav a:hover{background-size:100% 1px}
@@ -1138,7 +1139,7 @@ var aLink = function(o){ return '<a class="link" href="'+esc(o.url)+'"'+(isExt(o
 var phTxt = function(t){ return esc(t).replace(/\[(.+?)\]/g,'<b class="ph" title="'+esc(u('phTitle','Placeholder: replace before going live'))+'">$1</b>'); };
 var contactBits = [P.phone ? esc(u('call','call'))+' '+esc(P.phone) : '', P.email ? esc(P.email) : ''].filter(Boolean).join(' &nbsp;·&nbsp; ');
 var brand = '<span class="b1">'+esc(B.line1)+'</span><span class="b2">'+esc(B.line2)+'</span>';
-if (B.logo) brand = '<img class="b-logo" src="'+esc(B.logo)+'" alt="'+esc(B.name)+' logo" width="48" height="48"><span class="b-txt">'+brand+'</span>';
+if (B.logo) brand = '<img class="b-logo'+(B.logoRound===false?' sq':'')+'" src="'+esc(B.logo)+'" alt="'+esc(B.name)+' logo" width="48" height="48"><span class="b-txt">'+brand+'</span>';
 
 var secHead = function(o){ return '<div class="sec-head z"><div>'+chap(o.label)+'<h2 data-blur>'+md(o.heading)+'</h2></div>'+(o.text ? '<p data-fade>'+esc(o.text)+'</p>' : '')+'</div>'; };
 var linkTag = function(url, cls, inner, extra){ return url ? '<a class="'+cls+'" href="'+esc(url)+'" target="_blank" rel="noopener"'+(extra||'')+'>'+inner+'</a>' : '<div class="'+cls+'"'+(extra||'')+'>'+inner+'</div>'; };
