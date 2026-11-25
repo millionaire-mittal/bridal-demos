@@ -492,7 +492,7 @@ def build(lead: dict) -> Path:
     site = json.dumps(cfg, ensure_ascii=False, indent=1).replace("</", "<\\/")
     url = f"{BASE_URL}/{ROUTE}/{lead['slug']}/"
     html = PAGE
-    for key, val in (("__LANG__", LANGUAGES[lead.get("language", "english")].get("html", "en")),
+    for key, val in (("__LANG__", lead.get("html_lang") or LANGUAGES[lead.get("language", "english")].get("html", "en")),
                      ("__TITLE__", escape(cfg["meta"]["title"])),
                      ("__DESCRIPTION__", escape(cfg["meta"]["description"])),
                      ("__THEME__", cfg["theme"]["colors"]["ivory"]), ("__URL__", url),

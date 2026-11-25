@@ -412,6 +412,7 @@ a.f-item:hover{background:var(--blush-2)}
 .svcs{padding:120px 0 110px}
 .sv-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
 .sv-card{background:var(--blush-2)}
+.sv-grid.two,.i-grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}
 .sv-img{aspect-ratio:4/5;overflow:hidden}
 .sv-img img{width:100%;height:100%;object-fit:cover}
 .sv-body{padding:24px 26px 30px}
@@ -507,6 +508,7 @@ a.f-item:hover{background:var(--blush-2)}
 @media (max-width:860px){
   .svcs,.faq{padding:80px 0}
   .sv-grid{grid-template-columns:1fr 1fr;gap:16px}
+  .i-grid.two{grid-template-columns:1fr}
   .sv-body{padding:18px 16px 22px}
   .sv-body h3{font-size:21px}
   .spot{padding:90px 0}

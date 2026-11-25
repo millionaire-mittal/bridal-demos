@@ -432,6 +432,7 @@ a.f-item:hover{background:var(--blush-2)}
 .svcs{padding:120px 0 110px}
 .sv-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
 .sv-card{background:var(--blush-2)}
+.sv-grid.two,.i-grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}
 .sv-img{aspect-ratio:4/5;overflow:hidden}
 .sv-img img{width:100%;height:100%;object-fit:cover}
 .sv-body{padding:24px 26px 30px}
@@ -527,6 +528,7 @@ a.f-item:hover{background:var(--blush-2)}
 @media (max-width:860px){
   .svcs,.faq{padding:80px 0}
   .sv-grid{grid-template-columns:1fr 1fr;gap:16px}
+  .i-grid.two{grid-template-columns:1fr}
   .sv-body{padding:18px 16px 22px}
   .sv-body h3{font-size:21px}
   .spot{padding:90px 0}
@@ -1117,7 +1119,7 @@ var about = '<section class="uno blush" id="about"><i class="rp" data-rib=".93" 
  '<span class="signature" data-fade style="--d:400ms">'+esc(A.signature||P.first)+'</span><a class="link" href="#journey" data-fade style="--d:500ms">'+esc(A.link||'How your day unfolds')+'</a></div></div>'+
  '<i class="rp" data-rib=".95" data-rib-m=".95" style="top:72%"></i><i class="rp" data-rib=".9" data-rib-m=".94" style="top:96%"></i></section>';
 
-var services = !SV || !SV.items || !SV.items.length ? '' : '<section class="svcs" id="services"><div class="wrap">'+secHead(SV)+'<div class="sv-grid z">'+
+var services = !SV || !SV.items || !SV.items.length ? '' : '<section class="svcs" id="services"><div class="wrap">'+secHead(SV)+'<div class="sv-grid z'+(SV.items.length===4?' two':'')+'">'+
  SV.items.map(function(x,i){ return '<article class="sv-card" data-fade style="--d:'+(i%3*110)+'ms">'+(x.image ? '<div class="sv-img">'+img(x.image)+'</div>' : '')+'<div class="sv-body"><h3>'+esc(x.title)+'</h3><p>'+esc(x.text)+'</p>'+(x.status ? '<p class="sv-status">'+phTxt(x.status)+'</p>' : '')+'</div></article>'; }).join('')+'</div></div></section>';
 
 var spot = !SP ? '' : '<section class="spot" id="spot"><div class="wrap spot-grid"><div class="spot-art z"><figure class="arch-wrap" data-reveal><div class="arch">'+img(SP.image)+'</div></figure></div>'+
@@ -1184,7 +1186,7 @@ var work = '<section class="work" id="work"><div class="wrap"><div class="work-h
  '<div class="work-cta z">'+aBtn(ctaHref, cta)+(K.moreUrl && K.moreLabel ? '<a class="link" href="'+esc(K.moreUrl)+'">'+esc(K.moreLabel||'Full portfolio')+'</a>' : '')+'</div></div>'+
  '<i class="rp" data-rib=".02" data-rib-m=".04" style="top:6%"></i><i class="rp" data-rib=".5" data-rib-m=".04" style="top:27%"></i><i class="rp" data-rib=".55" data-rib-m=".96" style="top:46%"></i><i class="rp" data-rib=".9" data-rib-m=".96" style="top:62%"></i><i class="rp" data-rib=".97" data-rib-m=".96" style="top:96%"></i></section>';
 
-var info = !INFO || !INFO.cards || !INFO.cards.length ? '' : '<section class="info" id="info"><div class="wrap">'+secHead(INFO)+'<div class="i-grid z">'+
+var info = !INFO || !INFO.cards || !INFO.cards.length ? '' : '<section class="info" id="info"><div class="wrap">'+secHead(INFO)+'<div class="i-grid z'+(INFO.cards.length===4?' two':'')+'">'+
  INFO.cards.map(function(c,i){ return '<div class="i-card" data-fade style="--d:'+(i*120)+'ms"><h3>'+esc(c.title)+'</h3><'+(c.kind==='steps'?'ol':'ul')+' class="i-list'+(c.kind==='steps'?' steps':'')+'">'+c.items.map(function(x){ return '<li>'+esc(x)+'</li>'; }).join('')+'</'+(c.kind==='steps'?'ol':'ul')+'>'+(c.note?'<p class="i-note">'+esc(c.note)+'</p>':'')+'</div>'; }).join('')+'</div></div></section>';
 var faq = !FQ || !FQ.items || !FQ.items.length ? '' : '<section class="faq" id="faq"><div class="wrap">'+secHead(FQ)+'<div class="faq-list z">'+
  FQ.items.map(function(x,i){ return '<details class="faq-item" data-fade style="--d:'+(i%2*80)+'ms"><summary>'+esc(x.q)+'</summary><p>'+phTxt(x.a)+'</p></details>'; }).join('')+'</div></div></section>';

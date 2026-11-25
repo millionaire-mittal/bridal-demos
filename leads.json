@@ -3283,5 +3283,411 @@
       "reel3": "Platzhalter für einen Post",
       "reel4": "Platzhalter für ein Reel"
     }
+  },
+  {
+    "slug": "henna-by-kiran",
+    "logo": "logo.png",
+    "logo_round": false,
+    "business": "Henna by Kiran",
+    "wordmark": [
+      "HENNA",
+      "BY KIRAN"
+    ],
+    "first_name": "Kiran",
+    "city": "Luton",
+    "area": "UK",
+    "instagram": {
+      "url": "https://www.instagram.com/henna_by_kirannn/",
+      "handle": "henna_by_kirannn",
+      "cta": "Follow @henna_by_kirannn",
+      "button": "DM to Book"
+    },
+    "socials": {
+      "instagram": "https://www.instagram.com/henna_by_kirannn/"
+    },
+    "language": "english",
+    "html_lang": "en-GB",
+    "fonts": "soft-modern",
+    "motif": "olive",
+    "accent": "#9C5A3E",
+    "colors": {
+      "ivory": "#FAF5EC",
+      "blush": "#EFE2D1",
+      "blush2": "#F6ECDD",
+      "accent": "#9A593C",
+      "accentDark": "#6F3B26",
+      "ink": "#25190F",
+      "muted": "#675546",
+      "deep": "#2E4A3A",
+      "deep2": "#3B5A48",
+      "line": "#B59A62",
+      "silk": "#E8D5BC",
+      "silkEdge": "#C4A27A"
+    },
+    "title": "Bridal, Party & Corporate Henna in Luton & London | Henna by Kiran",
+    "description": "Henna by Kiran creates bespoke bridal, party and corporate mehndi across Luton, London and surrounding areas. Travel available — 2027 diary open. DM to book.",
+    "cta": "DM to Book",
+    "cta_url": "https://www.instagram.com/henna_by_kirannn/",
+    "labels": {
+      "about": "Meet Your Henna Artist",
+      "journey": "Booking experience",
+      "words": "Kind words",
+      "work": "Henna work",
+      "more": "",
+      "reels": "Instagram",
+      "review_suffix": ""
+    },
+    "sticky": [
+      {
+        "label": "DM to Book",
+        "url": "https://www.instagram.com/henna_by_kirannn/"
+      }
+    ],
+    "hero": {
+      "greeting": [
+        "Bespoke",
+        "Henna for Your Celebration"
+      ],
+      "eyebrow": "Henna Artist — Luton & London",
+      "lead": "Bridal, party and corporate mehndi across Luton, London and surrounding areas — with travel available and 2027 bookings now open.",
+      "facts": [
+        "2027 diary open",
+        "Bridal · Party · Corporate",
+        "Luton · London · Surrounding areas"
+      ],
+      "detail_caption": "Fine floral detail",
+      "cta2": {
+        "label": "View Henna Work",
+        "url": "#work"
+      }
+    },
+    "pull": {
+      "label": "Designed around your occasion.",
+      "text": "Tell me your date, your location and the look you love, and we’ll *plan your henna together.*",
+      "roots_word": "Luton.",
+      "roots": "Bespoke bridal, party and corporate henna across Luton, London and surrounding areas."
+    },
+    "about": {
+      "heading": "Hi, I’m *Kiran*",
+      "sub": "Henna artist based in Luton.",
+      "paragraphs": [
+        "Kiran is a henna artist based in Luton, creating bespoke bridal, party and corporate mehndi across Luton, London and surrounding areas.",
+        "From intricate bridal designs to vibrant celebration henna and corporate event artistry, every design is created around your occasion and personal style.",
+        "Based in Luton · Covers London and surrounding areas · Bridal, party and corporate henna · Travel available · 2027 diary open"
+      ],
+      "signature": "Kiran"
+    },
+    "services_section": {
+      "label": "Services",
+      "navLabel": "Services",
+      "heading": "Henna for *every occasion.*",
+      "text": "Kiran is based in Luton and covers London and surrounding areas. Travel is available — please send a DM to discuss your date, location, design style, and requirements.",
+      "items": [
+        {
+          "title": "Bridal Henna",
+          "text": "Bespoke bridal mehndi for weddings and pre-wedding celebrations.",
+          "image": "bride3.jpg"
+        },
+        {
+          "title": "Party Henna",
+          "text": "Henna for birthdays, celebrations, cultural events, festivals and gatherings.",
+          "image": "look6.jpg"
+        },
+        {
+          "title": "Corporate Henna",
+          "text": "Henna for corporate events, brand activations, workplace celebrations, cultural events and private bookings.",
+          "image": "look3.jpg"
+        },
+        {
+          "title": "Occasion Henna",
+          "text": "Bespoke designs for engagements, Eid, Diwali, baby showers, photoshoots and other meaningful occasions.",
+          "image": "bride2.jpg",
+          "status": "[CONFIRM WITH CLIENT]"
+        }
+      ]
+    },
+    "journey_heading": "From first message *to your henna.*",
+    "journey": [
+      {
+        "kicker": "01 · Your message",
+        "title": "Send a DM",
+        "short": "Send a DM",
+        "text": "Message @henna_by_kirannn on Instagram with your event date, your location and the occasion."
+      },
+      {
+        "kicker": "02 · The design",
+        "title": "Discuss your design",
+        "short": "Your design",
+        "text": "Share your design style, inspiration and requirements, and Kiran will get back to you with a quote."
+      },
+      {
+        "kicker": "03 · Your booking",
+        "title": "Secure your booking",
+        "short": "Your booking",
+        "text": "A non-refundable £20 deposit secures your booking. It is confirmed once the deposit has been received."
+      },
+      {
+        "kicker": "04 · The henna",
+        "title": "Your henna appointment",
+        "short": "Your henna",
+        "text": "Kiran covers Luton, London and surrounding areas, and travel is available."
+      }
+    ],
+    "reels": {
+      "heading": "Latest on *Instagram.*",
+      "text": "Henna work, stories and booking news from @henna_by_kirannn.",
+      "note": "The reel plays here on the live site.",
+      "cta": {
+        "label": "Follow @henna_by_kirannn",
+        "url": "https://www.instagram.com/henna_by_kirannn/"
+      },
+      "items": [
+        {
+          "title": "[Placeholder: reel]"
+        },
+        {
+          "title": "[Placeholder: reel]"
+        },
+        {
+          "title": "[Placeholder: post]"
+        },
+        {
+          "title": "[Placeholder: reel]"
+        }
+      ]
+    },
+    "reviews": [
+      {
+        "text": "Client review",
+        "name": "Client reviews to be added — copied word for word from verified sources.",
+        "placeholder": true
+      },
+      {
+        "text": "Client review",
+        "name": "Client reviews to be added — copied word for word from verified sources.",
+        "placeholder": true
+      },
+      {
+        "text": "Client review",
+        "name": "Client reviews to be added — copied word for word from verified sources.",
+        "placeholder": true
+      }
+    ],
+    "looks_heading": "The work, *up close.*",
+    "looks_text": "Bridal, party and occasion henna. [Photo selection to confirm with Kiran]",
+    "looks": [
+      {
+        "tag": "Henna",
+        "title": "Intricate forearm design"
+      },
+      {
+        "tag": "Bridal",
+        "title": "Red lehenga, henna hands"
+      },
+      {
+        "tag": "Henna",
+        "title": "Detailed hands, gold and red"
+      },
+      {
+        "tag": "Bridal",
+        "title": "Ivory gown, lace sleeves"
+      },
+      {
+        "tag": "Bridal",
+        "title": "Maroon gown, henna hands"
+      },
+      {
+        "tag": "Henna",
+        "title": "Floral detail with fresh flowers"
+      },
+      {
+        "tag": "Henna",
+        "title": "Forearms, fine lace and leaves"
+      }
+    ],
+    "info": {
+      "label": "How to book",
+      "navLabel": "How to book",
+      "heading": "How to *book.*",
+      "cards": [
+        {
+          "title": "Your first message",
+          "kind": "bullets",
+          "items": [
+            "Date",
+            "Postcode",
+            "Inspo picture of what you’re looking to have done",
+            "Any other relevant details about your booking"
+          ],
+          "note": "Please include these in your first message. It makes the whole process so much quicker and easier for both of us."
+        },
+        {
+          "title": "Bridal henna enquiry",
+          "kind": "bullets",
+          "items": [
+            "Full name",
+            "Date of booking (and preferred time)",
+            "Location (postcode)",
+            "Bridal package options",
+            "Additional guests (bridesmaids etc.)",
+            "Design preferences & inspo",
+            "Any skin conditions / allergies"
+          ]
+        },
+        {
+          "title": "Party henna enquiry",
+          "kind": "bullets",
+          "items": [
+            "Full name",
+            "Date of booking (and preferred time)",
+            "Location (postcode)",
+            "Event type",
+            "Guest count (approx.)",
+            "Design preferences & inspo",
+            "Any skin conditions / allergies"
+          ]
+        },
+        {
+          "title": "Booking terms",
+          "kind": "bullets",
+          "items": [
+            "To secure your booking, a non-refundable deposit of £20 is required (payment method shared upon enquiry).",
+            "The booking will only be confirmed once the deposit has been received.",
+            "Please ensure payment is ready before your henna application, either in cash in an envelope or via bank transfer."
+          ]
+        }
+      ]
+    },
+    "faq": {
+      "label": "FAQ",
+      "navLabel": "FAQ",
+      "heading": "Common *questions.*",
+      "items": [
+        {
+          "q": "Where is Kiran based?",
+          "a": "Kiran is based in Luton and covers London and surrounding areas."
+        },
+        {
+          "q": "Do you cover London?",
+          "a": "Yes. Kiran covers London and surrounding areas. Please send a DM to discuss your location and booking details."
+        },
+        {
+          "q": "Do you travel for bookings?",
+          "a": "Yes — travel is available. Please send a DM to discuss your location and booking details."
+        },
+        {
+          "q": "Do you offer bridal henna?",
+          "a": "Yes — Kiran offers bespoke bridal henna, party henna, corporate henna, and occasion henna."
+        },
+        {
+          "q": "Do you offer henna for parties and corporate events?",
+          "a": "Yes — Kiran offers bespoke bridal henna, party henna, corporate henna, and occasion henna."
+        },
+        {
+          "q": "Can designs be customised?",
+          "a": "Yes — designs can be tailored to your style, event, and preferences."
+        },
+        {
+          "q": "Is the 2027 diary open?",
+          "a": "Yes — the 2027 diary is open."
+        },
+        {
+          "q": "How do I book?",
+          "a": "Please send a DM on Instagram to discuss availability, design preferences, travel, and booking details. A non-refundable £20 deposit secures your booking."
+        },
+        {
+          "q": "How much does henna cost?",
+          "a": "Please send a DM for current pricing, travel fees, and package details."
+        },
+        {
+          "q": "What should I do before my henna appointment?",
+          "a": "Please ensure payment is ready before your henna application, either in cash in an envelope or via bank transfer. For anything else, send Kiran a DM."
+        }
+      ]
+    },
+    "booking": {
+      "label": "Contact",
+      "heading": "Book your *henna.*",
+      "intro": "Send a DM on Instagram with your event date, location and occasion. The 2027 diary is open and travel is available.",
+      "no_form": true,
+      "ctas": [
+        {
+          "label": "DM to Book",
+          "url": "https://www.instagram.com/henna_by_kirannn/"
+        },
+        {
+          "label": "Follow @henna_by_kirannn",
+          "url": "https://www.instagram.com/henna_by_kirannn/"
+        }
+      ],
+      "facts": [
+        "Enquire by Instagram DM",
+        "Luton · London · Surrounding areas",
+        "Travel available · 2027 diary open",
+        "Pricing on enquiry"
+      ],
+      "services": [
+        {
+          "title": "Bridal & party enquiries",
+          "text": "By Instagram DM",
+          "image": "bride3.jpg",
+          "quote": "Send your date, postcode and inspiration in one message."
+        },
+        {
+          "title": "Corporate & occasion enquiries",
+          "text": "By Instagram DM",
+          "image": "look3.jpg",
+          "quote": "Tell Kiran about your event and what you have in mind."
+        }
+      ]
+    },
+    "studio_lines": [
+      "Luton · London · Surrounding areas",
+      "Travel available · 2027 diary open",
+      "Instagram DM @henna_by_kirannn"
+    ],
+    "positions": {
+      "hero": "50% 40%",
+      "detail": "50% 50%",
+      "portrait": "50% 40%",
+      "party": "50% 45%",
+      "party-2": "50% 40%",
+      "step1": "50% 30%",
+      "step2": "50% 25%",
+      "step3": "50% 50%",
+      "step4": "50% 50%",
+      "look1": "50% 40%",
+      "look2": "50% 30%",
+      "look3": "50% 50%",
+      "look4": "50% 30%",
+      "look5": "50% 45%",
+      "look6": "50% 45%",
+      "look7": "50% 50%"
+    },
+    "alts": {
+      "hero": "Two forearms and hands with intricate henna, resting on a pink fluffy throw with white flowers",
+      "detail": "Close-up of a hand with fine floral henna in front of a pink backdrop",
+      "portrait": "Kiran, henna artist based in Luton",
+      "at-work": "Placeholder for a photo of Kiran applying henna",
+      "party": "Hands with floral henna holding a pink pouch, with peach roses and gypsophila on the wrists",
+      "party-2": "Hands with henna resting on a red embroidered lehenga with bangles",
+      "step1": "A bride in a red lehenga with a nath and henna hands",
+      "step2": "A bride in an ivory gown with lace sleeves and henna on her hands",
+      "step3": "Hands with deep red henna resting on a maroon embroidered dress",
+      "step4": "A forearm and hand with detailed henna in front of a pink backdrop",
+      "look1": "Two forearms and hands with intricate henna, resting on a pink fluffy throw with white flowers",
+      "look2": "A bride in a red lehenga with a nath and henna hands",
+      "look3": "Hands with henna resting on a red embroidered lehenga with bangles",
+      "look4": "A bride in an ivory gown with lace sleeves and henna on her hands",
+      "look5": "A bride in a maroon embroidered gown holding her hands with henna",
+      "look6": "Hands with floral henna holding a pink pouch, with peach roses and gypsophila on the wrists",
+      "look7": "Forearms with henna in fine lace and leaf patterns",
+      "bride2": "A bride in a green and gold anarkali with a pink dupatta on a staircase",
+      "bride3": "A bride in a pink dupatta, gold jewellery and long glossy waves",
+      "reel1": "Placeholder for a reel",
+      "reel2": "Placeholder for a reel",
+      "reel3": "Placeholder for a post",
+      "reel4": "Placeholder for a reel"
+    }
   }
 ]
