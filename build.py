@@ -117,7 +117,10 @@ def images_needed(lead: dict) -> list[str]:
     sp = lead.get("spotlight")
     if sp and sp.get("image"):
         need.append(sp["image"])
-    need += [x["image"] for x in (lead.get("services_section") or {}).get("items", []) if x.get("image")]
+    ss = lead.get("services_section") or {}
+    for blk in (ss if isinstance(ss, list) else [ss]):
+        need += [x["image"] for x in blk.get("items", []) if x.get("image")]
+    need += [x["image"] for x in (lead.get("gallery2") or {}).get("items", []) if x.get("image")]
     return list(dict.fromkeys(need))
 
 
@@ -356,7 +359,7 @@ def site_config(lead: dict) -> dict:
             "atWork": img("at-work.jpg", f"{first} styling a bride’s hair"),
         },
         "journey": {
-            "label": lb.get("journey", "Your journey"), "navLabel": lb.get("journey", "Your journey"),
+            "label": lb.get("journey", "Your journey"), "navLabel": lb.get("journey_nav", lb.get("journey", "Your journey")),
             "heading": lead.get("journey_heading", DEFAULT_JOURNEY_HEADING),
             "steps": [{"kicker": s.get("kicker") or f"{i:02d} · {s.get('short') or s['title']}",
                        "title": s["title"], "short": s.get("short") or s["title"], "text": s["text"],
@@ -421,12 +424,21 @@ def site_config(lead: dict) -> dict:
     if sp:
         cfg["spotlight"] = {k: sp[k] for k in ("label", "navLabel", "heading", "text", "text2", "ctas", "cards") if k in sp}
         cfg["spotlight"]["image"] = img(sp["image"], sp.get("alt", sp["heading"]))
+    def services_block(ss):
+        return {"label": ss.get("label", "Services"), "navLabel": ss.get("navLabel", ss.get("label", "Services")),
+                "heading": ss.get("heading", "Services"), "text": ss.get("text", ""),
+                "items": [{"title": x["title"], "text": x["text"], "status": x.get("status", ""),
+                           **({"image": img(x["image"], x["title"])} if x.get("image") else {})} for x in ss["items"]]}
+
     ss = lead.get("services_section")
-    if ss:
-        cfg["servicesSec"] = {"label": ss.get("label", "Services"), "navLabel": ss.get("navLabel", ss.get("label", "Services")),
-                              "heading": ss.get("heading", "Services"), "text": ss.get("text", ""),
-                              "items": [{"title": x["title"], "text": x["text"], "status": x.get("status", ""),
-                                         **({"image": img(x["image"], x["title"])} if x.get("image") else {})} for x in ss["items"]]}
+    if ss:   # one block, or a list of blocks (e.g. Henna and Nails)
+        cfg["servicesSec"] = [services_block(x) for x in ss] if isinstance(ss, list) else services_block(ss)
+    g2 = lead.get("gallery2")
+    if g2:
+        cfg["gallery2"] = {"label": g2.get("label", "Gallery"), "navLabel": g2.get("navLabel", g2.get("label", "Gallery")),
+                           "heading": g2.get("heading", "Gallery"), "text": g2.get("text", ""),
+                           "items": [{"image": img(x["image"], x["title"]), "title": x["title"], "tag": x.get("tag", "")}
+                                     for x in g2["items"]]}
     fq = lead.get("faq")
     if fq:
         cfg["faq"] = {"label": fq.get("label", "FAQ"), "navLabel": fq.get("navLabel", fq.get("label", "FAQ")),

@@ -3689,5 +3689,420 @@
       "reel3": "Placeholder for a post",
       "reel4": "Placeholder for a reel"
     }
+  },
+  {
+    "slug": "nails-by-sukhneet",
+    "business": "Nails by Sukhneet",
+    "wordmark": [
+      "HENNA",
+      "& NAILS BY SUKH"
+    ],
+    "first_name": "Sukh",
+    "city": "Edinburgh",
+    "area": "UK",
+    "instagram": {
+      "url": "https://www.instagram.com/nails_bysukhneet1999/",
+      "handle": "nails_bysukhneet1999",
+      "cta": "Follow @nails_bysukhneet1999",
+      "button": "DM to Book"
+    },
+    "socials": {
+      "instagram": "https://www.instagram.com/nails_bysukhneet1999/"
+    },
+    "language": "english",
+    "html_lang": "en-GB",
+    "fonts": "french",
+    "motif": "willow",
+    "accent": "#A65D49",
+    "colors": {
+      "ivory": "#FBF5EE",
+      "blush": "#F1DDD3",
+      "blush2": "#F8EBE3",
+      "accent": "#A35B47",
+      "accentDark": "#7A3E2E",
+      "ink": "#2B1B15",
+      "muted": "#6B554C",
+      "deep": "#3B2820",
+      "deep2": "#4A332A",
+      "line": "#BE9B6A",
+      "silk": "#EBD2C5",
+      "silkEdge": "#C9A08E"
+    },
+    "title": "Henna Artist & Certified Nail Tech in Edinburgh | Nails by Sukhneet",
+    "description": "Nails by Sukhneet offers bespoke henna and nail artistry in Edinburgh. Book bridal, party, occasion henna or nail services via Instagram DM.",
+    "cta": "DM to Book",
+    "cta_url": "https://www.instagram.com/nails_bysukhneet1999/",
+    "labels": {
+      "about": "Meet Sukh",
+      "journey": "Booking experience",
+      "journey_nav": "Booking",
+      "words": "Reviews",
+      "work": "Henna work",
+      "more": "",
+      "reels": "Instagram",
+      "review_suffix": ""
+    },
+    "ui": {
+      "aboutNav": "Sukh"
+    },
+    "sticky": [
+      {
+        "label": "DM to Book",
+        "url": "https://www.instagram.com/nails_bysukhneet1999/"
+      }
+    ],
+    "hero": {
+      "greeting": [
+        "Bespoke",
+        "Henna & Nail Artistry"
+      ],
+      "eyebrow": "Henna Artist & Certified Nail Tech — Edinburgh",
+      "lead": "Intricate henna for celebrations and considered nail designs — created by Sukh in Edinburgh.",
+      "facts": [
+        "UK-based henna artist",
+        "Certified nail tech",
+        "Edinburgh, UK"
+      ],
+      "detail_caption": "Considered nail detail",
+      "cta2": {
+        "label": "View Henna & Nails",
+        "url": "#work"
+      }
+    },
+    "pull": {
+      "label": "Designed around you.",
+      "text": "Tell me about your occasion or your nail inspiration, and we’ll *plan your design together.*",
+      "roots_word": "Edinburgh.",
+      "roots": "Bespoke henna and nail artistry: intricate mehndi for celebrations and considered nail designs for every day."
+    },
+    "about": {
+      "heading": "Henna & Nails, *Created for You*",
+      "sub": "UK-based henna artist and certified nail tech in Edinburgh.",
+      "paragraphs": [
+        "Sukh is a UK-based henna artist and certified nail technician based in Edinburgh. She creates bespoke henna for celebrations and considered nail designs for everyday wear and special occasions.",
+        "From intricate mehndi to personalised nail art, every design is created around your style, occasion, and preferences.",
+        "UK-based henna artist · Based in Edinburgh · Certified nail tech · Henna and nail services"
+      ],
+      "signature": "Sukh"
+    },
+    "services_section": [
+      {
+        "label": "Henna",
+        "navLabel": "Henna",
+        "heading": "Henna *services.*",
+        "text": "Bespoke mehndi for weddings, celebrations and the occasions in between.",
+        "items": [
+          {
+            "title": "Bridal Henna",
+            "text": "Bespoke bridal mehndi for weddings and pre-wedding celebrations.",
+            "image": "h1.jpg"
+          },
+          {
+            "title": "Party & Occasion Henna",
+            "text": "Henna for birthdays, celebrations, cultural events, festivals, Eid, Diwali, baby showers, photoshoots and gatherings.",
+            "image": "h2.jpg",
+            "status": "[CONFIRM WITH CLIENT]"
+          },
+          {
+            "title": "Custom Henna",
+            "text": "Bespoke designs tailored to your style, event and preferences.",
+            "image": "h3.jpg"
+          }
+        ]
+      },
+      {
+        "label": "Nails",
+        "navLabel": "Nails",
+        "heading": "Nail *services.*",
+        "text": "Please send a DM on Instagram to discuss availability, design preferences, nail services, and booking details.",
+        "items": [
+          {
+            "title": "Nail Art",
+            "text": "Custom nail art and creative designs.",
+            "image": "n1.jpg"
+          },
+          {
+            "title": "Gel Nails",
+            "text": "Gel-based nail services.",
+            "image": "n2.jpg",
+            "status": "[CONFIRM WITH CLIENT]"
+          },
+          {
+            "title": "Nail Consultation",
+            "text": "A consultation to discuss nail shape, length, colour, finish and design preferences.",
+            "image": "n3.jpg",
+            "status": "[CONFIRM WITH CLIENT]"
+          }
+        ]
+      }
+    ],
+    "journey_heading": "From first message *to your appointment.*",
+    "journey": [
+      {
+        "kicker": "01 · Your message",
+        "title": "Send a DM",
+        "short": "Send a DM",
+        "text": "Message @nails_bysukhneet1999 on Instagram with your event date, occasion or nail inspiration."
+      },
+      {
+        "kicker": "02 · The design",
+        "title": "Discuss your design",
+        "short": "Your design",
+        "text": "Talk through your henna design or nail preferences. [CONFIRM WITH CLIENT]"
+      },
+      {
+        "kicker": "03 · Your booking",
+        "title": "Confirm your booking",
+        "short": "Your booking",
+        "text": "Confirm your booking details. [CONFIRM WITH CLIENT]"
+      },
+      {
+        "kicker": "04 · The appointment",
+        "title": "Your appointment",
+        "short": "Your appointment",
+        "text": "Your henna or nail appointment. [CONFIRM WITH CLIENT]"
+      }
+    ],
+    "reels": {
+      "heading": "Latest on *Instagram.*",
+      "text": "Henna, nails and booking news from @nails_bysukhneet1999.",
+      "note": "The reel plays here on the live site.",
+      "cta": {
+        "label": "Follow @nails_bysukhneet1999",
+        "url": "https://www.instagram.com/nails_bysukhneet1999/"
+      },
+      "items": [
+        {
+          "title": "[Placeholder: reel]"
+        },
+        {
+          "title": "[Placeholder: reel]"
+        },
+        {
+          "title": "[Placeholder: post]"
+        },
+        {
+          "title": "[Placeholder: reel]"
+        }
+      ]
+    },
+    "reviews": [
+      {
+        "text": "Client review",
+        "name": "Client reviews to be added — copied word for word from verified sources.",
+        "placeholder": true
+      },
+      {
+        "text": "Client review",
+        "name": "Client reviews to be added — copied word for word from verified sources.",
+        "placeholder": true
+      },
+      {
+        "text": "Client review",
+        "name": "Client reviews to be added — copied word for word from verified sources.",
+        "placeholder": true
+      }
+    ],
+    "looks_heading": "Henna, *up close.*",
+    "looks_text": "Henna designs. [Photo selection to confirm with Sukh]",
+    "looks": [
+      {
+        "tag": "Henna",
+        "title": "Floral back-of-hand design"
+      },
+      {
+        "tag": "Henna",
+        "title": "Roses on the palm"
+      },
+      {
+        "tag": "Henna",
+        "title": "Flowers and spirals"
+      },
+      {
+        "tag": "Henna",
+        "title": "Lattice and rose forearm"
+      },
+      {
+        "tag": "Henna",
+        "title": "Roses, lattice and leaves"
+      },
+      {
+        "tag": "Henna",
+        "title": "Palm flowers and swirls"
+      },
+      {
+        "tag": "Henna",
+        "title": "Two hands, floral henna"
+      }
+    ],
+    "gallery2": {
+      "label": "Nails",
+      "navLabel": "Nail work",
+      "heading": "Nails, *up close.*",
+      "text": "Nail designs. [Photo selection to confirm with Sukh]",
+      "items": [
+        {
+          "image": "nail1.jpg",
+          "title": "Deep red with a glitter bow",
+          "tag": "Nail Art"
+        },
+        {
+          "image": "nail2.jpg",
+          "title": "Rose, gold line and flower detail",
+          "tag": "Nail Art"
+        },
+        {
+          "image": "nail3.jpg",
+          "title": "Hand-painted character on pink",
+          "tag": "Nail Art"
+        },
+        {
+          "image": "nail4.jpg",
+          "title": "Soft green and pink with gems",
+          "tag": "Nail Art"
+        }
+      ]
+    },
+    "faq": {
+      "label": "FAQ",
+      "navLabel": "FAQ",
+      "heading": "Common *questions.*",
+      "items": [
+        {
+          "q": "Where is Sukh based?",
+          "a": "Sukh is a UK-based henna artist and certified nail technician based in Edinburgh."
+        },
+        {
+          "q": "Do you offer bridal henna?",
+          "a": "Yes — bespoke bridal, party, occasion, and custom henna is available."
+        },
+        {
+          "q": "Do you offer henna for parties and occasions?",
+          "a": "Yes — bespoke bridal, party, occasion, and custom henna is available."
+        },
+        {
+          "q": "Can henna designs be customised?",
+          "a": "Yes — bespoke bridal, party, occasion, and custom henna is available. Please send a DM to discuss your design preferences."
+        },
+        {
+          "q": "Are you a certified nail technician?",
+          "a": "Yes — Sukh is a certified nail tech."
+        },
+        {
+          "q": "What nail services do you offer?",
+          "a": "Please send a DM on Instagram to discuss available nail services, design preferences, and booking details."
+        },
+        {
+          "q": "Can nail designs be customised?",
+          "a": "Please send a DM on Instagram to discuss available nail services, design preferences, and booking details."
+        },
+        {
+          "q": "How do I book?",
+          "a": "Please send a DM on Instagram to discuss availability, design preferences, nail services, and booking details."
+        },
+        {
+          "q": "How much do henna or nail services cost?",
+          "a": "Please send a DM for current pricing, availability, and booking details."
+        },
+        {
+          "q": "What should I do before my henna appointment?",
+          "a": "Please send a DM on Instagram and Sukh will talk you through anything you need to know before your appointment."
+        }
+      ]
+    },
+    "booking": {
+      "label": "Contact",
+      "heading": "Book your *appointment.*",
+      "intro": "Send a DM on Instagram with your event date, occasion or nail inspiration. Sukh is a UK-based henna artist and certified nail tech in Edinburgh.",
+      "no_form": true,
+      "ctas": [
+        {
+          "label": "DM to Book",
+          "url": "https://www.instagram.com/nails_bysukhneet1999/"
+        },
+        {
+          "label": "Follow @nails_bysukhneet1999",
+          "url": "https://www.instagram.com/nails_bysukhneet1999/"
+        }
+      ],
+      "facts": [
+        "Enquire by Instagram DM",
+        "Edinburgh, UK",
+        "UK-based henna artist · Certified nail tech",
+        "Pricing on enquiry"
+      ],
+      "services": [
+        {
+          "title": "Henna enquiries",
+          "text": "By Instagram DM",
+          "image": "look1.jpg",
+          "quote": "Share your event date, occasion and design inspiration."
+        },
+        {
+          "title": "Nail enquiries",
+          "text": "By Instagram DM",
+          "image": "n1.jpg",
+          "quote": "Share your nail inspiration, shape and finish."
+        }
+      ]
+    },
+    "studio_lines": [
+      "Edinburgh, UK",
+      "UK-based henna artist · Certified nail tech",
+      "Instagram DM @nails_bysukhneet1999"
+    ],
+    "positions": {
+      "hero": "50% 50%",
+      "detail": "50% 50%",
+      "portrait": "50% 40%",
+      "party": "50% 40%",
+      "party-2": "50% 40%",
+      "step1": "50% 40%",
+      "step2": "50% 50%",
+      "step3": "50% 40%",
+      "step4": "50% 40%",
+      "look1": "50% 40%",
+      "look2": "50% 50%",
+      "look3": "50% 50%",
+      "look4": "50% 40%",
+      "look5": "50% 40%",
+      "look6": "50% 50%",
+      "look7": "50% 50%",
+      "nail3": "30% 50%"
+    },
+    "alts": {
+      "hero": "Two hands with detailed henna, with blue and leopard-print nails, held out in front of a wooden floor",
+      "detail": "Close-up of short deep-red nails with a glitter bow and a gem",
+      "portrait": "Sukh, henna artist and certified nail technician in Edinburgh",
+      "at-work": "A woman drawing henna on a client's hand with a cone",
+      "party": "A flat lay of pink nails with gold line and flower details on a branded card",
+      "party-2": "Hands with almond nails in soft green and pink, with gems",
+      "step1": "A flat lay of pink nails with gold line and flower details on a branded card",
+      "step2": "Two hands with detailed henna, with blue and leopard-print nails",
+      "step3": "A circle of hands, each with a different henna design",
+      "step4": "Two hands with floral henna lying on a newspaper",
+      "look1": "A hand with a floral henna design and a trailing vine on the fingers",
+      "look2": "A palm with three roses drawn in henna",
+      "look3": "A hand with large henna flowers and spirals",
+      "look4": "A forearm and hand with lattice and roses in henna",
+      "look5": "A hand with henna roses, lattice and leaves",
+      "look6": "A palm with a large henna flower and swirls",
+      "look7": "Two hands with floral henna and blue and leopard-print nails",
+      "h1": "A hand with henna roses, lattice and leaves",
+      "h2": "A palm with a large henna flower and swirls",
+      "h3": "A hand with large henna flowers and spirals",
+      "n1": "Hands with almond nails in soft green and pink, with gems",
+      "n2": "Short deep-red nails with a glitter bow and a gem",
+      "n3": "Pastel nails on a bamboo display stand",
+      "nail1": "Short deep-red nails with a glitter bow and a gem",
+      "nail2": "A flat lay of pink nails with gold line and flower details",
+      "nail3": "A pink nail with a hand-painted blue character",
+      "nail4": "Hands with almond nails in soft green and pink, with gems",
+      "nail5": "Pastel nails on a bamboo display stand",
+      "reel1": "Placeholder for a reel",
+      "reel2": "Placeholder for a reel",
+      "reel3": "Placeholder for a post",
+      "reel4": "Placeholder for a reel"
+    }
   }
 ]

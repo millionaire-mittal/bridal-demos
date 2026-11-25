@@ -40,7 +40,7 @@ if (S.meta && S.meta.description){ var m = document.createElement('meta'); m.nam
 /* ---------- sections ---------- */
 var B = S.brand, P = S.person, H = S.hero, PL = S.pull, A = S.about, J = S.journey, R = S.reels, W = S.testimonials, K = S.work, G = S.guides, BK = S.booking, F = S.footer || {};
 var CL = S.clients, FT = S.featured, V = S.videos, INFO = S.info;
-var SV = S.servicesSec, SP = S.spotlight, FQ = S.faq;   // optional: services cards, a highlighted spotlight section, FAQ   // optional: selected clients, press features, video testimonials
+var SVS = [].concat(S.servicesSec || []), SV = SVS[0], SP = S.spotlight, FQ = S.faq, GL2 = S.gallery2;   // optional: services cards, a highlighted spotlight section, FAQ   // optional: selected clients, press features, video testimonials
 var IG = P.instagram && P.instagram.url ? P.instagram : null;
 var igLink = function(cls, label){ return '<a class="'+cls+'" href="'+esc(IG.url)+'" target="_blank" rel="noopener">'+label+'</a>'; };
 var U = S.ui || {};
@@ -60,7 +60,7 @@ var initials = function(n){ return String(n).replace(/[^A-Za-zÀ-ɏ ]/g,'').spli
 
 var nav = '<a class="skip" href="#main">'+esc(u('skip','Skip to content'))+'</a>'+
  '<header class="nav" id="nav"><a class="brand'+(B.logo?' has-logo':'')+'" href="#top" aria-label="'+esc(B.name)+', back to top">'+brand+'</a>'+
- '<nav aria-label="Primary"><a href="#about">'+esc(u('aboutNav',P.first))+'</a>'+(SV ? '<a href="#services">'+esc(SV.navLabel||SV.label)+'</a>' : '')+(SP ? '<a href="#spot">'+esc(SP.navLabel||SP.label)+'</a>' : '')+'<a href="#journey">'+esc(J.navLabel||'Your journey')+'</a>'+(R ? '<a href="#reels">'+esc(R.label)+'</a>' : '')+(CL ? '<a href="#clients">'+esc(CL.navLabel||CL.label)+'</a>' : '')+(FT ? '<a href="#featured">'+esc(FT.navLabel||FT.label)+'</a>' : '')+(V ? '<a href="#voices">'+esc(V.navLabel||V.label)+'</a>' : '')+'<a href="#words">'+esc(W.label)+'</a><a href="#work">'+esc(K.label)+'</a>'+(INFO ? '<a href="#info">'+esc(INFO.navLabel||INFO.label)+'</a>' : '')+(FQ ? '<a href="#faq">'+esc(FQ.navLabel||FQ.label)+'</a>' : '')+'</nav>'+
+ '<nav aria-label="Primary"><a href="#about">'+esc(u('aboutNav',P.first))+'</a>'+SVS.map(function(x,i){ return '<a href="#services'+(i ? '-'+(i+1) : '')+'">'+esc(x.navLabel||x.label)+'</a>'; }).join('')+(SP ? '<a href="#spot">'+esc(SP.navLabel||SP.label)+'</a>' : '')+'<a href="#journey">'+esc(J.navLabel||'Your journey')+'</a>'+(R ? '<a href="#reels">'+esc(R.label)+'</a>' : '')+(CL ? '<a href="#clients">'+esc(CL.navLabel||CL.label)+'</a>' : '')+(FT ? '<a href="#featured">'+esc(FT.navLabel||FT.label)+'</a>' : '')+(V ? '<a href="#voices">'+esc(V.navLabel||V.label)+'</a>' : '')+'<a href="#words">'+esc(W.label)+'</a><a href="#work">'+esc(K.label)+'</a>'+(GL2 ? '<a href="#gallery2">'+esc(GL2.navLabel||GL2.label)+'</a>' : '')+(INFO ? '<a href="#info">'+esc(INFO.navLabel||INFO.label)+'</a>' : '')+(FQ ? '<a href="#faq">'+esc(FQ.navLabel||FQ.label)+'</a>' : '')+'</nav>'+
  '<a class="btn btn-sm" href="'+esc(ctaHref)+'"'+(isExt(ctaHref)?' target="_blank" rel="noopener"':'')+'><i class="dot"></i><span>'+esc(cta)+'</span></a></header>';
 
 var hero = '<section class="hero" id="top"><div class="wrap hero-grid"><div class="hero-copy z">'+
@@ -90,8 +90,8 @@ var about = '<section class="uno blush" id="about"><i class="rp" data-rib=".93" 
  '<span class="signature" data-fade style="--d:400ms">'+esc(A.signature||P.first)+'</span><a class="link" href="#journey" data-fade style="--d:500ms">'+esc(A.link||'How your day unfolds')+'</a></div></div>'+
  '<i class="rp" data-rib=".95" data-rib-m=".95" style="top:72%"></i><i class="rp" data-rib=".9" data-rib-m=".94" style="top:96%"></i></section>';
 
-var services = !SV || !SV.items || !SV.items.length ? '' : '<section class="svcs" id="services"><div class="wrap">'+secHead(SV)+'<div class="sv-grid z'+(SV.items.length===4?' two':'')+'">'+
- SV.items.map(function(x,i){ return '<article class="sv-card" data-fade style="--d:'+(i%3*110)+'ms">'+(x.image ? '<div class="sv-img">'+img(x.image)+'</div>' : '')+'<div class="sv-body"><h3>'+esc(x.title)+'</h3><p>'+esc(x.text)+'</p>'+(x.status ? '<p class="sv-status">'+phTxt(x.status)+'</p>' : '')+'</div></article>'; }).join('')+'</div></div></section>';
+var services = SVS.map(function(SV, si){ return !SV.items || !SV.items.length ? '' : '<section class="svcs" id="services'+(si ? '-'+(si+1) : '')+'"><div class="wrap">'+secHead(SV)+'<div class="sv-grid z'+(SV.items.length===4?' two':'')+'">'+
+ SV.items.map(function(x,i){ return '<article class="sv-card" data-fade style="--d:'+(i%3*110)+'ms">'+(x.image ? '<div class="sv-img">'+img(x.image)+'</div>' : '')+'<div class="sv-body"><h3>'+esc(x.title)+'</h3><p>'+esc(x.text)+'</p>'+(x.status ? '<p class="sv-status">'+phTxt(x.status)+'</p>' : '')+'</div></article>'; }).join('')+'</div></div></section>'; }).join('');
 
 var spot = !SP ? '' : '<section class="spot" id="spot"><div class="wrap spot-grid"><div class="spot-art z"><figure class="arch-wrap" data-reveal><div class="arch">'+img(SP.image)+'</div></figure></div>'+
  '<div class="spot-copy z">'+chap(SP.label)+'<h2 data-blur>'+md(SP.heading)+'</h2><p class="spot-lead" data-fade>'+esc(SP.text)+'</p>'+(SP.text2 ? '<p class="spot-text" data-fade>'+esc(SP.text2)+'</p>' : '')+
@@ -157,6 +157,8 @@ var work = '<section class="work" id="work"><div class="wrap"><div class="work-h
  '<div class="work-cta z">'+aBtn(ctaHref, cta)+(K.moreUrl && K.moreLabel ? '<a class="link" href="'+esc(K.moreUrl)+'">'+esc(K.moreLabel||'Full portfolio')+'</a>' : '')+'</div></div>'+
  '<i class="rp" data-rib=".02" data-rib-m=".04" style="top:6%"></i><i class="rp" data-rib=".5" data-rib-m=".04" style="top:27%"></i><i class="rp" data-rib=".55" data-rib-m=".96" style="top:46%"></i><i class="rp" data-rib=".9" data-rib-m=".96" style="top:62%"></i><i class="rp" data-rib=".97" data-rib-m=".96" style="top:96%"></i></section>';
 
+var gal2 = !GL2 || !GL2.items || !GL2.items.length ? '' : '<section class="clients" id="gallery2"><div class="wrap">'+secHead(GL2)+'<div class="c-grid z">'+
+ GL2.items.map(function(c,i){ return '<figure class="c-card" data-fade style="--d:'+(i%4*110)+'ms"><div class="c-img">'+img(c.image)+'</div><figcaption><b>'+esc(c.title)+'</b>'+(c.tag ? '<span>'+esc(c.tag)+'</span>' : '')+'</figcaption></figure>'; }).join('')+'</div></div></section>';
 var info = !INFO || !INFO.cards || !INFO.cards.length ? '' : '<section class="info" id="info"><div class="wrap">'+secHead(INFO)+'<div class="i-grid z'+(INFO.cards.length===4?' two':'')+'">'+
  INFO.cards.map(function(c,i){ return '<div class="i-card" data-fade style="--d:'+(i*120)+'ms"><h3>'+esc(c.title)+'</h3><'+(c.kind==='steps'?'ol':'ul')+' class="i-list'+(c.kind==='steps'?' steps':'')+'">'+c.items.map(function(x){ return '<li>'+esc(x)+'</li>'; }).join('')+'</'+(c.kind==='steps'?'ol':'ul')+'>'+(c.note?'<p class="i-note">'+esc(c.note)+'</p>':'')+'</div>'; }).join('')+'</div></div></section>';
 var faq = !FQ || !FQ.items || !FQ.items.length ? '' : '<section class="faq" id="faq"><div class="wrap">'+secHead(FQ)+'<div class="faq-list z">'+
@@ -201,7 +203,7 @@ var foot = '<footer class="foot"><svg class="bot in" data-bot="sprig" aria-hidde
 
 var sticky = !S.sticky || !S.sticky.length ? '' : '<div class="sticky-cta" role="group" aria-label="'+esc(u('stickyLabel','Contact'))+'">'+S.sticky.map(function(c,i){ return aBtn(c.url, c.label, i ? 'btn btn-ghost' : 'btn'); }).join('')+'</div>';
 document.body.insertAdjacentHTML('afterbegin', nav+'<main id="main"><svg id="ribbon" aria-hidden="true" focusable="false"><path class="band" id="ribBand"/><path class="edge" id="ribEdge"/><path class="edge2" id="ribEdge2"/></svg>'+
-  hero+pull+about+services+spot+journey+reels+clients+featured+voices+words+work+info+faq+guides+book+'</main>'+foot+sticky+'<canvas id="petals" aria-hidden="true"></canvas>');
+  hero+pull+about+services+spot+journey+reels+clients+featured+voices+words+work+gal2+info+faq+guides+book+'</main>'+foot+sticky+'<canvas id="petals" aria-hidden="true"></canvas>');
 
 /* ===================== effects ===================== */
 var RM = document.documentElement.classList.contains('rm');

@@ -68,3 +68,5 @@ The enquiry form defaults to bridal wording (wedding date, venue, who needs styl
 Swiss German: `language: "german-ch"` gives `lang="de-CH"` (every page also gets a matching `hreflang` link). `logo_round: false` keeps a square logo from being clipped to a circle. See `isa-hairstudio`.
 
 `html_lang` (e.g. `"en-GB"`) overrides the page language and the `hreflang` link. Four services or four info cards are laid out as a 2 x 2 grid. See `henna-by-kiran`.
+
+`services_section` can also be a list of blocks (e.g. Henna and Nails, each with its own nav link), and `gallery2` (`{label, navLabel, heading, text, items: [{image, title, tag?}]}`) adds a second photo grid after the main gallery. `labels.journey_nav` shortens the nav label. See `nails-by-sukhneet`.
